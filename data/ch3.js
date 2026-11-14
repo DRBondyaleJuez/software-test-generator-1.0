@@ -2518,5 +2518,2452 @@ const QUESTIONS_CH3 = [
       "de": "Zähle die Argumente von json.dump.",
       "en": "Count the arguments of json.dump."
     }
-  }
+  },
+  {
+      "id": "ch3-mc-201",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2, \"c\": 3}\nprint(len(d))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "6",
+            "en": "6"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "len() zählt bei einem Dictionary die Schlüssel-Wert-Paare (Einträge), hier also drei. Es werden weder die Werte aufsummiert noch Schlüssel und Werte getrennt gezählt.",
+        "en": "For a dictionary, len() counts the key-value pairs (entries), here three. It neither sums the values nor counts keys and values separately."
+      },
+      "tip": {
+        "de": "Zähle die Einträge, nicht die einzelnen Elemente der Paare.",
+        "en": "Count the entries, not the individual parts of each pair."
+      }
+    },
+    {
+      "id": "ch3-mc-202",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"x\": 10, \"y\": 20}\nprint(list(d.values()))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "['x', 'y']",
+            "en": "['x', 'y']"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "[10, 20]",
+            "en": "[10, 20]"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "[('x', 10), ('y', 20)]",
+            "en": "[('x', 10), ('y', 20)]"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "{10, 20}",
+            "en": "{10, 20}"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "d.values() liefert nur die Werte in Einfügereihenfolge, list() macht daraus eine Liste. Die Schlüssel lieferte d.keys(), die Paare d.items().",
+        "en": "d.values() yields only the values in insertion order, and list() turns them into a list. The keys would come from d.keys(), the pairs from d.items()."
+      },
+      "tip": {
+        "de": "Welche der Methoden keys, values, items passt zum Namen?",
+        "en": "Which of keys, values, items matches the name?"
+      }
+    },
+    {
+      "id": "ch3-mc-203",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"p\": {\"name\": \"Ada\", \"age\": 36}}\nprint(d[\"p\"][\"age\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "36",
+            "en": "36"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Ada",
+            "en": "Ada"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "{'name': 'Ada', 'age': 36}",
+            "en": "{'name': 'Ada', 'age': 36}"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "d[\"p\"] liefert das innere Dictionary, und darauf liefert [\"age\"] den Wert 36. Zugriffe auf verschachtelte Strukturen werden einfach hintereinandergeschaltet.",
+        "en": "d[\"p\"] returns the inner dictionary, and [\"age\"] on it returns 36. Accesses to nested structures are simply chained."
+      },
+      "tip": {
+        "de": "Gehe von links nach rechts durch die Klammern, Schritt für Schritt.",
+        "en": "Work through the brackets from left to right, one step at a time."
+      }
+    },
+    {
+      "id": "ch3-mc-204",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welcher Aufruf öffnet die Datei so, dass json.dump dort ein Objekt neu schreiben kann?",
+        "en": "Which call opens the file so that json.dump can write an object into it (replacing any old content)?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "open(\"out.json\", \"w\")",
+            "en": "open(\"out.json\", \"w\")"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "open(\"out.json\", \"r\")",
+            "en": "open(\"out.json\", \"r\")"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "open(\"out.json\")",
+            "en": "open(\"out.json\")"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "open(\"out.json\", \"rb\")",
+            "en": "open(\"out.json\", \"rb\")"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Der Modus \"w\" öffnet die Datei zum Schreiben und überschreibt vorhandenen Inhalt. \"r\" (auch der Standard) und \"rb\" öffnen nur zum Lesen, json.dump würde dann einen Fehler auslösen.",
+        "en": "Mode \"w\" opens the file for writing and replaces existing content. \"r\" (also the default) and \"rb\" are read-only, so json.dump would raise an error."
+      },
+      "tip": {
+        "de": "Welcher Modus ist nicht schreibgeschützt?",
+        "en": "Which mode is not read-only?"
+      }
+    },
+    {
+      "id": "ch3-mc-205",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\nresult = json.dumps({\"name\": \"Ada\"})\nprint(type(result))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "<class 'str'>",
+            "en": "<class 'str'>"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "<class 'dict'>",
+            "en": "<class 'dict'>"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "<class 'bytes'>",
+            "en": "<class 'bytes'>"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "<class '_io.TextIOWrapper'>",
+            "en": "<class '_io.TextIOWrapper'>"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "json.dumps (\"dump string\") gibt den JSON-Text als str zurück. Ein dict würde json.loads liefern, und ein Dateiobjekt entsteht nur durch open().",
+        "en": "json.dumps (\"dump string\") returns the JSON text as a str. A dict would come from json.loads, and a file object only comes from open()."
+      },
+      "tip": {
+        "de": "Das s im Funktionsnamen steht für string.",
+        "en": "The s in the function name stands for string."
+      }
+    },
+    {
+      "id": "ch3-mc-206",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "words = [\"a\", \"b\", \"a\", \"c\", \"a\"]\ncounts = {}\nfor w in words:\n    counts[w] = counts.get(w, 0) + 1\nprint(counts[\"a\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "1",
+            "en": "1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "5",
+            "en": "5"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "counts.get(w, 0) liefert beim ersten Auftreten 0 und danach den bisherigen Zähler, der um 1 erhöht wird. Das Wort \"a\" kommt dreimal vor, daher steht am Ende 3 im Dictionary; ein KeyError tritt wegen get nicht auf.",
+        "en": "counts.get(w, 0) returns 0 on the first occurrence and the current counter afterwards, which is then incremented. The word \"a\" occurs three times, so 3 ends up in the dictionary; no KeyError occurs thanks to get."
+      },
+      "tip": {
+        "de": "Wie oft kommt \"a\" in der Liste vor?",
+        "en": "How often does \"a\" appear in the list?"
+      }
+    },
+    {
+      "id": "ch3-mc-207",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "keys = [\"a\", \"b\", \"c\"]\nvalues = [1, 2, 3]\nd = dict(zip(keys, values))\nprint(d[\"b\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "1",
+            "en": "1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "('b', 2)",
+            "en": "('b', 2)"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "zip paart gleich lange Listen elementweise, dict() macht daraus Schlüssel-Wert-Paare: {\"a\": 1, \"b\": 2, \"c\": 3}. Der Wert zu \"b\" ist daher 2, nicht das Paar.",
+        "en": "zip pairs up lists element by element and dict() turns the pairs into key-value pairs: {\"a\": 1, \"b\": 2, \"c\": 3}. The value for \"b\" is therefore 2, not the pair."
+      },
+      "tip": {
+        "de": "Die erste Liste liefert die Schlüssel, die zweite die Werte.",
+        "en": "The first list provides the keys, the second the values."
+      }
+    },
+    {
+      "id": "ch3-mc-208",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\nprint(1 in d, \"b\" in d)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "True True",
+            "en": "True True"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "False True",
+            "en": "False True"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "True False",
+            "en": "True False"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "False False",
+            "en": "False False"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Der Operator in prüft bei einem Dictionary die Schlüssel, nicht die Werte. 1 ist ein Wert und kein Schlüssel (False), \"b\" ist ein Schlüssel (True).",
+        "en": "For a dictionary, the in operator checks the keys, not the values. 1 is a value and not a key (False), \"b\" is a key (True)."
+      },
+      "tip": {
+        "de": "Worauf bezieht sich in bei Dictionaries?",
+        "en": "What does in refer to for dictionaries?"
+      }
+    },
+    {
+      "id": "ch3-mc-209",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\ne = {k: v * 2 for k, v in d.items()}\nprint(e[\"b\"], d[\"b\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "4 2",
+            "en": "4 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "4 4",
+            "en": "4 4"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "2 2",
+            "en": "2 2"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "2 4",
+            "en": "2 4"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Die Dictionary Comprehension baut ein neues Dictionary e mit verdoppelten Werten, daher ist e[\"b\"] gleich 4. Das ursprüngliche d bleibt unverändert, d[\"b\"] ist also weiterhin 2.",
+        "en": "The dictionary comprehension builds a new dictionary e with doubled values, so e[\"b\"] is 4. The original d is unchanged, so d[\"b\"] is still 2."
+      },
+      "tip": {
+        "de": "Wird d verändert oder entsteht ein neues Objekt?",
+        "en": "Is d modified, or is a new object created?"
+      }
+    },
+    {
+      "id": "ch3-mc-210",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\ndata = json.loads('{\"a\": [1, {\"b\": 2}]}')\nprint(data[\"a\"][1][\"b\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "1",
+            "en": "1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "{'b': 2}",
+            "en": "{'b': 2}"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein TypeError ausgelöst.",
+            "en": "A TypeError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "json.loads erzeugt ein Dictionary mit einer Liste unter \"a\". Index 1 der Liste ist das innere Dictionary, und darin liefert \"b\" den Wert 2.",
+        "en": "json.loads creates a dictionary with a list under \"a\". Index 1 of the list is the inner dictionary, and \"b\" in it yields 2."
+      },
+      "tip": {
+        "de": "Beachte den Index der Liste, er beginnt bei 0.",
+        "en": "Mind the list index; it starts at 0."
+      }
+    },
+    {
+      "id": "ch3-mc-211",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\nprint(json.dumps({\"b\": 1, \"a\": 2}, sort_keys=True))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "{\"a\": 2, \"b\": 1}",
+            "en": "{\"a\": 2, \"b\": 1}"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "{\"b\": 1, \"a\": 2}",
+            "en": "{\"b\": 1, \"a\": 2}"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "{\"a\": 1, \"b\": 2}",
+            "en": "{\"a\": 1, \"b\": 2}"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "{'a': 2, 'b': 1}",
+            "en": "{'a': 2, 'b': 1}"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "sort_keys=True sortiert die Schlüssel alphabetisch, die zugehörigen Werte bleiben bei ihrem Schlüssel. Die Ausgabe verwendet außerdem immer doppelte Anführungszeichen, nie einfache.",
+        "en": "sort_keys=True sorts the keys alphabetically while each value stays with its key. The output also always uses double quotes, never single quotes."
+      },
+      "tip": {
+        "de": "Sortiert werden die Schlüssel, nicht die Werte.",
+        "en": "The keys are sorted, not the values."
+      }
+    },
+    {
+      "id": "ch3-mc-212",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Was passiert beim Ausführen des folgenden Codes?",
+        "en": "What happens when the following code is executed?"
+      },
+      "clarification": {
+        "de": "Der String enthält einfache Anführungszeichen; die äußeren doppelten gehören zum Python-String.",
+        "en": "The string contains single quotes; the outer double quotes belong to the Python string."
+      },
+      "code": "import json\ndata = json.loads(\"{'a': 1}\")",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Es wird ein json.JSONDecodeError ausgelöst, weil JSON doppelte Anführungszeichen verlangt.",
+            "en": "A json.JSONDecodeError is raised because JSON requires double quotes."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Es entsteht das Dictionary {'a': 1}.",
+            "en": "The dictionary {'a': 1} is created."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird None zurückgegeben.",
+            "en": "None is returned."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "In JSON müssen Schlüssel und Strings in doppelten Anführungszeichen stehen; der Text mit einfachen Anführungszeichen ist kein gültiges JSON. json.loads meldet das mit einem JSONDecodeError (einer Unterklasse von ValueError).",
+        "en": "In JSON, keys and strings must be in double quotes; the text with single quotes is not valid JSON. json.loads reports this with a JSONDecodeError (a subclass of ValueError)."
+      },
+      "tip": {
+        "de": "Der Text sieht wie ein Python-Dictionary aus, aber ist er auch JSON?",
+        "en": "The text looks like a Python dictionary, but is it also JSON?"
+      }
+    },
+    {
+      "id": "ch3-mc-213",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Was passiert beim Ausführen des folgenden Codes?",
+        "en": "What happens when the following code is executed?"
+      },
+      "clarification": null,
+      "code": "import json\ntext = json.dumps({\"x\": {1, 2}})",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Es wird ein TypeError ausgelöst, da eine Menge (set) nicht JSON-serialisierbar ist.",
+            "en": "A TypeError is raised because a set is not JSON serializable."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Die Menge wird automatisch in eine Liste umgewandelt.",
+            "en": "The set is automatically converted to a list."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein json.JSONDecodeError ausgelöst.",
+            "en": "A json.JSONDecodeError is raised."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "JSON kennt nur Objekte, Arrays, Strings, Zahlen, true/false und null. Ein Python-set hat keine Entsprechung und löst daher beim Serialisieren einen TypeError aus; ein JSONDecodeError betrifft nur das Einlesen.",
+        "en": "JSON only knows objects, arrays, strings, numbers, true/false and null. A Python set has no counterpart and therefore raises a TypeError when serialized; a JSONDecodeError only concerns parsing."
+      },
+      "tip": {
+        "de": "Gibt es in JSON einen Typ für Mengen?",
+        "en": "Does JSON have a type for sets?"
+      }
+    },
+    {
+      "id": "ch3-mc-214",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "def add(d):\n    d[\"n\"] = d.get(\"n\", 0) + 1\n\nx = {}\nadd(x)\nadd(x)\nprint(x)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "{}",
+            "en": "{}"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "{'n': 1}",
+            "en": "{'n': 1}"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "{'n': 2}",
+            "en": "{'n': 2}"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein Fehler ausgelöst.",
+            "en": "An error is raised."
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "Dictionaries sind veränderlich und werden als Referenz übergeben, die Funktion ändert also das Original x. Der erste Aufruf setzt n auf 1, der zweite auf 2.",
+        "en": "Dictionaries are mutable and passed by reference, so the function modifies the original x. The first call sets n to 1, the second to 2."
+      },
+      "tip": {
+        "de": "Arbeitet die Funktion auf einer Kopie oder auf dem Original?",
+        "en": "Does the function work on a copy or on the original?"
+      }
+    },
+    {
+      "id": "ch3-mc-215",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 3, \"b\": 1, \"c\": 2}\nprint(max(d, key=d.get))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "a",
+            "en": "a"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "3",
+            "en": "3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "b",
+            "en": "b"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "c",
+            "en": "c"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "max iteriert über die Schlüssel und vergleicht sie anhand von d.get, also anhand ihrer Werte. Der größte Wert 3 gehört zum Schlüssel \"a\"; zurückgegeben wird der Schlüssel, nicht der Wert.",
+        "en": "max iterates over the keys and compares them by d.get, that is, by their values. The largest value 3 belongs to the key \"a\"; the key is returned, not the value."
+      },
+      "tip": {
+        "de": "Was wird zurückgegeben: das Element mit dem größten key-Wert oder der key-Wert selbst?",
+        "en": "What is returned: the element with the largest key value, or the key value itself?"
+      }
+    },
+    {
+      "id": "ch3-mc-216",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "d = {\"b\": 2, \"a\": 1}\nd.pop(\"b\")\nd[\"b\"] = 3\nprint(list(d))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "['a', 'b']",
+            "en": "['a', 'b']"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "['b', 'a']",
+            "en": "['b', 'a']"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "['a']",
+            "en": "['a']"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Nach pop ist nur noch \"a\" enthalten, und der neu gesetzte Schlüssel \"b\" wird als neuester Eintrag hinten angefügt. Dictionaries behalten die Einfügereihenfolge, ein gelöschter und neu angelegter Schlüssel rückt also ans Ende.",
+        "en": "After pop only \"a\" remains, and the newly set key \"b\" is appended as the newest entry. Dictionaries keep insertion order, so a deleted and re-created key moves to the end."
+      },
+      "tip": {
+        "de": "Der Schlüssel \"b\" ist zwischenzeitlich komplett weg.",
+        "en": "The key \"b\" is completely gone for a moment."
+      }
+    },
+    {
+      "id": "ch3-mc-217",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\ndata = json.loads('{\"a\": 3, \"b\": 3.0}')\nprint(type(data[\"a\"]).__name__, type(data[\"b\"]).__name__)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "int float",
+            "en": "int float"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "float float",
+            "en": "float float"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "int int",
+            "en": "int int"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "float int",
+            "en": "float int"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "JSON-Zahlen ohne Dezimalpunkt werden als int, solche mit Dezimalpunkt als float eingelesen. 3 und 3.0 behalten daher ihre unterschiedlichen Typen.",
+        "en": "JSON numbers without a decimal point are parsed as int, those with a decimal point as float. 3 and 3.0 therefore keep their different types."
+      },
+      "tip": {
+        "de": "Entscheidend ist die Schreibweise der Zahl im JSON-Text.",
+        "en": "What matters is how the number is written in the JSON text."
+      }
+    },
+    {
+      "id": "ch3-mc-218",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\ntry:\n    data = json.loads('{\"a\": 1,}')\nexcept json.JSONDecodeError:\n    print(\"invalid\")\nelse:\n    print(data)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "invalid",
+            "en": "invalid"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "{'a': 1}",
+            "en": "{'a': 1}"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Das Programm bricht mit einer nicht abgefangenen Exception ab.",
+            "en": "The program terminates with an uncaught exception."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird nichts ausgegeben.",
+            "en": "Nothing is printed."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "JSON erlaubt kein Komma nach dem letzten Element, anders als Python. json.loads löst deshalb einen JSONDecodeError aus, der vom except-Zweig abgefangen wird, sodass \"invalid\" erscheint.",
+        "en": "Unlike Python, JSON does not allow a comma after the last element. json.loads therefore raises a JSONDecodeError, which the except branch catches, so \"invalid\" is printed."
+      },
+      "tip": {
+        "de": "Prüfe das Ende des JSON-Textes genau.",
+        "en": "Look closely at the end of the JSON text."
+      }
+    },
+    {
+      "id": "ch3-mc-219",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "import json\ns = \"ü\"\nprint(len(json.dumps(s)), len(json.dumps(s, ensure_ascii=False)))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "8 3",
+            "en": "8 3"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "3 3",
+            "en": "3 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "8 8",
+            "en": "8 8"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "6 1",
+            "en": "6 1"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Standardmäßig wird ü als Escape-Folge \\u00fc geschrieben, mit den Anführungszeichen ergeben das 8 Zeichen. Mit ensure_ascii=False bleibt das ü erhalten, also nur 3 Zeichen inklusive Anführungszeichen.",
+        "en": "By default, ü is written as the escape sequence \\u00fc, which with the quotes makes 8 characters. With ensure_ascii=False the ü is kept, giving only 3 characters including the quotes."
+      },
+      "tip": {
+        "de": "Zähle auch die Anführungszeichen mit.",
+        "en": "Count the quotation marks too."
+      }
+    },
+    {
+      "id": "ch3-mc-220",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Welche Ausgabe erzeugt der folgende Code?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "e = dict.fromkeys([\"x\", \"y\"], [])\ne[\"x\"].append(1)\nprint(e[\"y\"])",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "[1]",
+            "en": "[1]"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "[]",
+            "en": "[]"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "None",
+            "en": "None"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein KeyError ausgelöst.",
+            "en": "A KeyError is raised."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "dict.fromkeys verwendet für alle Schlüssel dasselbe Wert-Objekt, hier dieselbe Liste. Das Anhängen über \"x\" ändert deshalb auch die Liste unter \"y\".",
+        "en": "dict.fromkeys uses the same value object for all keys, here the same list. Appending via \"x\" therefore also changes the list under \"y\"."
+      },
+      "tip": {
+        "de": "Wie viele Listen werden in dieser Zeile tatsächlich erzeugt?",
+        "en": "How many lists are actually created in that line?"
+      }
+    },
+    {
+      "id": "ch3-ms-201",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "ms",
+      "difficulty": "easy",
+      "question": {
+        "de": "Gegeben ist d = {\"a\": 1, \"b\": 2}. Welche Ausdrücke ergeben True? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "Given d = {\"a\": 1, \"b\": 2}. Which expressions evaluate to True? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "\"a\" in d",
+            "en": "\"a\" in d"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "1 in d",
+            "en": "1 in d"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "2 in d.values()",
+            "en": "2 in d.values()"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "len(d) == 2",
+            "en": "len(d) == 2"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "\"b\" in d.values()",
+            "en": "\"b\" in d.values()"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": {
+        "de": "in auf d prüft Schlüssel, daher ist \"a\" in d wahr, 1 in d aber falsch. d.values() enthält 1 und 2, deshalb ist 2 enthalten, \"b\" aber nicht; len(d) ist 2.",
+        "en": "in on d checks keys, so \"a\" in d is true but 1 in d is false. d.values() contains 1 and 2, so 2 is in it but \"b\" is not; len(d) is 2."
+      },
+      "tip": {
+        "de": "Unterscheide Schlüssel und Werte.",
+        "en": "Distinguish keys from values."
+      }
+    },
+    {
+      "id": "ch3-ms-202",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Gegeben ist d = {\"a\": 1, \"b\": 2}. Welche Aufrufe verändern das Dictionary d selbst? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "Given d = {\"a\": 1, \"b\": 2}. Which calls modify the dictionary d itself? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "d.update({\"c\": 3})",
+            "en": "d.update({\"c\": 3})"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "d.pop(\"a\")",
+            "en": "d.pop(\"a\")"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "d.setdefault(\"z\", 0)",
+            "en": "d.setdefault(\"z\", 0)"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "d.get(\"a\")",
+            "en": "d.get(\"a\")"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "d.copy()",
+            "en": "d.copy()"
+          }
+        },
+        {
+          "id": "f",
+          "text": {
+            "de": "d.keys()",
+            "en": "d.keys()"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "update fügt Einträge hinzu, pop entfernt einen und setdefault legt den fehlenden Schlüssel \"z\" an. get, copy und keys liefern nur einen Wert, eine Kopie bzw. eine Sicht und lassen d unverändert.",
+        "en": "update adds entries, pop removes one, and setdefault creates the missing key \"z\". get, copy and keys only return a value, a copy or a view and leave d unchanged."
+      },
+      "tip": {
+        "de": "Welche Methoden liefern lediglich Informationen oder neue Objekte?",
+        "en": "Which methods merely return information or new objects?"
+      }
+    },
+    {
+      "id": "ch3-ms-203",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Aussagen zu den Syntaxunterschieden zwischen Python und JSON sind richtig? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "Which statements about the syntax differences between Python and JSON are correct? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "In JSON müssen Schlüssel in doppelten Anführungszeichen stehen.",
+            "en": "In JSON, keys must be enclosed in double quotes."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Der Python-Wert True entspricht in JSON true.",
+            "en": "The Python value True corresponds to true in JSON."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Der Python-Wert None entspricht in JSON null.",
+            "en": "The Python value None corresponds to null in JSON."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "JSON erlaubt einfache Anführungszeichen für Strings.",
+            "en": "JSON allows single quotes for strings."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "JSON erlaubt Kommentare, die mit # beginnen.",
+            "en": "JSON allows comments starting with #."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "JSON verlangt doppelte Anführungszeichen und schreibt Wahrheitswerte klein (true/false) sowie null statt None. Einfache Anführungszeichen und Kommentare gibt es in JSON nicht.",
+        "en": "JSON requires double quotes and writes booleans in lower case (true/false) as well as null instead of None. Single quotes and comments do not exist in JSON."
+      },
+      "tip": {
+        "de": "Vergleiche die Schreibweise der Literale in beiden Sprachen.",
+        "en": "Compare how the literals are written in both languages."
+      }
+    },
+    {
+      "id": "ch3-ms-204",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Aussagen über die Funktionen des Moduls json sind richtig? Wähle alle zutreffenden aus (zwei sind richtig).",
+        "en": "Which statements about the functions of the json module are correct? Select all that apply (two are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "json.dumps gibt den JSON-Text als String zurück.",
+            "en": "json.dumps returns the JSON text as a string."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "json.load erwartet ein geöffnetes Dateiobjekt.",
+            "en": "json.load expects an open file object."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "json.loads erwartet einen Dateinamen als Argument.",
+            "en": "json.loads expects a file name as its argument."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "json.dump schreibt direkt in eine Datei und braucht nur das Objekt als Argument.",
+            "en": "json.dump writes directly to a file and only needs the object as an argument."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "explanation": {
+        "de": "dumps und loads arbeiten mit Strings, dump und load mit Dateiobjekten. json.loads erwartet JSON-Text, keinen Dateinamen, und json.dump benötigt zusätzlich das Dateiobjekt als zweites Argument.",
+        "en": "dumps and loads work with strings, dump and load with file objects. json.loads expects JSON text, not a file name, and json.dump additionally needs the file object as its second argument."
+      },
+      "tip": {
+        "de": "Das s am Ende bedeutet string, ohne s geht es um Dateien.",
+        "en": "The trailing s means string; without s it is about files."
+      }
+    },
+    {
+      "id": "ch3-ms-205",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "ms",
+      "difficulty": "hard",
+      "question": {
+        "de": "Gegeben ist d = {(1, 2): \"a\", \"k\": \"b\"}. Welche Ausdrücke werden ohne Fehler ausgewertet? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "Given d = {(1, 2): \"a\", \"k\": \"b\"}. Which expressions evaluate without an error? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "d[(1, 2)]",
+            "en": "d[(1, 2)]"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "d[1, 2]",
+            "en": "d[1, 2]"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "d[\"k\"]",
+            "en": "d[\"k\"]"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "d[[1, 2]]",
+            "en": "d[[1, 2]]"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "d[(2, 1)]",
+            "en": "d[(2, 1)]"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "d[1, 2] ist dasselbe wie d[(1, 2)], denn Kommas ohne Klammern bilden ein Tupel. Eine Liste als Schlüssel löst einen TypeError aus (nicht hashbar), und das Tupel (2, 1) ist ein anderer, nicht vorhandener Schlüssel und führt zu einem KeyError.",
+        "en": "d[1, 2] is the same as d[(1, 2)] because commas without parentheses form a tuple. A list as a key raises a TypeError (unhashable), and the tuple (2, 1) is a different, missing key and raises a KeyError."
+      },
+      "tip": {
+        "de": "Tupel sind unveränderlich, Listen nicht; und die Reihenfolge im Tupel zählt.",
+        "en": "Tuples are immutable, lists are not; and the order inside a tuple matters."
+      }
+    },
+    {
+      "id": "ch3-ms-206",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "ms",
+      "difficulty": "hard",
+      "question": {
+        "de": "Bei welchen Python-Werten gelingt json.dumps ohne Fehler? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "For which Python values does json.dumps succeed without an error? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "[1, \"a\", None]",
+            "en": "[1, \"a\", None]"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "(1, 2)",
+            "en": "(1, 2)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "{\"a\": None}",
+            "en": "{\"a\": None}"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "{1, 2}",
+            "en": "{1, 2}"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "b\"abc\"",
+            "en": "b\"abc\""
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "Listen, Tupel (als Array), None (als null) und Dictionaries mit String-Schlüsseln lassen sich serialisieren. Mengen (set) und Bytes haben keine JSON-Entsprechung und lösen einen TypeError aus.",
+        "en": "Lists, tuples (as arrays), None (as null) and dictionaries with string keys can be serialized. Sets and bytes have no JSON counterpart and raise a TypeError."
+      },
+      "tip": {
+        "de": "Welche Typen haben ein Gegenstück in JSON (Objekt, Array, String, Zahl, Wahrheitswert, null)?",
+        "en": "Which types have a counterpart in JSON (object, array, string, number, boolean, null)?"
+      }
+    },
+    {
+      "id": "ch3-ms-207",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "ms",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Nach Ausführung des folgenden Codes: Welche Ausdrücke sind wahr? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "After executing the following code: which expressions are true? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": "a = {\"x\": {\"y\": 1}}\nb = a.copy()\nb[\"x\"][\"y\"] = 2\nc = dict(a)\nc[\"z\"] = 0",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "a[\"x\"][\"y\"] == 2",
+            "en": "a[\"x\"][\"y\"] == 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "\"z\" in a",
+            "en": "\"z\" in a"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "b[\"x\"] is a[\"x\"]",
+            "en": "b[\"x\"] is a[\"x\"]"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "c == a",
+            "en": "c == a"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "\"z\" in c",
+            "en": "\"z\" in c"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "explanation": {
+        "de": "copy und dict() erzeugen flache Kopien: Das innere Dictionary wird geteilt, daher wirkt b[\"x\"][\"y\"] = 2 auch auf a. Der neue Schlüssel \"z\" landet nur in c, weshalb \"z\" in a falsch und c == a ebenfalls falsch ist.",
+        "en": "copy and dict() create shallow copies: the inner dictionary is shared, so b[\"x\"][\"y\"] = 2 also affects a. The new key \"z\" only lands in c, which makes \"z\" in a false and c == a false as well."
+      },
+      "tip": {
+        "de": "Unterscheide die äußere Ebene vom geteilten inneren Objekt.",
+        "en": "Distinguish the outer level from the shared inner object."
+      }
+    },
+    {
+      "id": "ch3-ms-208",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Gegeben ist d = {\"b\": 1, \"a\": 2} und txt = json.dumps(d, indent=4, sort_keys=True). Welche Aussagen sind richtig? Wähle alle zutreffenden aus (drei sind richtig).",
+        "en": "Given d = {\"b\": 1, \"a\": 2} and txt = json.dumps(d, indent=4, sort_keys=True). Which statements are correct? Select all that apply (three are correct)."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "txt ist ein String.",
+            "en": "txt is a string."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "In txt steht der Schlüssel \"a\" vor \"b\".",
+            "en": "In txt, the key \"a\" comes before \"b\"."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "txt enthält Zeilenumbrüche.",
+            "en": "txt contains line breaks."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Die Schlüsselreihenfolge in d ist danach a, b.",
+            "en": "The key order in d is a, b afterwards."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "Die Werte werden sortiert, sodass \"a\" den Wert 1 erhält.",
+            "en": "The values are sorted so that \"a\" gets the value 1."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "dumps liefert einen String; sort_keys ordnet die Schlüssel im Text alphabetisch, und indent erzeugt eine mehrzeilige Darstellung. Das Original d bleibt unverändert, und Werte werden nie umsortiert.",
+        "en": "dumps returns a string; sort_keys orders the keys alphabetically in the text, and indent produces a multi-line layout. The original d stays unchanged, and values are never re-sorted."
+      },
+      "tip": {
+        "de": "Betrifft die Aussage nur den erzeugten Text oder das Original?",
+        "en": "Does the statement concern only the generated text or the original?"
+      }
+    },
+    {
+      "id": "ch3-tf-201",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Der folgende Code gibt 1 aus.",
+        "en": "The following code prints 1."
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1}\nd[\"a\"] = 5\nprint(len(d))",
+      "answer": true,
+      "explanation": {
+        "de": "Schlüssel sind eindeutig: Die Zuweisung überschreibt den vorhandenen Wert, statt einen zweiten Eintrag anzulegen. Das Dictionary hat daher weiterhin einen Eintrag.",
+        "en": "Keys are unique: the assignment overwrites the existing value instead of adding a second entry. The dictionary therefore still has one entry."
+      },
+      "tip": {
+        "de": "Kann ein Schlüssel zweimal vorkommen?",
+        "en": "Can a key occur twice?"
+      }
+    },
+    {
+      "id": "ch3-tf-202",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Der folgende Code gibt 1 aus.",
+        "en": "The following code prints 1."
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\nprint(d[0])",
+      "answer": false,
+      "explanation": {
+        "de": "Dictionaries werden über Schlüssel angesprochen, nicht über Positionen. Da 0 kein Schlüssel ist, wird ein KeyError ausgelöst.",
+        "en": "Dictionaries are accessed via keys, not positions. Since 0 is not a key, a KeyError is raised."
+      },
+      "tip": {
+        "de": "Welche Schlüssel hat dieses Dictionary?",
+        "en": "Which keys does this dictionary have?"
+      }
+    },
+    {
+      "id": "ch3-tf-203",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wahr oder falsch: In JSON müssen Schlüssel in doppelten Anführungszeichen stehen.",
+        "en": "True or false: In JSON, keys must be enclosed in double quotes."
+      },
+      "clarification": null,
+      "code": null,
+      "answer": true,
+      "explanation": {
+        "de": "Gültiges JSON verlangt doppelte Anführungszeichen für alle Schlüssel und String-Werte. Das unterscheidet es von Python, wo auch einfache Anführungszeichen erlaubt sind.",
+        "en": "Valid JSON requires double quotes for all keys and string values. This differs from Python, where single quotes are allowed as well."
+      },
+      "tip": {
+        "de": "Denke an den Unterschied zu Python-Dictionaries.",
+        "en": "Think about the difference to Python dictionaries."
+      }
+    },
+    {
+      "id": "ch3-tf-204",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "tf",
+      "difficulty": "medium",
+      "question": {
+        "de": "Der folgende Code gibt die Zahlen 1 und 2 aus.",
+        "en": "The following code prints the numbers 1 and 2."
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\nfor x in d:\n    print(x)",
+      "answer": false,
+      "explanation": {
+        "de": "Die Iteration über ein Dictionary liefert dessen Schlüssel. Es werden also a und b ausgegeben; für die Werte wäre d.values() nötig.",
+        "en": "Iterating over a dictionary yields its keys. So a and b are printed; d.values() would be needed for the values."
+      },
+      "tip": {
+        "de": "Was liefert eine Schleife direkt über das Dictionary?",
+        "en": "What does a loop directly over the dictionary yield?"
+      }
+    },
+    {
+      "id": "ch3-tf-205",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "tf",
+      "difficulty": "medium",
+      "question": {
+        "de": "Der folgende Code gibt hi ohne Anführungszeichen aus.",
+        "en": "The following code prints hi without quotation marks."
+      },
+      "clarification": null,
+      "code": "import json\nprint(json.dumps(\"hi\"))",
+      "answer": false,
+      "explanation": {
+        "de": "json.dumps erzeugt JSON-Text, und ein JSON-String besteht aus Anführungszeichen. Die Ausgabe ist daher \"hi\" einschließlich der doppelten Anführungszeichen.",
+        "en": "json.dumps produces JSON text, and a JSON string consists of quotation marks. The output is therefore \"hi\" including the double quotes."
+      },
+      "tip": {
+        "de": "Wie sieht ein String in JSON-Text aus?",
+        "en": "What does a string look like in JSON text?"
+      }
+    },
+    {
+      "id": "ch3-tf-206",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "tf",
+      "difficulty": "hard",
+      "question": {
+        "de": "Der folgende Code gibt True aus.",
+        "en": "The following code prints True."
+      },
+      "clarification": null,
+      "code": "import json\nprint(json.loads('[1, 2]') == (1, 2))",
+      "answer": false,
+      "explanation": {
+        "de": "JSON-Arrays werden zu Python-Listen. Eine Liste ist nie gleich einem Tupel, daher ist [1, 2] == (1, 2) falsch.",
+        "en": "JSON arrays become Python lists. A list never equals a tuple, so [1, 2] == (1, 2) is False."
+      },
+      "tip": {
+        "de": "Welchen Python-Typ liefert json.loads für ein Array?",
+        "en": "Which Python type does json.loads return for an array?"
+      }
+    },
+    {
+      "id": "ch3-tf-207",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "tf",
+      "difficulty": "hard",
+      "question": {
+        "de": "Der folgende Code löst einen RuntimeError aus.",
+        "en": "The following code raises a RuntimeError."
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\nfor k in d:\n    del d[k]",
+      "answer": true,
+      "explanation": {
+        "de": "Ein Dictionary darf während der Iteration nicht in seiner Größe verändert werden. Nach dem ersten Löschen meldet Python \"dictionary changed size during iteration\" als RuntimeError.",
+        "en": "A dictionary must not change its size during iteration. After the first deletion, Python reports \"dictionary changed size during iteration\" as a RuntimeError."
+      },
+      "tip": {
+        "de": "Was passiert, wenn man das Objekt verändert, über das man gerade iteriert?",
+        "en": "What happens when you modify the object you are currently iterating over?"
+      }
+    },
+    {
+      "id": "ch3-tf-208",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "tf",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Der folgende Code gibt False aus, weil die Reihenfolge der Schlüssel verschieden ist.",
+        "en": "The following code prints False because the order of the keys is different."
+      },
+      "clarification": null,
+      "code": "print({\"a\": 1, \"b\": 2} == {\"b\": 2, \"a\": 1})",
+      "answer": false,
+      "explanation": {
+        "de": "Obwohl Dictionaries die Einfügereihenfolge merken, vergleicht == nur die Schlüssel-Wert-Paare. Die Reihenfolge spielt für die Gleichheit keine Rolle, daher wird True ausgegeben.",
+        "en": "Although dictionaries remember insertion order, == only compares the key-value pairs. Order does not matter for equality, so True is printed."
+      },
+      "tip": {
+        "de": "Wird bei == die Reihenfolge verglichen?",
+        "en": "Does == compare the order?"
+      }
+    },
+    {
+      "id": "ch3-fib-201",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze die fehlende Methode, sodass die Werte aufsummiert werden.",
+        "en": "Fill in the missing method so that the values are summed up."
+      },
+      "clarification": {
+        "de": "Gesucht ist der reine Methodenname ohne Klammern.",
+        "en": "The plain method name without parentheses is expected."
+      },
+      "code": "d = {\"a\": 1, \"b\": 2}\ntotal = sum(d.____())\nprint(total)  # prints 3",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "values",
+            ".values"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "d.values() liefert die Werte 1 und 2, sum addiert sie zu 3. Mit keys wären es die Schlüssel, die sich nicht summieren ließen.",
+        "en": "d.values() yields the values 1 and 2, and sum adds them to 3. keys would give the strings, which cannot be summed."
+      },
+      "tip": {
+        "de": "Summiert werden sollen Werte, nicht Schlüssel.",
+        "en": "Values are to be summed, not keys."
+      }
+    },
+    {
+      "id": "ch3-fib-202",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries / Labor 2 (Dictionaries)"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze den Ausdruck, der ein leeres Dictionary erzeugt.",
+        "en": "Fill in the expression that creates an empty dictionary."
+      },
+      "clarification": null,
+      "code": "counts = ____\ncounts[\"a\"] = 1\nprint(counts)  # prints {'a': 1}",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "{}",
+            "dict()"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Ein leeres Dictionary schreibt man {} oder dict(). Anschließend können Einträge per Zuweisung hinzugefügt werden.",
+        "en": "An empty dictionary is written {} or dict(). Entries can then be added by assignment."
+      },
+      "tip": {
+        "de": "Geschweifte Klammern ohne Inhalt.",
+        "en": "Curly braces without content."
+      }
+    },
+    {
+      "id": "ch3-fib-203",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze den Dateimodus, der zum Schreiben von JSON in eine Datei nötig ist.",
+        "en": "Fill in the file mode needed for writing JSON into a file."
+      },
+      "clarification": {
+        "de": "Gesucht ist nur der Buchstabe ohne Anführungszeichen.",
+        "en": "Only the letter without quotation marks is expected."
+      },
+      "code": "import json\nwith open(\"data.json\", \"____\") as f:\n    json.dump({\"a\": 1}, f)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "w"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Zum Schreiben (mit Überschreiben) wird der Modus \"w\" verwendet. Ohne Modus würde die Datei nur zum Lesen geöffnet.",
+        "en": "Writing (with overwriting) uses mode \"w\". Without a mode the file would be opened for reading only."
+      },
+      "tip": {
+        "de": "Ein einzelner Buchstabe, der für write steht.",
+        "en": "A single letter standing for write."
+      }
+    },
+    {
+      "id": "ch3-fib-204",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON / Labor 3 (JSON)"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze den Wert, damit die Schlüssel in der JSON-Ausgabe alphabetisch sortiert werden.",
+        "en": "Fill in the value so that the keys in the JSON output are sorted alphabetically."
+      },
+      "clarification": null,
+      "code": "import json\nprint(json.dumps({\"b\": 1, \"a\": 2}, sort_keys=____))  # prints {\"a\": 2, \"b\": 1}",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "True"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "sort_keys=True aktiviert die alphabetische Sortierung der Schlüssel. Der Standardwert ist False.",
+        "en": "sort_keys=True enables alphabetical sorting of the keys. The default is False."
+      },
+      "tip": {
+        "de": "Der Parameter ist ein Wahrheitswert.",
+        "en": "The parameter is a boolean."
+      }
+    },
+    {
+      "id": "ch3-fib-205",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze den Standardwert, der für einen fehlenden Schlüssel zurückgegeben wird.",
+        "en": "Fill in the default value returned for a missing key."
+      },
+      "clarification": null,
+      "code": "c = {\"a\": 1}\nprint(c.get(\"b\", ____))  # prints -1",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "-1"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Das zweite Argument von get ist der Rückgabewert, falls der Schlüssel fehlt. Hier muss es -1 sein, damit -1 ausgegeben wird.",
+        "en": "The second argument of get is the return value if the key is missing. It must be -1 here for -1 to be printed."
+      },
+      "tip": {
+        "de": "Siehe den Kommentar hinter print.",
+        "en": "See the comment after print."
+      }
+    },
+    {
+      "id": "ch3-fib-206",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze den Operator, sodass das Dictionary die Quadratzahlen enthält.",
+        "en": "Fill in the operator so that the dictionary contains the square numbers."
+      },
+      "clarification": null,
+      "code": "squares = {n: n ____ 2 for n in range(4)}\nprint(squares[3])  # prints 9",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "**"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Der Potenzoperator ** berechnet n hoch 2, für n = 3 ergibt das 9. Die Comprehension erzeugt die Einträge 0:0, 1:1, 2:4, 3:9.",
+        "en": "The power operator ** computes n squared, giving 9 for n = 3. The comprehension creates the entries 0:0, 1:1, 2:4, 3:9."
+      },
+      "tip": {
+        "de": "Welcher Operator potenziert in Python?",
+        "en": "Which operator raises to a power in Python?"
+      }
+    },
+    {
+      "id": "ch3-fib-207",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze den Index, um das letzte Element der Liste unter \"a\" auszugeben.",
+        "en": "Fill in the index to print the last element of the list under \"a\"."
+      },
+      "clarification": null,
+      "code": "import json\ndata = json.loads('{\"a\": [10, 20]}')\nprint(data[\"a\"][____])  # prints 20",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "1",
+            "-1"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Das Array wird zur Liste [10, 20]; das Element 20 steht an Index 1 beziehungsweise -1. Index 0 würde 10 liefern.",
+        "en": "The array becomes the list [10, 20]; the element 20 is at index 1 or -1. Index 0 would give 10."
+      },
+      "tip": {
+        "de": "Die Indizierung beginnt bei 0.",
+        "en": "Indexing starts at 0."
+      }
+    },
+    {
+      "id": "ch3-fib-208",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fib",
+      "difficulty": "hard",
+      "question": {
+        "de": "Ergänze die Methode von dict, die aus einer Liste von Schlüsseln ein Dictionary mit einheitlichem Startwert erzeugt.",
+        "en": "Fill in the dict method that creates a dictionary with a uniform initial value from a list of keys."
+      },
+      "clarification": {
+        "de": "Gesucht ist der reine Methodenname ohne Klammern.",
+        "en": "The plain method name without parentheses is expected."
+      },
+      "code": "d = dict.____([\"a\", \"b\"], 0)\nprint(d[\"b\"])  # prints 0",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "fromkeys",
+            ".fromkeys"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "dict.fromkeys(keys, value) legt für jeden Schlüssel einen Eintrag mit demselben Startwert an. Hier entsteht {\"a\": 0, \"b\": 0}.",
+        "en": "dict.fromkeys(keys, value) creates an entry with the same initial value for every key. Here {\"a\": 0, \"b\": 0} is created."
+      },
+      "tip": {
+        "de": "Der Name beschreibt, woher die Schlüssel kommen.",
+        "en": "The name describes where the keys come from."
+      }
+    },
+    {
+      "id": "ch3-fib-209",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "fib",
+      "difficulty": "hard",
+      "question": {
+        "de": "Ergänze den Wert, damit das ä in der JSON-Ausgabe unverändert erscheint.",
+        "en": "Fill in the value so that the ä appears unchanged in the JSON output."
+      },
+      "clarification": null,
+      "code": "import json\nprint(json.dumps(\"ä\", ensure_ascii=____))  # prints \"ä\"",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "False"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Standardmäßig (ensure_ascii=True) werden Nicht-ASCII-Zeichen als \\uXXXX-Folge geschrieben. Mit False bleibt das Zeichen erhalten.",
+        "en": "By default (ensure_ascii=True) non-ASCII characters are written as \\uXXXX sequences. With False the character is preserved."
+      },
+      "tip": {
+        "de": "Das ASCII-Escaping soll abgeschaltet werden.",
+        "en": "ASCII escaping is to be switched off."
+      }
+    },
+    {
+      "id": "ch3-fib-210",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fib",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Ergänze die Methode, die den zuletzt eingefügten Eintrag entfernt und als Paar zurückgibt.",
+        "en": "Fill in the method that removes the most recently inserted entry and returns it as a pair."
+      },
+      "clarification": null,
+      "code": "d = {\"a\": 1, \"b\": 2}\nremoved = d.____()\nprint(removed)  # prints ('b', 2)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "popitem",
+            ".popitem"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "popitem entfernt seit Python 3.7 den zuletzt eingefügten Eintrag (LIFO) und gibt ihn als Tupel aus Schlüssel und Wert zurück. pop bräuchte dagegen einen Schlüssel als Argument.",
+        "en": "Since Python 3.7, popitem removes the most recently inserted entry (LIFO) and returns it as a (key, value) tuple. pop, in contrast, would need a key as an argument."
+      },
+      "tip": {
+        "de": "Die Methode braucht kein Argument und liefert ein Paar.",
+        "en": "The method takes no argument and returns a pair."
+      }
+    },
+    {
+      "id": "ch3-fe-201",
+      "chapter": 3,
+      "section": "3.2 Dictionaries",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.2 Dictionaries"
+      },
+      "type": "fe",
+      "difficulty": "medium",
+      "question": {
+        "de": "In welcher Zeile liegt der Fehler, der zu einer Exception führt?",
+        "en": "Which line contains the error that leads to an exception?"
+      },
+      "clarification": {
+        "de": "Das Programm soll die Mengen aufsummieren.",
+        "en": "The program is supposed to sum up the quantities."
+      },
+      "code": "1: stock = {\"a\": 3, \"b\": 5}\n2: total = 0\n3: for name, qty in stock:\n4:     total += qty\n5: print(total)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 1",
+            "en": "Line 1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3",
+            "en": "Line 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4",
+            "en": "Line 4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 5",
+            "en": "Line 5"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Die Iteration über stock liefert nur Schlüssel (Strings wie \"a\"), die sich nicht in zwei Variablen entpacken lassen; es folgt ein ValueError. Korrekt wäre for name, qty in stock.items().",
+        "en": "Iterating over stock yields only keys (strings like \"a\"), which cannot be unpacked into two variables; a ValueError follows. The correct form is for name, qty in stock.items()."
+      },
+      "tip": {
+        "de": "Was liefert eine for-Schleife direkt über ein Dictionary?",
+        "en": "What does a for loop directly over a dictionary yield?"
+      }
+    },
+    {
+      "id": "ch3-fe-202",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "fe",
+      "difficulty": "hard",
+      "question": {
+        "de": "In welcher Zeile liegt der Fehler, der zu einer Exception führt?",
+        "en": "Which line contains the error that leads to an exception?"
+      },
+      "clarification": null,
+      "code": "1: import json\n2: text = json.dumps({\"id\": 7, \"tags\": [\"a\", \"b\"]})\n3: data = json.loads(text)\n4: data[\"tags\"].add(\"c\")\n5: print(data)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 2",
+            "en": "Line 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3",
+            "en": "Line 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4",
+            "en": "Line 4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 5",
+            "en": "Line 5"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "JSON-Arrays werden von json.loads zu Python-Listen, und Listen besitzen keine Methode add (diese gehört zu set). Zeile 4 löst deshalb einen AttributeError aus; richtig wäre append.",
+        "en": "json.loads turns JSON arrays into Python lists, and lists have no add method (that belongs to set). Line 4 therefore raises an AttributeError; append would be correct."
+      },
+      "tip": {
+        "de": "In welchen Python-Typ wird ein JSON-Array umgewandelt?",
+        "en": "Into which Python type is a JSON array converted?"
+      }
+    },
+    {
+      "id": "ch3-fe-203",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "fe",
+      "difficulty": "hard",
+      "question": {
+        "de": "In welcher Zeile liegt der Fehler, der zu einer Exception führt?",
+        "en": "Which line contains the error that leads to an exception?"
+      },
+      "clarification": null,
+      "code": "1: import json\n2: raw = '{\"items\": [{\"id\": 1}, {\"id\": 2}]}'\n3: data = json.loads(raw)\n4: ids = [x[\"id\"] for x in data]\n5: print(ids)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 2",
+            "en": "Line 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3",
+            "en": "Line 3"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4",
+            "en": "Line 4"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 5",
+            "en": "Line 5"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "data ist ein Dictionary, die Iteration liefert daher den Schlüssel \"items\" als String, und \"items\"[\"id\"] löst einen TypeError aus. Zu iterieren wäre über data[\"items\"].",
+        "en": "data is a dictionary, so iterating yields the key \"items\" as a string, and \"items\"[\"id\"] raises a TypeError. The loop should iterate over data[\"items\"]."
+      },
+      "tip": {
+        "de": "Welche Struktur steht auf oberster Ebene des JSON-Textes?",
+        "en": "Which structure is at the top level of the JSON text?"
+      }
+    },
+    {
+      "id": "ch3-fe-204",
+      "chapter": 3,
+      "section": "3.3 JSON",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "3.3 JSON"
+      },
+      "type": "fe",
+      "difficulty": "ultra",
+      "question": {
+        "de": "In welcher Zeile liegt der Fehler, der beim Ausführen zu einer Exception führt?",
+        "en": "Which line contains the error that leads to an exception when executed?"
+      },
+      "clarification": null,
+      "code": "1: import json\n2: scores = {(\"a\", 1): 10, (\"b\", 2): 20}\n3: text = json.dumps(scores)\n4: print(text)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 1",
+            "en": "Line 1"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 2",
+            "en": "Line 2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 3",
+            "en": "Line 3"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 4",
+            "en": "Line 4"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "Tupel sind in Python zwar gültige Dictionary-Schlüssel (Zeile 2 ist fehlerfrei), JSON-Objekte erlauben aber nur Strings als Schlüssel. json.dumps meldet in Zeile 3 deshalb einen TypeError (keys must be str, int, float, bool or None).",
+        "en": "Tuples are valid dictionary keys in Python (line 2 is fine), but JSON objects only allow strings as keys. json.dumps therefore raises a TypeError in line 3 (keys must be str, int, float, bool or None)."
+      },
+      "tip": {
+        "de": "Prüfe, welche Schlüsseltypen JSON zulässt.",
+        "en": "Check which key types JSON allows."
+      }
+    }
 ];
