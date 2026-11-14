@@ -31,6 +31,8 @@ Spec lives in [AGENTS.md](AGENTS.md). MVP-first strategy: 20 pilot questions + f
 ## Phase 4 — Scale the question bank to 1000
 Batches of ~45 questions per chapter (cheap model + validator + spot review), committed per batch.
 Wave 1 done (2026-11-14): bank at 264 (ch1:20 ✅ complete, ch2:48, ch3:50, ch4:49, ch5:49, ch6:48).
+Wave 2 done (2026-11-14): bank at 514 (ch1:20, ch2:98, ch3:100, ch4:99, ch5:99, ch6:98).
+Remaining to 1000: ch2 +62, ch3 +120, ch4 +101, ch5 +101, ch6 +102 (~2 more waves).
 Targets (ch1 capped at 20 — thin source material; its share moved to ch2):
 - [ ] Ch 3 Strukturierte Daten → 220 total
 - [ ] Ch 4 Dateien → 200 total
