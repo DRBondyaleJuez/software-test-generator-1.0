@@ -2470,5 +2470,2494 @@ const QUESTIONS_CH4 = [
         "de": "Welchen Typ erwartet write()?",
         "en": "Which type does write() expect?"
       }
+    },
+    {
+      "id": "ch4-mc-201",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wie sind Dateien und Verzeichnisse in einem Dateisystem wie NTFS organisiert?",
+        "en": "How are files and directories organized in a file system such as NTFS?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "In einer hierarchischen Struktur",
+            "en": "In a hierarchical structure"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Als flache Liste ohne Verzeichnisse",
+            "en": "As a flat list without directories"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Als Python-Dictionary im Arbeitsspeicher",
+            "en": "As a Python dictionary in main memory"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Getrennt nach Dateiendung auf je einem eigenen Laufwerk",
+            "en": "Separated by file extension, each on its own drive"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "NTFS organisiert Dateien und Verzeichnisse hierarchisch, d.h. Verzeichnisse können wieder Verzeichnisse und Dateien enthalten. Eine flache Liste, ein Dictionary im Arbeitsspeicher oder eine Trennung nach Endungen auf Laufwerke beschreibt kein Dateisystem.",
+        "en": "NTFS organizes files and directories hierarchically, i.e. directories can contain further directories and files. A flat list, an in-memory dictionary or a split of drives by extension does not describe a file system."
+      },
+      "tip": {
+        "de": "Denke an einen Baum aus Ordnern.",
+        "en": "Think of a tree of folders."
+      }
+    },
+    {
+      "id": "ch4-tf-201",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wahr oder falsch: In einem hierarchischen Dateisystem darf ein Verzeichnis nur Dateien enthalten, aber keine weiteren Verzeichnisse.",
+        "en": "True or false: In a hierarchical file system a directory may only contain files, but no further directories."
+      },
+      "clarification": null,
+      "code": null,
+      "answer": false,
+      "explanation": {
+        "de": "Verzeichnisse können Unterverzeichnisse enthalten; genau das macht die Struktur hierarchisch. Ohne verschachtelte Verzeichnisse gäbe es keine Baumstruktur.",
+        "en": "Directories can contain subdirectories; this is exactly what makes the structure hierarchical. Without nested directories there would be no tree structure."
+      },
+      "tip": {
+        "de": "Was bedeutet \"hierarchisch\" für Ordner?",
+        "en": "What does \"hierarchical\" mean for folders?"
+      }
+    },
+    {
+      "id": "ch4-mc-202",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welcher der folgenden Pfade ist ein relativer Pfad?",
+        "en": "Which of the following paths is a relative path?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "/home/anna/a.txt",
+            "en": "/home/anna/a.txt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "C:\\Users\\anna\\a.txt",
+            "en": "C:\\Users\\anna\\a.txt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "data/a.txt",
+            "en": "data/a.txt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "C:/Users/anna/a.txt",
+            "en": "C:/Users/anna/a.txt"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "Ein relativer Pfad beginnt weder mit einem Wurzelverzeichnis noch mit einem Laufwerksbuchstaben und wird vom aktuellen Arbeitsverzeichnis aus gedeutet. Die anderen drei Pfade starten an der Wurzel bzw. am Laufwerk C: und sind daher absolut.",
+        "en": "A relative path starts neither with a root directory nor with a drive letter and is interpreted from the current working directory. The other three paths start at the root or at drive C: and are therefore absolute."
+      },
+      "tip": {
+        "de": "Wo beginnt der Pfad: an der Wurzel oder beim aktuellen Verzeichnis?",
+        "en": "Where does the path start: at the root or at the current directory?"
+      }
+    },
+    {
+      "id": "ch4-ms-201",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche zwei der folgenden Pfade sind absolute Pfade? Wähle genau 2 aus.",
+        "en": "Which two of the following paths are absolute paths? Select exactly 2."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "/home/anna/a.txt",
+            "en": "/home/anna/a.txt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "data/a.txt",
+            "en": "data/a.txt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "C:\\Users\\anna\\a.txt",
+            "en": "C:\\Users\\anna\\a.txt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "../a.txt",
+            "en": "../a.txt"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "a.txt",
+            "en": "a.txt"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "explanation": {
+        "de": "Absolute Pfade legen den Ort vollständig ab der Wurzel bzw. dem Laufwerk fest. data/a.txt, ../a.txt und a.txt sind relativ und hängen vom Arbeitsverzeichnis ab.",
+        "en": "Absolute paths specify the location completely starting at the root or drive. data/a.txt, ../a.txt and a.txt are relative and depend on the working directory."
+      },
+      "tip": {
+        "de": "Absolute Pfade hängen nicht vom Arbeitsverzeichnis ab.",
+        "en": "Absolute paths do not depend on the working directory."
+      }
+    },
+    {
+      "id": "ch4-tf-202",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wahr oder falsch: Auch unter Windows (Trennzeichen \\) funktioniert open(\"data/a.txt\") mit Schrägstrich, sofern das Verzeichnis data existiert.",
+        "en": "True or false: Even on Windows (separator \\) open(\"data/a.txt\") works with a forward slash, provided the directory data exists."
+      },
+      "clarification": {
+        "de": "Die Datei a.txt existiert in data.",
+        "en": "The file a.txt exists in data."
+      },
+      "code": "with open(\"data/a.txt\") as f:\n    text = f.read()",
+      "answer": true,
+      "explanation": {
+        "de": "Python und die Windows-Dateifunktionen akzeptieren den Schrägstrich als Pfadtrenner, daher funktioniert dieser Aufruf auch unter Windows. Für portablen Code ist os.path.join dennoch die sauberere Wahl.",
+        "en": "Python and the Windows file functions accept the forward slash as a path separator, so this call works on Windows too. For portable code os.path.join is still the cleaner choice."
+      },
+      "tip": {
+        "de": "Unterstützt Python beide Trennzeichen unter Windows?",
+        "en": "Does Python support both separators on Windows?"
+      }
+    },
+    {
+      "id": "ch4-mc-203",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Das aktuelle Arbeitsverzeichnis ist /home/u/proj. Welche Datei wird mit dem folgenden Aufruf geöffnet?",
+        "en": "The current working directory is /home/u/proj. Which file is opened by the following call?"
+      },
+      "clarification": {
+        "de": "In Pfaden steht .. für das übergeordnete Verzeichnis.",
+        "en": "In paths, .. stands for the parent directory."
+      },
+      "code": "f = open(\"../data/a.txt\")",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "/home/u/proj/data/a.txt",
+            "en": "/home/u/proj/data/a.txt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "/home/u/data/a.txt",
+            "en": "/home/u/data/a.txt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "/home/data/a.txt",
+            "en": "/home/data/a.txt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "/data/a.txt",
+            "en": "/data/a.txt"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Ausgehend von /home/u/proj führt .. nach /home/u, danach folgt data/a.txt. Der Pfad endet also bei /home/u/data/a.txt; die anderen Pfade gehen eine Ebene zu wenig oder zu viel nach oben bzw. bleiben in proj.",
+        "en": "Starting from /home/u/proj, .. leads to /home/u, followed by data/a.txt. The path therefore ends at /home/u/data/a.txt; the other paths go one level too few or too many upwards or stay inside proj."
+      },
+      "tip": {
+        "de": "Gehe vom Arbeitsverzeichnis genau eine Ebene nach oben.",
+        "en": "Go up exactly one level from the working directory."
+      }
+    },
+    {
+      "id": "ch4-fib-201",
+      "chapter": 4,
+      "section": "4.2 Dateisysteme",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.2 Dateisysteme"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze das Präfix vor dem String-Literal, damit \\n und \\t im Windows-Pfad nicht als Zeilenumbruch bzw. Tabulator gedeutet werden.",
+        "en": "Fill in the prefix before the string literal so that \\n and \\t in the Windows path are not interpreted as newline and tab."
+      },
+      "clarification": {
+        "de": "Gesucht ist ein einzelner Buchstabe.",
+        "en": "A single letter is expected."
+      },
+      "code": "path = ____\"C:\\new\\table.txt\"\nf = open(path)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "r",
+            "R"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Ein Raw-String (Präfix r) behandelt Backslashes als normale Zeichen. Ohne r würden \\n und \\t im Pfad Steuerzeichen ergeben und der Pfad wäre ungültig.",
+        "en": "A raw string (prefix r) treats backslashes as ordinary characters. Without r, \\n and \\t in the path would become control characters and the path would be invalid."
+      },
+      "tip": {
+        "de": "Das Präfix steht für raw.",
+        "en": "The prefix stands for raw."
+      }
+    },
+    {
+      "id": "ch4-mc-204",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Eine Bilddatei photo.png wird in photo.txt umbenannt; der Dateiinhalt wird nicht verändert. Was gilt danach?",
+        "en": "An image file photo.png is renamed to photo.txt; the file content is not changed. What applies afterwards?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Der Inhalt ist weiterhin binär codiert und lässt sich mit einem Texteditor nicht sinnvoll bearbeiten.",
+            "en": "The content is still binary-coded and cannot sensibly be edited with a text editor."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Die Datei ist nun eine Textdatei, weil die Endung .txt lautet.",
+            "en": "The file is now a text file because the extension is .txt."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Python wandelt den Inhalt beim Öffnen automatisch in lesbaren Text um.",
+            "en": "Python automatically converts the content to readable text when opening."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Die Datei wird beim Umbenennen automatisch gelöscht.",
+            "en": "The file is deleted automatically when renamed."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Die Endung ist nur Teil des Namens und ändert den Inhalt nicht; die Bytes bleiben die eines Bildes. Weder das Betriebssystem noch Python machen daraus Text, und gelöscht wird beim Umbenennen nichts.",
+        "en": "The extension is only part of the name and does not change the content; the bytes remain those of an image. Neither the operating system nor Python turns it into text, and nothing is deleted when renaming."
+      },
+      "tip": {
+        "de": "Was bestimmt, ob eine Datei Text oder Binärdaten enthält: der Name oder der Inhalt?",
+        "en": "What decides whether a file contains text or binary data: the name or the content?"
+      }
+    },
+    {
+      "id": "ch4-tf-203",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wahr oder falsch: Wird eine Textdatei im Modus \"rb\" geöffnet, liefert read() einen String vom Typ str.",
+        "en": "True or false: If a text file is opened in mode \"rb\", read() returns a string of type str."
+      },
+      "clarification": null,
+      "code": "with open(\"a.txt\", \"rb\") as f:\n    data = f.read()",
+      "answer": false,
+      "explanation": {
+        "de": "Im Binärmodus liefert read() immer ein bytes-Objekt, auch wenn die Datei Text enthält. Einen str erhält man erst im Textmodus (\"r\").",
+        "en": "In binary mode read() always returns a bytes object, even if the file contains text. A str is only obtained in text mode (\"r\")."
+      },
+      "tip": {
+        "de": "Welche Bedeutung hat das b im Modus?",
+        "en": "What does the b in the mode mean?"
+      }
+    },
+    {
+      "id": "ch4-mc-205",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Warum gibt man beim Öffnen von Textdateien mit Umlauten besser encoding=\"utf-8\" an?",
+        "en": "Why is it better to pass encoding=\"utf-8\" when opening text files that contain umlauts?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Weil die Standardkodierung vom Betriebssystem abhängen kann und die Datei sonst auf anderen Systemen anders gelesen oder geschrieben würde.",
+            "en": "Because the default encoding can depend on the operating system, so the file could otherwise be read or written differently on other systems."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Weil Python Umlaute ohne diese Angabe grundsätzlich löscht.",
+            "en": "Because Python deletes umlauts without this argument."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Weil encoding=\"utf-8\" die Datei in eine Binärdatei umwandelt.",
+            "en": "Because encoding=\"utf-8\" converts the file into a binary file."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Weil Textdateien sonst nur mit dem Modus \"wb\" geschrieben werden können.",
+            "en": "Because text files could otherwise only be written with mode \"wb\"."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Eine Textdatei besteht aus Bytes, die erst über eine Kodierung zu Zeichen werden; ohne Angabe wird eine plattformabhängige Standardkodierung verwendet. Mit encoding=\"utf-8\" ist das Verhalten überall gleich. Umlaute werden nicht gelöscht, und die Datei bleibt eine Textdatei.",
+        "en": "A text file consists of bytes that only become characters through an encoding; without the argument a platform-dependent default encoding is used. With encoding=\"utf-8\" the behavior is the same everywhere. Umlauts are not deleted and the file remains a text file."
+      },
+      "tip": {
+        "de": "Überlege, was bei unterschiedlichen Standardkodierungen auf verschiedenen Rechnern passiert.",
+        "en": "Think about what happens with different default encodings on different machines."
+      }
+    },
+    {
+      "id": "ch4-fib-202",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze das Schlüsselwort-Argument, mit dem die Textkodierung UTF-8 festgelegt wird.",
+        "en": "Fill in the keyword argument that sets the text encoding to UTF-8."
+      },
+      "clarification": null,
+      "code": "with open(\"gruss.txt\", \"w\", ____=\"utf-8\") as f:\n    f.write(\"Grüße\")",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "encoding"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "open() besitzt den Parameter encoding, mit dem die Kodierung für den Textmodus bestimmt wird. Im Binärmodus ist er nicht erlaubt.",
+        "en": "open() has the parameter encoding that determines the encoding for text mode. It is not allowed in binary mode."
+      },
+      "tip": {
+        "de": "Der Parametername nennt das, was eingestellt wird.",
+        "en": "The parameter name states what is being set."
+      }
+    },
+    {
+      "id": "ch4-mc-206",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Was gibt der folgende Code aus?",
+        "en": "What does the following code print?"
+      },
+      "clarification": null,
+      "code": "raw = \"ä\".encode(\"utf-8\")\nprint(raw.decode(\"latin-1\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "ä",
+            "en": "ä"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Ã¤",
+            "en": "Ã¤"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "UnicodeDecodeError",
+            "en": "UnicodeDecodeError"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "b'\\xc3\\xa4'",
+            "en": "b'\\xc3\\xa4'"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "In UTF-8 besteht ä aus den zwei Bytes C3 A4. Latin-1 ordnet jedem Byte genau ein Zeichen zu (Ã und ¤), daher entsteht Ã¤ ohne Fehler. Ein ä entsteht nur, wenn mit derselben Kodierung dekodiert wird, mit der kodiert wurde.",
+        "en": "In UTF-8, ä consists of the two bytes C3 A4. Latin-1 maps every byte to exactly one character (Ã and ¤), so Ã¤ results without an error. An ä only results if decoding uses the same encoding that was used for encoding."
+      },
+      "tip": {
+        "de": "Wie viele Bytes hat ä in UTF-8, und was macht Latin-1 mit jedem einzelnen Byte?",
+        "en": "How many bytes does ä have in UTF-8, and what does Latin-1 do with each single byte?"
+      }
+    },
+    {
+      "id": "ch4-ms-202",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "ms",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche drei Aussagen über Text- und Binärdateien sind richtig? Wähle genau 3 aus.",
+        "en": "Which three statements about text and binary files are correct? Select exactly 3."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Eine .json-Datei ist eine Textdatei.",
+            "en": "A .json file is a text file."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Eine .png-Datei ist eine Textdatei.",
+            "en": "A .png file is a text file."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Binärdateien öffnet man in Python mit den Modi \"rb\" bzw. \"wb\".",
+            "en": "Binary files are opened in Python with modes \"rb\" or \"wb\"."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Textdateien lassen sich mit einem Texteditor bearbeiten.",
+            "en": "Text files can be edited with a text editor."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "Im Modus \"rb\" liefert read() einen str.",
+            "en": "In mode \"rb\" read() returns a str."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "explanation": {
+        "de": "JSON ist ein Textformat, Binärdateien werden mit rb/wb bearbeitet, und Textdateien kann man in einem Texteditor ändern. PNG ist ein Bildformat und damit binär, und rb liefert bytes statt str.",
+        "en": "JSON is a text format, binary files are handled with rb/wb, and text files can be changed in a text editor. PNG is an image format and therefore binary, and rb returns bytes instead of str."
+      },
+      "tip": {
+        "de": "Ordne jede Endung einer der beiden Dateiarten zu.",
+        "en": "Assign each extension to one of the two file types."
+      }
+    },
+    {
+      "id": "ch4-tf-204",
+      "chapter": 4,
+      "section": "4.3 Arten von Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.3 Arten von Dateien"
+      },
+      "type": "tf",
+      "difficulty": "hard",
+      "question": {
+        "de": "Wahr oder falsch: Läuft der Code unter Windows mit Standardeinstellungen, gibt er 3 aus.",
+        "en": "True or false: If the code runs on Windows with default settings, it prints 3."
+      },
+      "clarification": {
+        "de": "n.txt existiert vorher nicht. Der Zeilenumbruch \\n zählt als ein Zeichen im String.",
+        "en": "n.txt does not exist beforehand. The newline \\n counts as one character in the string."
+      },
+      "code": "import os\nwith open(\"n.txt\", \"w\") as f:\n    f.write(\"A\\n\")\nprint(os.path.getsize(\"n.txt\"))",
+      "answer": true,
+      "explanation": {
+        "de": "Im Textmodus wandelt Python unter Windows beim Schreiben jedes \\n in \\r\\n um, die Datei enthält also A, CR und LF: 3 Bytes. Unter Linux wären es 2 Bytes; im Binärmodus findet keine Umwandlung statt.",
+        "en": "In text mode on Windows Python converts every \\n to \\r\\n when writing, so the file contains A, CR and LF: 3 bytes. On Linux it would be 2 bytes; in binary mode no conversion takes place."
+      },
+      "tip": {
+        "de": "Wie wird ein Zeilenumbruch unter Windows in der Datei abgelegt?",
+        "en": "How is a line break stored in the file on Windows?"
+      }
+    },
+    {
+      "id": "ch4-mc-207",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wie nennt man das Wiederherstellen eines Python-Objekts aus einer Pickle-Datei?",
+        "en": "What is restoring a Python object from a pickle file called?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Pickling",
+            "en": "Pickling"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Unpickling",
+            "en": "Unpickling"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Parsen von JSON",
+            "en": "Parsing JSON"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Komprimieren",
+            "en": "Compressing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Das Laden mit pickle.load() heißt Unpickling; es stellt das ursprüngliche Objekt aus dem Byte-Stream wieder her. Pickling ist die Gegenrichtung, also das Speichern mit pickle.dump().",
+        "en": "Loading with pickle.load() is called unpickling; it restores the original object from the byte stream. Pickling is the opposite direction, i.e. saving with pickle.dump()."
+      },
+      "tip": {
+        "de": "Die Gegenrichtung zu Pickling.",
+        "en": "The opposite direction of pickling."
+      }
+    },
+    {
+      "id": "ch4-tf-205",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "tf",
+      "difficulty": "medium",
+      "question": {
+        "de": "Wahr oder falsch: Der Code löst beim zweiten pickle.load einen Fehler aus, weil eine Pickle-Datei nur ein einziges Objekt enthalten darf.",
+        "en": "True or false: The code raises an error at the second pickle.load because a pickle file may contain only a single object."
+      },
+      "clarification": {
+        "de": "Die Datei p.pkl existiert vorher nicht.",
+        "en": "The file p.pkl does not exist beforehand."
+      },
+      "code": "import pickle\nwith open(\"p.pkl\", \"wb\") as f:\n    pickle.dump(1, f)\n    pickle.dump(\"a\", f)\nwith open(\"p.pkl\", \"rb\") as f:\n    x = pickle.load(f)\n    y = pickle.load(f)\nprint(x, y)",
+      "answer": false,
+      "explanation": {
+        "de": "Mehrere dump-Aufrufe hängen die Objekte hintereinander in dieselbe Datei; mehrere load-Aufrufe lesen sie in derselben Reihenfolge wieder aus. Der Code gibt daher 1 a aus.",
+        "en": "Several dump calls store the objects one after another in the same file; several load calls read them back in the same order. The code therefore prints 1 a."
+      },
+      "tip": {
+        "de": "Wo steht der Dateizeiger nach dem ersten load?",
+        "en": "Where is the file pointer after the first load?"
+      }
+    },
+    {
+      "id": "ch4-fib-203",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze Anweisung und Modus, damit die Liste per pickle gespeichert werden kann.",
+        "en": "Fill in the statement and mode so that the list can be saved with pickle."
+      },
+      "clarification": null,
+      "code": "____ pickle\nwith open(\"d.pkl\", \"____\") as f:\n    pickle.dump([1, 2], f)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "import"
+          ],
+          "caseSensitive": true
+        },
+        {
+          "accepted": [
+            "wb",
+            "\"wb\"",
+            "'wb'",
+            "bw"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Das Modul pickle muss zuerst importiert werden. Zum Schreiben der Bytes wird die Datei im Binärmodus mit wb geöffnet.",
+        "en": "The module pickle must be imported first. To write the bytes the file is opened in binary mode with wb."
+      },
+      "tip": {
+        "de": "Modul laden, dann Schreiben plus binär.",
+        "en": "Load the module, then writing plus binary."
+      }
+    },
+    {
+      "id": "ch4-mc-208",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ein Python-Skript soll verschachtelte Daten (Listen und Dictionaries mit Strings und Zahlen) speichern, die auch ein JavaScript-Programm lesen muss. Welches Format ist am besten geeignet?",
+        "en": "A Python script is to store nested data (lists and dictionaries with strings and numbers) that a JavaScript program must also read. Which format is best suited?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Pickle",
+            "en": "Pickle"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "JSON",
+            "en": "JSON"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Eine mit \"wb\" geschriebene Binärdatei mit eigenem Format nur für Python",
+            "en": "A binary file written with \"wb\" in a custom Python-only format"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Eine .exe-Datei",
+            "en": "An .exe file"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "JSON ist ein sprachunabhängiges Textformat und für den Datenaustausch zwischen Programmiersprachen geeignet. Pickle ist Python-spezifisch und deshalb für andere Sprachen ungeeignet; eine eigene Python-Binärdatei oder eine .exe-Datei ist ebenso wenig austauschbar.",
+        "en": "JSON is a language-independent text format suited for exchanging data between programming languages. Pickle is Python-specific and therefore unsuitable for other languages; a custom Python binary file or an .exe file is not interchangeable either."
+      },
+      "tip": {
+        "de": "Welches Format verstehen mehrere Programmiersprachen?",
+        "en": "Which format do several programming languages understand?"
+      }
+    },
+    {
+      "id": "ch4-mc-209",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Was gibt der Code aus?",
+        "en": "What does the code print?"
+      },
+      "clarification": {
+        "de": "Die Datei k.pkl existiert vorher nicht.",
+        "en": "The file k.pkl does not exist beforehand."
+      },
+      "code": "import pickle\ndata = {\"t\": (1, 2), \"s\": {3}}\nwith open(\"k.pkl\", \"wb\") as f:\n    pickle.dump(data, f)\nwith open(\"k.pkl\", \"rb\") as f:\n    back = pickle.load(f)\nprint(type(back[\"t\"]).__name__, type(back[\"s\"]).__name__)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "list list",
+            "en": "list list"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "tuple set",
+            "en": "tuple set"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "tuple list",
+            "en": "tuple list"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "list set",
+            "en": "list set"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Pickle stellt Python-Objekte samt ihrem Typ wieder her, ein Tupel bleibt also ein tuple und eine Menge ein set. Bei JSON würde das Tupel dagegen zur Liste, und Mengen ließen sich gar nicht direkt serialisieren.",
+        "en": "Pickle restores Python objects including their type, so a tuple remains a tuple and a set remains a set. With JSON the tuple would become a list instead, and sets could not be serialized directly at all."
+      },
+      "tip": {
+        "de": "Bleiben die Python-Typen beim Roundtrip erhalten?",
+        "en": "Are the Python types preserved in the round trip?"
+      }
+    },
+    {
+      "id": "ch4-ms-203",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "ms",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche drei Aussagen über den Vergleich von pickle und JSON sind richtig? Wähle genau 3 aus.",
+        "en": "Which three statements about comparing pickle and JSON are correct? Select exactly 3."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Ein Tupel bleibt nach einem pickle-Roundtrip ein Tupel.",
+            "en": "A tuple remains a tuple after a pickle round trip."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Nach json.dump und json.load ist aus einem Tupel eine Liste geworden.",
+            "en": "After json.dump and json.load a tuple has become a list."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "JSON-Dateien sind Textdateien, Pickle-Dateien sind Binärdateien.",
+            "en": "JSON files are text files, pickle files are binary files."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Pickle-Dateien lassen sich ohne Weiteres von Java-Programmen lesen.",
+            "en": "Pickle files can be read by Java programs without further ado."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "Eine Pickle-Datei aus unbekannter Quelle kann bedenkenlos geladen werden.",
+            "en": "A pickle file from an unknown source can be loaded without concern."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "Pickle erhält Python-Typen, ist aber binär und Python-spezifisch; JSON ist ein lesbares Textformat, kennt jedoch keine Tupel und liefert beim Laden Listen. Pickle ist weder für Java gedacht noch für unbekannte Quellen sicher, da beim Laden Code ausgeführt werden kann.",
+        "en": "Pickle preserves Python types but is binary and Python-specific; JSON is a readable text format but has no tuples and returns lists when loading. Pickle is neither meant for Java nor safe for unknown sources, since code can be executed when loading."
+      },
+      "tip": {
+        "de": "Denke an Typtreue, Dateiart und Austauschbarkeit.",
+        "en": "Think about type fidelity, file kind and interchangeability."
+      }
+    },
+    {
+      "id": "ch4-tf-206",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "tf",
+      "difficulty": "hard",
+      "question": {
+        "de": "Wahr oder falsch: Der Code löst einen EOFError aus.",
+        "en": "True or false: The code raises an EOFError."
+      },
+      "clarification": {
+        "de": "Die Datei e.pkl existiert vorher nicht. open(...).close() legt sie an und schließt sie sofort.",
+        "en": "The file e.pkl does not exist beforehand. open(...).close() creates it and closes it immediately."
+      },
+      "code": "import pickle\nopen(\"e.pkl\", \"wb\").close()\nwith open(\"e.pkl\", \"rb\") as f:\n    obj = pickle.load(f)",
+      "answer": true,
+      "explanation": {
+        "de": "Die Datei ist leer, daher findet pickle.load keine Daten mehr und löst einen EOFError aus. Das ist derselbe Fehler, den man nutzen kann, um das Ende mehrerer hintereinander gespeicherter Objekte zu erkennen.",
+        "en": "The file is empty, so pickle.load finds no data and raises an EOFError. This is the same error that can be used to detect the end of several objects stored one after another."
+      },
+      "tip": {
+        "de": "Was liest load aus einer leeren Datei?",
+        "en": "What does load read from an empty file?"
+      }
+    },
+    {
+      "id": "ch4-fe-201",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "fe",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche Zeile verhindert, dass settings korrekt gespeichert wird?",
+        "en": "Which line prevents settings from being saved correctly?"
+      },
+      "clarification": {
+        "de": "Das Dictionary soll in die Datei s.pkl gespeichert werden.",
+        "en": "The dictionary is supposed to be saved to the file s.pkl."
+      },
+      "code": "1 import pickle\n2 settings = {\"theme\": \"dark\"}\n3 with open(\"s.pkl\", \"wb\") as f:\n4     pickle.dump(f, settings)\n5 print(\"saved\")",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 1: Das Modul wird falsch importiert.",
+            "en": "Line 1: The module is imported incorrectly."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3: Der Modus wb ist falsch, es müsste w sein.",
+            "en": "Line 3: The mode wb is wrong, it should be w."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4: Die Argumente von pickle.dump stehen in der falschen Reihenfolge.",
+            "en": "Line 4: The arguments of pickle.dump are in the wrong order."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 2: Ein Dictionary lässt sich nicht picklen.",
+            "en": "Line 2: A dictionary cannot be pickled."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "Zeile 5: print darf nicht nach dem with-Block stehen.",
+            "en": "Line 5: print must not come after the with block."
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "pickle.dump erwartet zuerst das Objekt und danach die Datei. Mit vertauschten Argumenten wird das Dictionary als Datei behandelt, und es entsteht ein TypeError. Der Modus wb ist für Pickle gerade richtig, und Import und Dictionary sind in Ordnung.",
+        "en": "pickle.dump expects the object first and the file second. With swapped arguments the dictionary is treated as a file and a TypeError results. The mode wb is exactly right for pickle, and the import and dictionary are fine."
+      },
+      "tip": {
+        "de": "Vergleiche die Reihenfolge der Argumente mit pickle.dump(obj, f).",
+        "en": "Compare the order of the arguments with pickle.dump(obj, f)."
+      }
+    },
+    {
+      "id": "ch4-mc-210",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Was passiert beim Ausführen des Codes?",
+        "en": "What happens when the code is run?"
+      },
+      "clarification": null,
+      "code": "import pickle\nlog = open(\"log.txt\", \"w\")\nstate = {\"name\": \"app\", \"handle\": log}\nwith open(\"state.pkl\", \"wb\") as f:\n    pickle.dump(state, f)\nprint(\"done\")",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Ein TypeError wird ausgelöst, done wird nicht ausgegeben.",
+            "en": "A TypeError is raised, done is not printed."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "done wird ausgegeben; die offene Datei wird mitgespeichert.",
+            "en": "done is printed; the open file is saved along with it."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "done wird ausgegeben; handle wird als None gespeichert.",
+            "en": "done is printed; handle is saved as None."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Ein FileNotFoundError wird ausgelöst, weil log.txt fehlt.",
+            "en": "A FileNotFoundError is raised because log.txt is missing."
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Ein offenes Dateiobjekt lässt sich nicht serialisieren, daher scheitert pickle.dump mit einem TypeError, bevor print ausgeführt wird. Pickle ersetzt solche Objekte nicht durch None, und log.txt wird durch den Modus w angelegt, sodass kein FileNotFoundError entsteht.",
+        "en": "An open file object cannot be serialized, so pickle.dump fails with a TypeError before print is executed. Pickle does not replace such objects with None, and log.txt is created by mode w, so no FileNotFoundError occurs."
+      },
+      "tip": {
+        "de": "Nicht jedes Python-Objekt lässt sich in Bytes umwandeln.",
+        "en": "Not every Python object can be converted to bytes."
+      }
+    },
+    {
+      "id": "ch4-fib-204",
+      "chapter": 4,
+      "section": "4.4 Pickles",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.4 Pickles"
+      },
+      "type": "fib",
+      "difficulty": "hard",
+      "question": {
+        "de": "Ergänze den Fehlertyp, mit dem die Schleife endet, sobald keine weiteren Objekte in der Pickle-Datei stehen.",
+        "en": "Fill in the error type that ends the loop as soon as no more objects remain in the pickle file."
+      },
+      "clarification": {
+        "de": "Es wird der Name der Exception-Klasse gesucht.",
+        "en": "The name of the exception class is expected."
+      },
+      "code": "import pickle\nitems = []\nwith open(\"p.pkl\", \"rb\") as f:\n    while True:\n        try:\n            items.append(pickle.load(f))\n        except ____:\n            break",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "EOFError"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Wenn pickle.load am Dateiende nichts mehr lesen kann, wird ein EOFError (end of file) ausgelöst. Er wird hier abgefangen, um die Schleife zu beenden.",
+        "en": "When pickle.load cannot read anything at the end of the file, an EOFError (end of file) is raised. It is caught here to end the loop."
+      },
+      "tip": {
+        "de": "Die Abkürzung steht für end of file.",
+        "en": "The abbreviation stands for end of file."
+      }
+    },
+    {
+      "id": "ch4-mc-211",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche Funktion wechselt das aktuelle Arbeitsverzeichnis?",
+        "en": "Which function changes the current working directory?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "os.cd(path)",
+            "en": "os.cd(path)"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "os.setcwd(path)",
+            "en": "os.setcwd(path)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "os.chdir(path)",
+            "en": "os.chdir(path)"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "os.listdir(path)",
+            "en": "os.listdir(path)"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "os.chdir(path) (change directory) setzt das Arbeitsverzeichnis neu; relative Pfade beziehen sich danach darauf. os.cd und os.setcwd gibt es nicht, und listdir wechselt nichts, sondern listet nur Einträge auf.",
+        "en": "os.chdir(path) (change directory) sets a new working directory; relative paths refer to it afterwards. os.cd and os.setcwd do not exist, and listdir changes nothing but only lists entries."
+      },
+      "tip": {
+        "de": "Der Name leitet sich von change directory ab.",
+        "en": "The name derives from change directory."
+      }
+    },
+    {
+      "id": "ch4-fib-205",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze die Funktion, die ein leeres Verzeichnis löscht.",
+        "en": "Fill in the function that deletes an empty directory."
+      },
+      "clarification": {
+        "de": "Das Verzeichnis empty_dir existiert und ist leer.",
+        "en": "The directory empty_dir exists and is empty."
+      },
+      "code": "import os\nos.____(\"empty_dir\")",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "rmdir",
+            "removedirs"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "os.rmdir entfernt ein leeres Verzeichnis (remove directory). Für Dateien ist stattdessen os.remove zuständig.",
+        "en": "os.rmdir removes an empty directory (remove directory). For files os.remove is used instead."
+      },
+      "tip": {
+        "de": "remove directory.",
+        "en": "remove directory."
+      }
+    },
+    {
+      "id": "ch4-mc-212",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Was passiert beim Ausführen des Codes?",
+        "en": "What happens when the code is run?"
+      },
+      "clarification": {
+        "de": "Das Verzeichnis a existiert nicht.",
+        "en": "The directory a does not exist."
+      },
+      "code": "import os\nos.mkdir(\"a/b\")",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Es werden a und darin b angelegt.",
+            "en": "a and inside it b are created."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Es wird ein FileNotFoundError ausgelöst.",
+            "en": "A FileNotFoundError is raised."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Es wird nur a angelegt.",
+            "en": "Only a is created."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein FileExistsError ausgelöst.",
+            "en": "A FileExistsError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "os.mkdir legt nur ein einzelnes Verzeichnis an und setzt voraus, dass das übergeordnete Verzeichnis bereits existiert; sonst entsteht ein FileNotFoundError. Zum Anlegen der ganzen Kette dient os.makedirs.",
+        "en": "os.mkdir only creates a single directory and requires that the parent directory already exists; otherwise a FileNotFoundError occurs. os.makedirs is used to create the whole chain."
+      },
+      "tip": {
+        "de": "Welche Voraussetzung hat mkdir für den übergeordneten Ordner?",
+        "en": "What does mkdir require of the parent folder?"
+      }
+    },
+    {
+      "id": "ch4-mc-213",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Was gibt der Code aus?",
+        "en": "What does the code print?"
+      },
+      "clarification": {
+        "de": "Das Verzeichnis out existiert vor dem Start nicht.",
+        "en": "The directory out does not exist before the start."
+      },
+      "code": "import os\nos.makedirs(\"out/2026\", exist_ok=True)\nos.makedirs(\"out/2026\", exist_ok=True)\nprint(os.path.isdir(\"out/2026\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "FileExistsError beim zweiten Aufruf",
+            "en": "FileExistsError at the second call"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "True",
+            "en": "True"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "False",
+            "en": "False"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "FileNotFoundError, weil out fehlt",
+            "en": "FileNotFoundError because out is missing"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "os.makedirs legt auch fehlende Zwischenverzeichnisse an, und exist_ok=True unterdrückt den Fehler, wenn das Zielverzeichnis schon existiert. Beide Aufrufe laufen daher durch, und isdir liefert True.",
+        "en": "os.makedirs also creates missing intermediate directories, and exist_ok=True suppresses the error if the target directory already exists. Both calls therefore run through, and isdir returns True."
+      },
+      "tip": {
+        "de": "Was bewirkt exist_ok=True beim zweiten Aufruf?",
+        "en": "What does exist_ok=True do at the second call?"
+      }
+    },
+    {
+      "id": "ch4-tf-207",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "tf",
+      "difficulty": "medium",
+      "question": {
+        "de": "Wahr oder falsch: os.listdir liefert die Namen stets in alphabetischer Reihenfolge.",
+        "en": "True or false: os.listdir always returns the names in alphabetical order."
+      },
+      "clarification": null,
+      "code": "import os\nnames = os.listdir(\".\")",
+      "answer": false,
+      "explanation": {
+        "de": "Die Reihenfolge der Einträge ist beliebig und vom System abhängig. Wer eine feste Reihenfolge braucht, sortiert das Ergebnis selbst, z.B. mit sorted(os.listdir(...)).",
+        "en": "The order of the entries is arbitrary and system-dependent. Anyone who needs a fixed order sorts the result themselves, e.g. with sorted(os.listdir(...))."
+      },
+      "tip": {
+        "de": "Die Dokumentation von listdir verspricht keine Sortierung.",
+        "en": "The documentation of listdir does not promise any sorting."
+      }
+    },
+    {
+      "id": "ch4-mc-214",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Was gibt der Code aus?",
+        "en": "What does the code print?"
+      },
+      "clarification": null,
+      "code": "import os\nprint(os.path.join(\"data\", \"/tmp/x.txt\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "data/tmp/x.txt",
+            "en": "data/tmp/x.txt"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "data//tmp/x.txt",
+            "en": "data//tmp/x.txt"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "/tmp/x.txt",
+            "en": "/tmp/x.txt"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "data/x.txt",
+            "en": "data/x.txt"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "Ist ein späterer Teil von os.path.join ein absoluter Pfad, werden alle vorherigen Teile verworfen. Das Ergebnis ist deshalb /tmp/x.txt; es wird nichts zusammengeklebt und auch kein Teil gekürzt.",
+        "en": "If a later part of os.path.join is an absolute path, all previous parts are discarded. The result is therefore /tmp/x.txt; nothing is glued together and no part is shortened."
+      },
+      "tip": {
+        "de": "Was macht join, wenn ein Argument mit dem Wurzelverzeichnis beginnt?",
+        "en": "What does join do when an argument starts with the root directory?"
+      }
+    },
+    {
+      "id": "ch4-fib-206",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze die Funktion aus os.path, die einen Dateinamen in Name und Endung aufteilt.",
+        "en": "Fill in the os.path function that splits a file name into name and extension."
+      },
+      "clarification": {
+        "de": "ext soll den Wert \".txt\" erhalten.",
+        "en": "ext is supposed to receive the value \".txt\"."
+      },
+      "code": "import os\nroot, ext = os.path.____(\"report.txt\")\nprint(ext)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "splitext"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "os.path.splitext teilt den Pfad am letzten Punkt in ein Tupel aus Wurzel und Endung, hier (\"report\", \".txt\"). Das Tupel wird auf root und ext entpackt.",
+        "en": "os.path.splitext splits the path at the last dot into a tuple of root and extension, here (\"report\", \".txt\"). The tuple is unpacked into root and ext."
+      },
+      "tip": {
+        "de": "split + extension.",
+        "en": "split + extension."
+      }
+    },
+    {
+      "id": "ch4-mc-215",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "hard",
+      "question": {
+        "de": "Was gibt der Code aus?",
+        "en": "What does the code print?"
+      },
+      "clarification": null,
+      "code": "import os\nprint(os.path.splitext(\"archive.tar.gz\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "('archive', '.tar.gz')",
+            "en": "('archive', '.tar.gz')"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "('archive.tar', '.gz')",
+            "en": "('archive.tar', '.gz')"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "('archive.tar.gz', '')",
+            "en": "('archive.tar.gz', '')"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "('archive', '.tar')",
+            "en": "('archive', '.tar')"
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "splitext trennt nur die letzte Endung ab, hier .gz; der Rest archive.tar bleibt als Name stehen. Mehrfachendungen wie .tar.gz werden also nicht als Einheit behandelt.",
+        "en": "splitext only splits off the last extension, here .gz; the rest archive.tar remains as the name. Multiple extensions such as .tar.gz are therefore not treated as a unit."
+      },
+      "tip": {
+        "de": "An welchem Punkt wird getrennt?",
+        "en": "At which dot is the split made?"
+      }
+    },
+    {
+      "id": "ch4-ms-204",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "ms",
+      "difficulty": "medium",
+      "question": {
+        "de": "Welche drei Aussagen über Funktionen aus os.path sind richtig? Wähle genau 3 aus.",
+        "en": "Which three statements about functions from os.path are correct? Select exactly 3."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "os.path.isdir(p) ist True, wenn p ein existierendes Verzeichnis ist.",
+            "en": "os.path.isdir(p) is True if p is an existing directory."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "os.path.isfile(p) ist True, wenn p eine existierende Datei ist.",
+            "en": "os.path.isfile(p) is True if p is an existing file."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "os.path.getsize(p) liefert die Dateigröße in Bytes.",
+            "en": "os.path.getsize(p) returns the file size in bytes."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "os.path.getsize(p) liefert die Anzahl der Zeilen der Datei.",
+            "en": "os.path.getsize(p) returns the number of lines of the file."
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "os.path.exists(p) ist für Verzeichnisse immer False.",
+            "en": "os.path.exists(p) is always False for directories."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "isdir und isfile unterscheiden Verzeichnisse und Dateien, getsize liefert die Größe in Bytes. Zeilen zählt getsize nicht, und exists ist auch für Verzeichnisse True, wenn sie vorhanden sind.",
+        "en": "isdir and isfile distinguish directories from files, and getsize returns the size in bytes. getsize does not count lines, and exists is also True for directories if they are present."
+      },
+      "tip": {
+        "de": "Worin unterscheiden sich exists, isfile und isdir?",
+        "en": "How do exists, isfile and isdir differ?"
+      }
+    },
+    {
+      "id": "ch4-fe-202",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fe",
+      "difficulty": "hard",
+      "question": {
+        "de": "Das Skript soll a.txt in das neue Verzeichnis backup verschieben, bricht aber mit einem Fehler ab. Welche Zeile enthält die Ursache?",
+        "en": "The script is supposed to move a.txt into the new directory backup, but it aborts with an error. Which line contains the cause?"
+      },
+      "clarification": {
+        "de": "a.txt liegt im Arbeitsverzeichnis, backup existiert vorher nicht.",
+        "en": "a.txt is located in the working directory, backup does not exist beforehand."
+      },
+      "code": "1 import os\n2 os.mkdir(\"backup\")\n3 os.rename(\"a.txt\", \"backup\")\n4 print(os.listdir(\"backup\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 2: mkdir darf nur für vorhandene Verzeichnisse verwendet werden.",
+            "en": "Line 2: mkdir may only be used for existing directories."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3: Als Ziel fehlt der Dateiname, z.B. os.path.join(\"backup\", \"a.txt\").",
+            "en": "Line 3: The target lacks the file name, e.g. os.path.join(\"backup\", \"a.txt\")."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4: listdir kann nur das Arbeitsverzeichnis auflisten.",
+            "en": "Line 4: listdir can only list the working directory."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 1: os muss mit from os import * importiert werden.",
+            "en": "Line 1: os must be imported with from os import *."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "os.rename erwartet als Ziel den vollständigen neuen Pfad der Datei, nicht nur das Zielverzeichnis. Da backup schon existiert, scheitert das Umbenennen auf diesen Namen mit einem Fehler. mkdir, listdir und der Import sind korrekt verwendet.",
+        "en": "os.rename expects the complete new path of the file as the target, not just the target directory. Since backup already exists, renaming to that name fails with an error. mkdir, listdir and the import are used correctly."
+      },
+      "tip": {
+        "de": "Was muss der zweite Parameter von rename enthalten?",
+        "en": "What must the second parameter of rename contain?"
+      }
+    },
+    {
+      "id": "ch4-mc-216",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Das Verzeichnis sub existiert vor dem Start nicht. Was gibt der Code aus?",
+        "en": "The directory sub does not exist before the start. What does the code print?"
+      },
+      "clarification": null,
+      "code": "import os\nos.mkdir(\"sub\")\nos.chdir(\"sub\")\nwith open(\"n.txt\", \"w\") as f:\n    f.write(\"x\")\nprint(os.path.exists(\"n.txt\"), os.path.exists(\"sub/n.txt\"))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "True True",
+            "en": "True True"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "False True",
+            "en": "False True"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "True False",
+            "en": "True False"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "False False",
+            "en": "False False"
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "Nach os.chdir(\"sub\") beziehen sich relative Pfade auf sub, daher liegt n.txt dort und exists(\"n.txt\") ist True. Der Pfad sub/n.txt würde nun als sub/sub/n.txt gedeutet, den es nicht gibt, also False.",
+        "en": "After os.chdir(\"sub\") relative paths refer to sub, so n.txt is located there and exists(\"n.txt\") is True. The path sub/n.txt would now be interpreted as sub/sub/n.txt, which does not exist, hence False."
+      },
+      "tip": {
+        "de": "Wovon hängen relative Pfade ab, und was hat chdir geändert?",
+        "en": "What do relative paths depend on, and what did chdir change?"
+      }
+    },
+    {
+      "id": "ch4-tf-208",
+      "chapter": 4,
+      "section": "4.5 Das Modul os",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.5 Das Modul os / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "tf",
+      "difficulty": "easy",
+      "question": {
+        "de": "Wahr oder falsch: os.listdir() ohne Argument listet die Einträge des aktuellen Arbeitsverzeichnisses auf.",
+        "en": "True or false: os.listdir() without an argument lists the entries of the current working directory."
+      },
+      "clarification": null,
+      "code": "import os\nprint(os.listdir())",
+      "answer": true,
+      "explanation": {
+        "de": "Ohne Pfadangabe verwendet listdir den Standardwert \".\", also das aktuelle Arbeitsverzeichnis. Das Ergebnis ist eine Liste mit Namen.",
+        "en": "Without a path argument listdir uses the default \".\", i.e. the current working directory. The result is a list of names."
+      },
+      "tip": {
+        "de": "Welcher Standardpfad gilt ohne Argument?",
+        "en": "Which default path applies without an argument?"
+      }
+    },
+    {
+      "id": "ch4-mc-217",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Wie verarbeitet man eine sehr große Textdatei zeilenweise, ohne sie komplett in den Speicher zu laden?",
+        "en": "How do you process a very large text file line by line without loading it completely into memory?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Mit for line in f: innerhalb von with open(...) as f",
+            "en": "With for line in f: inside with open(...) as f"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Mit lines = f.readlines() und anschließender Schleife über lines",
+            "en": "With lines = f.readlines() followed by a loop over lines"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Mit text = f.read() und anschließendem text.split(\"\\n\")",
+            "en": "With text = f.read() followed by text.split(\"\\n\")"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Mit f.seek(0) vor jeder einzelnen Zeile",
+            "en": "With f.seek(0) before every single line"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Die Iteration über das Dateiobjekt liefert jeweils eine Zeile und hält nicht die ganze Datei im Speicher. readlines() und read() laden dagegen alles auf einmal, und seek(0) springt nur an den Dateianfang zurück.",
+        "en": "Iterating over the file object yields one line at a time and does not keep the whole file in memory. readlines() and read(), by contrast, load everything at once, and seek(0) merely jumps back to the start of the file."
+      },
+      "tip": {
+        "de": "Welche Variante liest immer nur eine Zeile?",
+        "en": "Which variant reads only one line at a time?"
+      }
+    },
+    {
+      "id": "ch4-mc-218",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "easy",
+      "question": {
+        "de": "Was passiert, wenn man eine nicht vorhandene Datei mit open(\"new.txt\", \"a\") öffnet?",
+        "en": "What happens if you open a non-existent file with open(\"new.txt\", \"a\")?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Es wird ein FileNotFoundError ausgelöst.",
+            "en": "A FileNotFoundError is raised."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Die Datei wird neu angelegt, und es kann angehängt werden.",
+            "en": "The file is created and appending is possible."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Python öffnet die Datei nur zum Lesen.",
+            "en": "Python opens the file for reading only."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Es wird ein FileExistsError ausgelöst.",
+            "en": "A FileExistsError is raised."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Der Modus a legt die Datei an, falls sie nicht existiert, und schreibt sonst am Ende weiter. Einen FileNotFoundError gäbe es im Lesemodus r, einen FileExistsError im Modus x bei vorhandener Datei.",
+        "en": "Mode a creates the file if it does not exist and otherwise continues writing at the end. A FileNotFoundError would occur in read mode r, a FileExistsError in mode x if the file exists."
+      },
+      "tip": {
+        "de": "Vergleiche das Verhalten von a mit dem von r.",
+        "en": "Compare the behavior of a with that of r."
+      }
+    },
+    {
+      "id": "ch4-mc-219",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "medium",
+      "question": {
+        "de": "Was bewirkt der Modus \"x\" in open(\"report.txt\", \"x\")?",
+        "en": "What does mode \"x\" do in open(\"report.txt\", \"x\")?"
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Die Datei wird zum Anhängen geöffnet.",
+            "en": "The file is opened for appending."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Die Datei wird zum Schreiben neu angelegt; existiert sie schon, wird ein FileExistsError ausgelöst.",
+            "en": "The file is newly created for writing; if it already exists, a FileExistsError is raised."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Die Datei wird exklusiv gelesen und danach gelöscht.",
+            "en": "The file is read exclusively and then deleted."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Die Datei wird im Binärmodus gelesen.",
+            "en": "The file is read in binary mode."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "Der Modus x steht für exklusives Anlegen: Er schützt vorhandene Dateien vor dem Überschreiben, indem er einen FileExistsError auslöst. Anhängen ist a, Binärmodus wird mit b gekennzeichnet, und eine Datei wird dabei nicht gelöscht.",
+        "en": "Mode x stands for exclusive creation: it protects existing files from being overwritten by raising a FileExistsError. Appending is a, binary mode is marked with b, and no file is deleted."
+      },
+      "tip": {
+        "de": "Der Modus verhindert ein versehentliches Überschreiben.",
+        "en": "The mode prevents accidental overwriting."
+      }
+    },
+    {
+      "id": "ch4-mc-220",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "mc",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Was gibt der Code aus?",
+        "en": "What does the code print?"
+      },
+      "clarification": null,
+      "code": "with open(\"d.txt\", \"w\") as f:\n    f.write(\"1\\n2\\n3\")\nwith open(\"d.txt\") as f:\n    lines = f.readlines()\nprint(len(lines), repr(lines[-1]), len(lines[0]))",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "3 '3' 2",
+            "en": "3 '3' 2"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "3 '3\\n' 2",
+            "en": "3 '3\\n' 2"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "3 '3' 1",
+            "en": "3 '3' 1"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "4 '' 2",
+            "en": "4 '' 2"
+          }
+        }
+      ],
+      "answer": "a",
+      "explanation": {
+        "de": "Der Text hat nach der 3 keinen Zeilenumbruch, also gibt es drei Zeilen, und die letzte ist \"3\" ohne \\n. Die erste Zeile \"1\\n\" enthält den Umbruch und hat die Länge 2. Eine leere vierte Zeile entsteht nicht.",
+        "en": "The text has no line break after the 3, so there are three lines, and the last one is \"3\" without \\n. The first line \"1\\n\" contains the line break and has length 2. No empty fourth line arises."
+      },
+      "tip": {
+        "de": "Welche Zeilen enden mit \\n, und welche nicht?",
+        "en": "Which lines end with \\n, and which do not?"
+      }
+    },
+    {
+      "id": "ch4-ms-205",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "ms",
+      "difficulty": "easy",
+      "question": {
+        "de": "Welche drei der folgenden Namen sind Methoden eines geöffneten Textdatei-Objekts? Wähle genau 3 aus.",
+        "en": "Which three of the following names are methods of an opened text file object? Select exactly 3."
+      },
+      "clarification": null,
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "read",
+            "en": "read"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "readline",
+            "en": "readline"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "writelines",
+            "en": "writelines"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "append",
+            "en": "append"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "readall",
+            "en": "readall"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "read, readline und writelines sind Methoden von Dateiobjekten. append ist eine Listenmethode, und readall gibt es bei Python-Dateiobjekten nicht.",
+        "en": "read, readline and writelines are methods of file objects. append is a list method, and readall does not exist on Python file objects."
+      },
+      "tip": {
+        "de": "Welche dieser Namen kennst du von open()-Dateien, welche von Listen?",
+        "en": "Which of these names do you know from open() files, which from lists?"
+      }
+    },
+    {
+      "id": "ch4-ms-206",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "ms",
+      "difficulty": "hard",
+      "question": {
+        "de": "Welche der folgenden Modi erlauben im Textmodus das Lesen aus der Datei? Wähle genau 3 aus.",
+        "en": "Which of the following modes allow reading from the file in text mode? Select exactly 3."
+      },
+      "clarification": {
+        "de": "Gemeint ist, ob auf dem geöffneten Objekt read() erlaubt ist.",
+        "en": "This refers to whether read() is permitted on the opened object."
+      },
+      "code": null,
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "\"r\"",
+            "en": "\"r\""
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "\"r+\"",
+            "en": "\"r+\""
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "\"w\"",
+            "en": "\"w\""
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "\"w+\"",
+            "en": "\"w+\""
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "\"a\"",
+            "en": "\"a\""
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "explanation": {
+        "de": "r liest nur, r+ liest und schreibt, und w+ schreibt (nach dem Leeren der Datei) und erlaubt zusätzlich Lesen. Reines w und a sind reine Schreibmodi, bei denen read() einen Fehler auslöst.",
+        "en": "r only reads, r+ reads and writes, and w+ writes (after emptying the file) and additionally allows reading. Plain w and a are write-only modes in which read() raises an error."
+      },
+      "tip": {
+        "de": "Das Pluszeichen erweitert einen Modus um die jeweils andere Richtung.",
+        "en": "The plus sign extends a mode by the respective other direction."
+      }
+    },
+    {
+      "id": "ch4-ms-207",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "ms",
+      "difficulty": "hard",
+      "question": {
+        "de": "Die Datei t.txt enthält die Zeilen A, B und C (jeweils mit \\n am Ende). Direkt nach dem ersten f.readline() soll ein Ausdruck die Liste ['B\\n', 'C\\n'] ergeben. Welche drei Ausdrücke tun das, wenn man sie einzeln an dieser Stelle auswertet? Wähle genau 3 aus.",
+        "en": "The file t.txt contains the lines A, B and C (each ending with \\n). Directly after the first f.readline(), an expression is supposed to yield the list ['B\\n', 'C\\n']. Which three expressions do that when evaluated individually at this point? Select exactly 3."
+      },
+      "clarification": null,
+      "code": "with open(\"t.txt\") as f:\n    f.readline()\n    result = ...  # expression to evaluate here",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "f.readlines()",
+            "en": "f.readlines()"
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "list(f)",
+            "en": "list(f)"
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "[line for line in f]",
+            "en": "[line for line in f]"
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "f.read()",
+            "en": "f.read()"
+          }
+        },
+        {
+          "id": "e",
+          "text": {
+            "de": "f.readline()",
+            "en": "f.readline()"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "explanation": {
+        "de": "Nach dem ersten readline() steht der Dateizeiger vor B; readlines(), list(f) und die Listen-Abkürzung lesen von dort aus alle restlichen Zeilen als Liste. read() liefert einen einzigen String, readline() nur die Zeile B.",
+        "en": "After the first readline() the file pointer is before B; readlines(), list(f) and the list comprehension read all remaining lines from there as a list. read() returns a single string, readline() only the line B."
+      },
+      "tip": {
+        "de": "Wo steht der Dateizeiger, und welcher Typ kommt jeweils heraus?",
+        "en": "Where is the file pointer, and which type does each expression return?"
+      }
+    },
+    {
+      "id": "ch4-ms-208",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "ms",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Die Dateien a.txt und b.txt enthalten beide den Text old. Welche Aussagen über den Zustand nach Ausführung des Codes sind richtig? Wähle alle zutreffenden aus.",
+        "en": "The files a.txt and b.txt both contain the text old. Which statements about the state after running the code are correct? Select all that apply."
+      },
+      "clarification": null,
+      "code": "with open(\"a.txt\", \"a\") as f:\n    pass\nwith open(\"b.txt\", \"w\") as g:\n    pass",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "a.txt enthält weiterhin old.",
+            "en": "a.txt still contains old."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "b.txt existiert und ist leer.",
+            "en": "b.txt exists and is empty."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "b.txt enthält weiterhin old, da nichts geschrieben wurde.",
+            "en": "b.txt still contains old because nothing was written."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Der Code löst einen Fehler aus, weil nichts in die Dateien geschrieben wird.",
+            "en": "The code raises an error because nothing is written to the files."
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "explanation": {
+        "de": "Der Modus a verändert vorhandenen Inhalt nicht, während w die Datei schon beim Öffnen leert, auch wenn danach nie geschrieben wird. Ein leerer with-Block ist erlaubt und löst keinen Fehler aus.",
+        "en": "Mode a does not change existing content, whereas w empties the file already when opening, even if nothing is written afterwards. An empty with block is allowed and raises no error."
+      },
+      "tip": {
+        "de": "Wann genau wird der Inhalt im Modus w gelöscht?",
+        "en": "When exactly is the content deleted in mode w?"
+      }
+    },
+    {
+      "id": "ch4-fib-207",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "easy",
+      "question": {
+        "de": "Ergänze die String-Methode, die den Zeilenumbruch am Ende jeder Zeile entfernt.",
+        "en": "Fill in the string method that removes the line break at the end of each line."
+      },
+      "clarification": {
+        "de": "Es gibt zwei übliche Methoden; eine genügt.",
+        "en": "There are two common methods; one is enough."
+      },
+      "code": "with open(\"a.txt\") as f:\n    for line in f:\n        print(line.____())",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "strip",
+            "rstrip"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "Jede gelesene Zeile endet mit \\n; strip() bzw. rstrip() entfernt dieses Zeichen (strip auch Leerzeichen am Anfang). Ohne diesen Schritt würde print zusätzlich zur Zeile einen eigenen Zeilenumbruch ausgeben.",
+        "en": "Every line read ends with \\n; strip() or rstrip() removes this character (strip also removes whitespace at the beginning). Without this step print would output its own line break in addition to the line."
+      },
+      "tip": {
+        "de": "Es geht um das Entfernen von Whitespace am Zeilenende.",
+        "en": "It is about removing whitespace at the end of the line."
+      }
+    },
+    {
+      "id": "ch4-fib-208",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze die Funktion, die die Zahl in einen String umwandelt, damit write() sie schreiben kann.",
+        "en": "Fill in the function that converts the number to a string so that write() can write it."
+      },
+      "clarification": null,
+      "code": "with open(\"n.txt\", \"w\") as f:\n    f.write(____(42))",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "str"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "write() erwartet im Textmodus einen String, mit einer Zahl entsteht ein TypeError. str(42) liefert \"42\", das geschrieben werden kann.",
+        "en": "In text mode write() expects a string; passing a number raises a TypeError. str(42) returns \"42\", which can be written."
+      },
+      "tip": {
+        "de": "Welchen Typ erwartet write()?",
+        "en": "Which type does write() expect?"
+      }
+    },
+    {
+      "id": "ch4-fib-209",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "medium",
+      "question": {
+        "de": "Ergänze die String-Methode, die den gesamten Dateiinhalt an den Zeilenumbrüchen in eine Liste zerlegt.",
+        "en": "Fill in the string method that splits the entire file content at the line breaks into a list."
+      },
+      "clarification": {
+        "de": "Die Datei a.txt enthält \"x\\ny\\nz\".",
+        "en": "The file a.txt contains \"x\\ny\\nz\"."
+      },
+      "code": "with open(\"a.txt\") as f:\n    parts = f.read().____(\"\\n\")\nprint(parts)  # ['x', 'y', 'z']",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "split"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "split(\"\\n\") zerlegt den String an jedem Zeilenumbruch und liefert ['x', 'y', 'z']; die Umbrüche selbst bleiben nicht erhalten. Im Gegensatz zu readlines() enthalten die Elemente kein \\n.",
+        "en": "split(\"\\n\") splits the string at every line break and returns ['x', 'y', 'z']; the line breaks themselves are not kept. Unlike readlines() the elements contain no \\n."
+      },
+      "tip": {
+        "de": "Die Methode zerlegt einen String an einem Trennzeichen.",
+        "en": "The method splits a string at a separator."
+      }
+    },
+    {
+      "id": "ch4-fib-210",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fib",
+      "difficulty": "hard",
+      "question": {
+        "de": "Ergänze den Schlüsselwort-Parameter von print, mit dem die Ausgabe in die Datei statt auf den Bildschirm geschrieben wird.",
+        "en": "Fill in the keyword parameter of print that writes the output to the file instead of the screen."
+      },
+      "clarification": null,
+      "code": "with open(\"o.txt\", \"w\") as f:\n    print(\"hello\", ____=f)",
+      "answer": null,
+      "blanks": [
+        {
+          "accepted": [
+            "file"
+          ],
+          "caseSensitive": true
+        }
+      ],
+      "explanation": {
+        "de": "print besitzt den Parameter file, der ein Objekt mit write()-Methode erwartet; standardmäßig ist das sys.stdout. print hängt am Ende automatisch einen Zeilenumbruch an, o.txt enthält also hello und \\n.",
+        "en": "print has the parameter file, which expects an object with a write() method; by default this is sys.stdout. print automatically appends a line break at the end, so o.txt contains hello and \\n."
+      },
+      "tip": {
+        "de": "Der Parameter benennt das Ziel der Ausgabe.",
+        "en": "The parameter names the destination of the output."
+      }
+    },
+    {
+      "id": "ch4-fe-203",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fe",
+      "difficulty": "hard",
+      "question": {
+        "de": "Das Programm soll die drei Wörter zeilenweise in out.txt schreiben und zeigt am Ende ['abc'] statt ['a', 'b', 'c']. Welche Zeile enthält die Ursache?",
+        "en": "The program is supposed to write the three words line by line to out.txt and ends up showing ['abc'] instead of ['a', 'b', 'c']. Which line contains the cause?"
+      },
+      "clarification": null,
+      "code": "1 words = [\"a\", \"b\", \"c\"]\n2 with open(\"out.txt\", \"w\") as f:\n3     f.writelines(words)\n4 with open(\"out.txt\") as f:\n5     print(f.read().splitlines())",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 1: Die Liste enthält Strings statt Zahlen.",
+            "en": "Line 1: The list contains strings instead of numbers."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 2: Der Modus w ist hier falsch.",
+            "en": "Line 2: The mode w is wrong here."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 3: writelines fügt keine Zeilenumbrüche hinzu.",
+            "en": "Line 3: writelines does not add line breaks."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 5: splitlines kann nur mit einem Argument verwendet werden.",
+            "en": "Line 5: splitlines can only be used with an argument."
+          }
+        }
+      ],
+      "answer": "c",
+      "explanation": {
+        "de": "writelines schreibt die Elemente unverändert hintereinander und ergänzt keine Zeilenumbrüche, in der Datei steht also abc in einer Zeile. Die Elemente müssten \\n enthalten, oder man schreibt sie einzeln mit \"\\n\". Modus w und splitlines sind richtig verwendet.",
+        "en": "writelines writes the elements unchanged one after another and adds no line breaks, so the file contains abc on one line. The elements would have to contain \\n, or they would be written individually with \"\\n\". Mode w and splitlines are used correctly."
+      },
+      "tip": {
+        "de": "Prüfe, was writelines zwischen die Elemente setzt.",
+        "en": "Check what writelines puts between the elements."
+      }
+    },
+    {
+      "id": "ch4-fe-204",
+      "chapter": 4,
+      "section": "4.6 Syntax und Befehle für Dateien",
+      "source": {
+        "document": "SOTE2 Skript (Softwareentwicklung 2)",
+        "section": "4.6 Syntax und Befehle für Dateien / Labor 4 (Dateien und Datensätze)"
+      },
+      "type": "fe",
+      "difficulty": "ultra",
+      "question": {
+        "de": "Die Datei log.txt enthält fünf Zeilen, das Programm soll die Zeilen zählen, gibt aber 0 aus. Welche Zeile enthält die Ursache?",
+        "en": "The file log.txt contains five lines, the program is supposed to count the lines but prints 0. Which line contains the cause?"
+      },
+      "clarification": null,
+      "code": "1 count = 0\n2 with open(\"log.txt\") as f:\n3     f.read()\n4     for line in f:\n5         count += 1\n6 print(count)",
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "de": "Zeile 1: count muss ein String sein.",
+            "en": "Line 1: count must be a string."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "de": "Zeile 3: read() verbraucht die Datei, die Schleife findet danach nichts mehr.",
+            "en": "Line 3: read() consumes the file, the loop finds nothing afterwards."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "de": "Zeile 4: Man darf nicht direkt über ein Dateiobjekt iterieren.",
+            "en": "Line 4: One must not iterate directly over a file object."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "de": "Zeile 5: += funktioniert nicht mit Variablen aus dem with-Block.",
+            "en": "Line 5: += does not work with variables from the with block."
+          }
+        }
+      ],
+      "answer": "b",
+      "explanation": {
+        "de": "f.read() liest bis zum Dateiende, der Dateizeiger steht danach hinter dem letzten Zeichen, und die Schleife in Zeile 4 erhält keine Zeilen mehr. Die Iteration über ein Dateiobjekt ist erlaubt, und count lässt sich im with-Block ändern.",
+        "en": "f.read() reads up to the end of the file, the file pointer is then behind the last character, and the loop in line 4 receives no more lines. Iterating over a file object is allowed, and count can be changed inside the with block."
+      },
+      "tip": {
+        "de": "Wo steht der Dateizeiger nach Zeile 3?",
+        "en": "Where is the file pointer after line 3?"
+      }
     }
 ];
