@@ -25,12 +25,14 @@ All coding questions use **Python**.
 
 ## 3. Question data format
 
-Questions live in `data/questions.js` (not `.json`, so the site works over `file://` without fetch/CORS issues):
+Questions live in per-chapter files `data/ch1.js` … `data/ch6.js` (not `.json`, so the site works over `file://` without fetch/CORS issues). Each defines one strict-JSON-compatible array; `data/questions.js` only concatenates them into `QUESTIONS`:
 
 ```js
-// data/questions.js
-const QUESTIONS = [ /* question objects */ ];
+// data/ch3.js
+const QUESTIONS_CH3 = [ /* question objects */ ];
 ```
+
+New questions are **appended to the chapter's array**, keeping existing entries untouched. To avoid id collisions across batches, each generation batch numbers its ids in a fresh hundred-block per type (first batch `mc-101`, `fib-101`, …; second batch `mc-201`, …).
 
 ### Question object schema
 
@@ -123,6 +125,6 @@ Per-question time: in paginated mode, accumulate time while the question is show
 
 - Planning/review: strongest available model. Bulk question generation and site implementation: cheaper models (Sonnet class) following this spec.
 - Pilot: 20 questions (ch1:1, ch2:3, ch3:5, ch4:4, ch5:4, ch6:3) with a mix of all 5 types and all 4 difficulties.
-- Full bank target: 1000 questions (ch1:40, ch2:140, ch3:220, ch4:200, ch5:200, ch6:200), generated in batches of ~50 per chapter/section, each batch validated before commit.
+- Full bank target: 1000 questions (ch1:20, ch2:160, ch3:220, ch4:200, ch5:200, ch6:200), generated in batches of ~45 per chapter/section, each batch validated before commit. Chapter 1 is capped at 20 because its source material is a single short intro section.
 - Validation: `tools/validate_questions.py` (added with the pilot) checks schema, unique ids, option/answer consistency, blank counts, bilingual completeness. Run it after every batch.
 - Commit style: small, descriptive commits in English ("Add pilot question bank (20 questions)"), so progress is traceable.

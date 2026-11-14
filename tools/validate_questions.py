@@ -17,9 +17,9 @@ def load(path):
     if lines and lines[0].startswith("//"):
         lines = lines[1:]
     body = "\n".join(lines).strip()
-    m = re.match(r"^const\s+QUESTIONS\s*=\s*", body)
+    m = re.match(r"^const\s+\w+\s*=\s*", body)
     if not m:
-        raise ValueError("file must define 'const QUESTIONS = [...]'")
+        raise ValueError("file must define 'const <NAME> = [...]'")
     body = body[m.end():].rstrip()
     if body.endswith(";"):
         body = body[:-1]
@@ -127,12 +127,20 @@ def check(q, errs):
 
 
 def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parent.parent / "data" / "questions.js")
-    try:
-        qs = load(path)
-    except Exception as e:  # noqa: BLE001
-        print(f"ERROR: cannot parse {path}: {e}")
-        return 1
+    if len(sys.argv) > 1:
+        paths = [Path(p) for p in sys.argv[1:]]
+    else:
+        data_dir = Path(__file__).resolve().parent.parent / "data"
+        paths = sorted(data_dir.glob("ch[1-6].js"))
+        if not paths:
+            paths = [data_dir / "questions.js"]
+    qs = []
+    for path in paths:
+        try:
+            qs.extend(load(path))
+        except Exception as e:  # noqa: BLE001
+            print(f"ERROR: cannot parse {path}: {e}")
+            return 1
     if not isinstance(qs, list):
         print("ERROR: QUESTIONS must be an array")
         return 1
