@@ -2431,5 +2431,2435 @@ const QUESTIONS_CH2 = [
       "de": "Wer beginnt die Kommunikation, und wie heißt die Antwort?",
       "en": "Who starts the communication and what is the answer called?"
     }
+  },
+  {
+    "id": "ch2-mc-201",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Was sollte man laut Einleitung des Kapitels verstehen, um intelligente, vernetzte Systeme zu entwickeln?",
+      "en": "According to the introduction of the chapter, what should one understand in order to develop intelligent, networked systems?"
+    },
+    "clarification": {
+      "de": "Es geht um die Beispiele aus dem Einleitungstext zu 2.2.",
+      "en": "This refers to the examples in the introductory text of 2.2."
+    },
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Wie man einen eigenen Prozessor entwirft",
+          "en": "Wie man einen eigenen Prozessor entwirft"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Wie die Kommunikation über das Internet funktioniert und welche Protokolle es gibt",
+          "en": "Wie die Kommunikation über das Internet funktioniert und welche Protokolle es gibt"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Wie man Compiler für neue Programmiersprachen schreibt",
+          "en": "Wie man Compiler für neue Programmiersprachen schreibt"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Wie man Grafikkarten-Treiber programmiert",
+          "en": "Wie man Grafikkarten-Treiber programmiert"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "Das Skript nennt als Grundlagen vernetzter Systeme z. B., wie die Kommunikation über das Internet funktioniert, welche Protokolle es gibt und wie man einen Server aufsetzt. Prozessorentwurf, Compilerbau und Treiberprogrammierung kommen als Thema nicht vor.",
+      "en": "The script names as basics of networked systems e.g. how communication over the Internet works, which protocols exist and how to set up a server. Processor design, compiler construction and driver programming are not topics."
+    },
+    "tip": {
+      "de": "Suche nach der Option, die etwas mit Kommunikation zwischen Rechnern zu tun hat.",
+      "en": "Look for the option that has to do with communication between computers."
+    }
+  },
+  {
+    "id": "ch2-mc-202",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Was ist ein Protokoll im Zusammenhang mit vernetzten Systemen?",
+      "en": "What is a protocol in the context of networked systems?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Ein Programm, das Webseiten darstellt",
+          "en": "Ein Programm, das Webseiten darstellt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Ein Speicherort für dauerhaft gespeicherte Daten",
+          "en": "Ein Speicherort für dauerhaft gespeicherte Daten"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Ein Regelwerk, das festlegt, wie Kommunikationspartner Daten austauschen",
+          "en": "Ein Regelwerk, das festlegt, wie Kommunikationspartner Daten austauschen"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Die Hardware, auf der ein Server läuft",
+          "en": "Die Hardware, auf der ein Server läuft"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Ein Protokoll ist ein vereinbartes Regelwerk dafür, wie Kommunikationspartner Daten austauschen; HTTP ist dafür das wichtigste Beispiel im Web. Ein Browser, ein Speicherort oder ein Host sind keine Regelwerke, sondern Programme bzw. Hardware.",
+      "en": "A protocol is an agreed set of rules for how communication partners exchange data; HTTP is the most important example on the web. A browser, a storage location or a host are not sets of rules but programs or hardware."
+    },
+    "tip": {
+      "de": "Denke an das T in HTTP.",
+      "en": "Think of the T in HTTP."
+    }
+  },
+  {
+    "id": "ch2-mc-203",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "mc",
+    "difficulty": "medium",
+    "question": {
+      "de": "Eine Fitness-App lädt Trainingsdaten von einem Server herunter und soll währenddessen weiter auf Eingaben des Nutzers reagieren. Welche Basistechnologie ist dafür entscheidend?",
+      "en": "A fitness app downloads training data from a server and is supposed to keep reacting to user input in the meantime. Which basic technology is crucial for this?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Persistenz",
+          "en": "Persistenz"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "HTML",
+          "en": "HTML"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Nebenläufigkeit",
+          "en": "Nebenläufigkeit"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "URL-Adressierung",
+          "en": "URL-Adressierung"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Reagieren auf Eingaben bei gleichzeitigem Herunterladen setzt voraus, dass das Programm mehrere Aufgaben praktisch zeitgleich erledigt, also Nebenläufigkeit. Persistenz betrifft die Speicherung über die Laufzeit hinaus, HTML die Darstellung von Seiten und URLs die Adressierung von Ressourcen.",
+      "en": "Reacting to input while downloading requires the program to handle several tasks practically at the same time, i.e. concurrency. Persistence concerns storage beyond the runtime, HTML the display of pages and URLs the addressing of resources."
+    },
+    "tip": {
+      "de": "Zwei Aufgaben sollen gleichzeitig laufen: Welche Technologie aus dem Kapitel beschäftigt sich damit?",
+      "en": "Two tasks should run at the same time: which technology of the chapter deals with that?"
+    }
+  },
+  {
+    "id": "ch2-mc-204",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "mc",
+    "difficulty": "hard",
+    "question": {
+      "de": "Ordne den drei Anforderungen die passende Technologie zu: (1) Messwerte müssen nach einem Neustart noch vorhanden sein. (2) Ein Server bedient viele Clients, ohne dass einer die anderen blockiert. (3) Browser und Server tauschen Anfragen und Antworten aus. Welche Zuordnung ist vollständig korrekt?",
+      "en": "Assign the matching technology to each of the three requirements: (1) Measurements must still exist after a restart. (2) A server serves many clients without one blocking the others. (3) Browser and server exchange requests and responses. Which assignment is completely correct?"
+    },
+    "clarification": {
+      "de": "Jede Option ordnet die Nummern 1 bis 3 je einer Technologie zu.",
+      "en": "Each option assigns the numbers 1 to 3 to one technology each."
+    },
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "1: Nebenläufigkeit, 2: Persistenz, 3: HTTP",
+          "en": "1: Concurrency, 2: Persistence, 3: HTTP"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "1: Persistenz, 2: HTTP, 3: Nebenläufigkeit",
+          "en": "1: Persistence, 2: HTTP, 3: Concurrency"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "1: Persistenz, 2: Nebenläufigkeit, 3: HTTP",
+          "en": "1: Persistence, 2: Concurrency, 3: HTTP"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "1: HTTP, 2: Nebenläufigkeit, 3: Persistenz",
+          "en": "1: HTTP, 2: Concurrency, 3: Persistence"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Daten über einen Neustart hinaus zu behalten ist Persistenz, das gleichzeitige Bedienen vieler Clients ist Nebenläufigkeit, und der Austausch von Request und Response läuft über HTTP. In den anderen Optionen sind jeweils mindestens zwei Zuordnungen vertauscht.",
+      "en": "Keeping data across a restart is persistence, serving many clients at once is concurrency, and the exchange of request and response is done via HTTP. In the other options at least two assignments are swapped."
+    },
+    "tip": {
+      "de": "Bestimme zuerst die eindeutigste Anforderung und streiche damit Optionen.",
+      "en": "First determine the most clear-cut requirement and eliminate options with it."
+    }
+  },
+  {
+    "id": "ch2-mc-205",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "mc",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Ein Smart-Home-System empfängt laufend Sensordaten, analysiert sie währenddessen und trifft Entscheidungen. Alle Messwerte sollen zusätzlich in einer Datei protokolliert werden, die auch nach einem Neustart noch vorhanden ist. Welche Aussage ist korrekt?",
+      "en": "A smart home system continuously receives sensor data, analyses it in the meantime and makes decisions. In addition, all measurements are to be logged in a file that still exists after a restart. Which statement is correct?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Nebenläufigkeit wird für das Protokollieren über den Neustart hinaus benötigt, Persistenz für Empfang und Analyse.",
+          "en": "Concurrency is needed for logging beyond the restart, persistence for reception and analysis."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Es wird nur Nebenläufigkeit benötigt, weil eine Datei ohnehin nie Teil eines Smart-Home-Systems ist.",
+          "en": "Only concurrency is needed, because a file is never part of a smart home system anyway."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Nebenläufigkeit wird für Empfang und Analyse benötigt, Persistenz für das Protokoll, das den Neustart überdauert.",
+          "en": "Concurrency is needed for reception and analysis, persistence for the log that survives the restart."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Beides erledigt allein HTTP, daher sind weitere Technologien unnötig.",
+          "en": "HTTP alone handles both, so no further technologies are needed."
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Gleichzeitiger Empfang und Analyse erfordern Nebenläufigkeit, das Protokoll über den Neustart hinaus erfordert Persistenz. Die beiden Technologien lösen verschiedene Probleme und ersetzen sich nicht; auch ist das Protokollieren keineswegs überflüssig, weil es ausdrücklich verlangt ist.",
+      "en": "Simultaneous reception and analysis require concurrency, the log beyond the restart requires persistence. The two technologies solve different problems and do not replace each other; logging is also by no means superfluous, since it is explicitly required."
+    },
+    "tip": {
+      "de": "Ordne jeder der beiden Anforderungen genau eine der Technologien zu.",
+      "en": "Assign exactly one of the technologies to each of the two requirements."
+    }
+  },
+  {
+    "id": "ch2-mc-206",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "mc",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche beiden Gründe nennt das Skript dafür, dass Daten über das Programmende hinaus erhalten bleiben sollen?",
+      "en": "Which two reasons does the script give for data being kept beyond the end of the program?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Um das Programm schneller zu starten und weniger Arbeitsspeicher zu belegen",
+          "en": "Um das Programm schneller zu starten und weniger Arbeitsspeicher zu belegen"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Um Anfragen parallel zu bearbeiten und Clients nicht zu blockieren",
+          "en": "Um Anfragen parallel zu bearbeiten und Clients nicht zu blockieren"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Um Webseiten zu rendern und Links anzuzeigen",
+          "en": "Um Webseiten zu rendern und Links anzuzeigen"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Um sie später wiederzuverwenden und mit anderen Programmen zu teilen",
+          "en": "Um sie später wiederzuverwenden und mit anderen Programmen zu teilen"
+        }
+      }
+    ],
+    "answer": "d",
+    "explanation": {
+      "de": "Laut Skript sollen Daten erhalten bleiben, um sie später wiederverwenden und um sie mit anderen Programmen teilen zu können. Schnellerer Programmstart, paralleles Bedienen von Clients und das Rendern von Seiten werden dafür nicht als Gründe genannt.",
+      "en": "According to the script, data should be kept so that it can be reused later and shared with other programs. Faster program start, serving clients in parallel and rendering pages are not given as reasons."
+    },
+    "tip": {
+      "de": "Was möchte man mit gespeicherten Daten am nächsten Tag tun, und mit wem?",
+      "en": "What do you want to do with stored data the next day, and with whom?"
+    }
+  },
+  {
+    "id": "ch2-mc-207",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "mc",
+    "difficulty": "hard",
+    "question": {
+      "de": "Das folgende Skript wird dreimal nacheinander gestartet, jeweils nachdem es vollständig beendet wurde. Welche Ausgaben erscheinen?",
+      "en": "The following script is started three times in a row, each time after it has terminated completely. Which outputs appear?"
+    },
+    "clarification": {
+      "de": "Es wird keine Datei und keine Datenbank verwendet.",
+      "en": "No file and no database is used."
+    },
+    "code": "counter = 0\ncounter += 1\nprint(counter)",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "1, 2, 3, weil der Wert von counter zwischen den Starts erhalten bleibt",
+          "en": "1, 2, 3, weil der Wert von counter zwischen den Starts erhalten bleibt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "0, 1, 2, weil print vor += ausgeführt wird",
+          "en": "0, 1, 2, weil print vor += ausgeführt wird"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "1, 1, 1, weil die Variable nur während der Laufzeit existiert",
+          "en": "1, 1, 1, weil die Variable nur während der Laufzeit existiert"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "1, Fehler, Fehler, weil counter beim zweiten Start nicht definiert ist",
+          "en": "1, Fehler, Fehler, weil counter beim zweiten Start nicht definiert ist"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Die Variable counter lebt nur im Arbeitsspeicher und wird bei jedem Start neu mit 0 angelegt, daher erscheint dreimal 1. Ohne Speichern in Datei oder Datenbank gibt es keine Persistenz, und += macht einen Wert nicht dauerhaft. Es gibt auch keinen Fehler, da counter in jedem Lauf definiert wird.",
+      "en": "The variable counter only lives in main memory and is created anew with 0 on every start, so 1 appears three times. Without saving to a file or database there is no persistence, and += does not make a value permanent. There is also no error, since counter is defined in every run."
+    },
+    "tip": {
+      "de": "Wo wird counter gespeichert, und was passiert damit zwischen zwei Starts?",
+      "en": "Where is counter stored, and what happens to it between two starts?"
+    }
+  },
+  {
+    "id": "ch2-mc-208",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "mc",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Welchen Inhalt hat score.txt nach dem zweiten Lauf, und was bedeutet das für die Persistenz?",
+      "en": "What are the contents of score.txt after the second run, and what does this mean for persistence?"
+    },
+    "clarification": null,
+    "code": "# run 1\nwith open(\"score.txt\", \"w\") as f:\n    f.write(\"10\")\n\n# run 2 (program started again later)\nwith open(\"score.txt\", \"w\") as f:\n    f.write(\"20\")",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "1020, weil \"w\" an die vorhandene Datei anhängt",
+          "en": "1020, weil \"w\" an die vorhandene Datei anhängt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "20; der alte Inhalt wird überschrieben, die Datei bleibt aber über die Läufe hinweg bestehen",
+          "en": "20; der alte Inhalt wird überschrieben, die Datei bleibt aber über die Läufe hinweg bestehen"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "10, weil eine bestehende Datei nicht überschrieben werden kann",
+          "en": "10, weil eine bestehende Datei nicht überschrieben werden kann"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Die Datei ist leer, weil sie mit dem Programmende gelöscht wird",
+          "en": "Die Datei ist leer, weil sie mit dem Programmende gelöscht wird"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "Der Modus \"w\" überschreibt den bisherigen Inhalt, daher steht nach dem zweiten Lauf nur 20 in der Datei. Die Datei selbst überdauert beide Programmläufe (Persistenz), der alte Wert 10 geht jedoch verloren. Dass das Programm beendet ist, löscht die Datei nicht.",
+      "en": "Mode \"w\" overwrites the previous content, so after the second run only 20 is in the file. The file itself survives both program runs (persistence), but the old value 10 is lost. The program having ended does not delete the file."
+    },
+    "tip": {
+      "de": "Was macht der Modus beim Öffnen mit bereits vorhandenem Dateiinhalt?",
+      "en": "What does the mode do to existing file content when opening?"
+    }
+  },
+  {
+    "id": "ch2-mc-209",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Welches Beispiel für Nebenläufigkeit in der Industrie nennt das Skript?",
+      "en": "Which example of concurrency in industry does the script mention?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Eine Maschine erst starten, wenn die vorherige komplett fertig ist",
+          "en": "Eine Maschine erst starten, wenn die vorherige komplett fertig ist"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Messwerte nur einmal pro Tag in eine Datei schreiben",
+          "en": "Messwerte nur einmal pro Tag in eine Datei schreiben"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Mehrere Maschinen gleichzeitig steuern und Daten mehrerer Sensoren gleichzeitig verarbeiten",
+          "en": "Mehrere Maschinen gleichzeitig steuern und Daten mehrerer Sensoren gleichzeitig verarbeiten"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Eine Webseite im Browser rendern",
+          "en": "Eine Webseite im Browser rendern"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Das Skript nennt für die Industrie, mehrere Maschinen gleichzeitig zu steuern und Daten mehrerer Sensoren gleichzeitig zu verarbeiten. Nacheinander abgearbeitete Maschinen, ein tägliches Schreiben in eine Datei oder das Rendern einer Seite sind keine Beispiele für gleichzeitige Aufgaben.",
+      "en": "For industry the script mentions controlling several machines at the same time and processing data from several sensors at the same time. Machines handled one after another, writing to a file once a day or rendering a page are not examples of simultaneous tasks."
+    },
+    "tip": {
+      "de": "Suche die Option, bei der mehrere Dinge zugleich laufen.",
+      "en": "Look for the option where several things run at once."
+    }
+  },
+  {
+    "id": "ch2-mc-210",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "mc",
+    "difficulty": "medium",
+    "question": {
+      "de": "Warum ist Nebenläufigkeit bei der Echtzeit-Verarbeitung von Sensordatenströmen wichtig?",
+      "en": "Why is concurrency important for the real-time processing of sensor data streams?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Weil Sensordaten nur so dauerhaft gespeichert werden können",
+          "en": "Weil Sensordaten nur so dauerhaft gespeichert werden können"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Weil Daten gleichzeitig empfangen, analysiert und für Entscheidungen genutzt werden müssen",
+          "en": "Weil Daten gleichzeitig empfangen, analysiert und für Entscheidungen genutzt werden müssen"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Weil Sensoren HTTP nur über mehrere Ports sprechen",
+          "en": "Weil Sensoren HTTP nur über mehrere Ports sprechen"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Weil sonst die URL der Sensoren nicht eindeutig wäre",
+          "en": "Weil sonst die URL der Sensoren nicht eindeutig wäre"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "Die Daten werden fortlaufend empfangen, während sie bereits analysiert und für Entscheidungen genutzt werden; beides muss gleichzeitig laufen. Dauerhaftes Speichern ist Persistenz, und Ports oder URLs der Sensoren haben mit gleichzeitiger Bearbeitung nichts zu tun.",
+      "en": "The data is received continuously while it is already being analysed and used for decisions; both must run at the same time. Permanent storage is persistence, and ports or URLs of the sensors have nothing to do with simultaneous processing."
+    },
+    "tip": {
+      "de": "Was passiert mit neuen Messwerten, während die alten noch analysiert werden?",
+      "en": "What happens to new measurements while the old ones are still being analysed?"
+    }
+  },
+  {
+    "id": "ch2-mc-211",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "mc",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Welche Aussage über Nebenläufigkeit ist korrekt?",
+      "en": "Which statement about concurrency is correct?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Ein nebenläufiges Programm speichert seine Daten automatisch dauerhaft.",
+          "en": "Ein nebenläufiges Programm speichert seine Daten automatisch dauerhaft."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Nebenläufigkeit setzt zwingend mehrere Rechner voraus.",
+          "en": "Nebenläufigkeit setzt zwingend mehrere Rechner voraus."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Nebenläufigkeit betrifft ausschließlich die Gestaltung von Benutzeroberflächen.",
+          "en": "Nebenläufigkeit betrifft ausschließlich die Gestaltung von Benutzeroberflächen."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Ein Programm kann nebenläufig sein, ohne Daten persistent zu speichern; beides sind unabhängige Themen.",
+          "en": "Ein Programm kann nebenläufig sein, ohne Daten persistent zu speichern; beides sind unabhängige Themen."
+        }
+      }
+    ],
+    "answer": "d",
+    "explanation": {
+      "de": "Nebenläufigkeit beschreibt, dass ein Programm mehrere Aufgaben praktisch zeitgleich erledigt; ob Daten dabei dauerhaft gespeichert werden (Persistenz), ist ein davon unabhängiges Thema. Mehrere Rechner sind nicht Voraussetzung, und Nebenläufigkeit beschränkt sich weder auf Benutzeroberflächen noch ist sie Speichern über das Programmende hinaus.",
+      "en": "Concurrency means that a program handles several tasks practically at the same time; whether data is stored permanently (persistence) is an independent matter. Several computers are not a prerequisite, and concurrency is neither limited to user interfaces nor is it storing beyond the end of the program."
+    },
+    "tip": {
+      "de": "Prüfe bei jeder Option, ob sie Nebenläufigkeit mit einem anderen Begriff vermischt.",
+      "en": "For each option check whether it mixes up concurrency with another term."
+    }
+  },
+  {
+    "id": "ch2-mc-212",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wofür steht die Abkürzung HTTP?",
+      "en": "What does the abbreviation HTTP stand for?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Hypertext Markup Protocol",
+          "en": "Hypertext Markup Protocol"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "High Transfer Text Program",
+          "en": "High Transfer Text Program"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Hypertext Transfer Protocol",
+          "en": "Hypertext Transfer Protocol"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Hyperlink Text Transmission Procedure",
+          "en": "Hyperlink Text Transmission Procedure"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "HTTP steht für Hypertext Transfer Protocol, das wichtigste Protokoll für die Kommunikation über das Internet. Die anderen Optionen sind frei erfundene Ausschreibungen.",
+      "en": "HTTP stands for Hypertext Transfer Protocol, the most important protocol for communication over the Internet. The other options are made-up expansions."
+    },
+    "tip": {
+      "de": "Die Abkürzung enthält das Wort „Protocol“.",
+      "en": "The abbreviation contains the word “Protocol”."
+    }
+  },
+  {
+    "id": "ch2-mc-213",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "mc",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche Technologie sorgt laut Skript für die Interaktivität von Webseiten?",
+      "en": "Which technology provides the interactivity of web pages according to the script?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "CSS",
+          "en": "CSS"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "JSON",
+          "en": "JSON"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "JavaScript",
+          "en": "JavaScript"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "HTTP",
+          "en": "HTTP"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Für die Interaktivität von Webseiten ist JavaScript zuständig. CSS gestaltet Layouts und Farben, JSON dient dem Austausch strukturierter Daten, und HTTP überträgt Daten zwischen Client und Server.",
+      "en": "JavaScript is responsible for the interactivity of web pages. CSS styles layouts and colours, JSON is used for exchanging structured data, and HTTP transfers data between client and server."
+    },
+    "tip": {
+      "de": "Das Skript nennt neben HTML noch zwei weitere Sprachen für Webseiten.",
+      "en": "Besides HTML, the script names two more languages for web pages."
+    }
+  },
+  {
+    "id": "ch2-mc-214",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "mc",
+    "difficulty": "hard",
+    "question": {
+      "de": "Ein Nutzer ruft im Browser eine Webseite auf. Welche Beschreibung des Ablaufs ist korrekt?",
+      "en": "A user opens a web page in the browser. Which description of the process is correct?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Der Server rendert die Seite und zeigt sie direkt im Browser-Fenster an.",
+          "en": "Der Server rendert die Seite und zeigt sie direkt im Browser-Fenster an."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Der Browser sendet das HTML der Seite an den Server, der es als Response zurückschickt.",
+          "en": "Der Browser sendet das HTML der Seite an den Server, der es als Response zurückschickt."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Der Browser sendet per HTTP einen Request; der Server antwortet mit einer Response, und der Browser rendert das gelieferte HTML.",
+          "en": "Der Browser sendet per HTTP einen Request; der Server antwortet mit einer Response, und der Browser rendert das gelieferte HTML."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Der Server sendet unaufgefordert einen Request an den Browser, der die Seite als Response zurückgibt.",
+          "en": "Der Server sendet unaufgefordert einen Request an den Browser, der die Seite als Response zurückgibt."
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Der Browser (Client) sendet per HTTP einen Request, der Webserver antwortet mit einer Response, die z. B. HTML enthält, und der Browser rendert dieses HTML und wendet CSS bzw. JavaScript an. Der Server rendert nichts im Browser-Fenster, und HTML sendet der Browser nicht an den Server, um eine Seite zu erhalten.",
+      "en": "The browser (client) sends a request via HTTP, the web server answers with a response containing e.g. HTML, and the browser renders this HTML and applies CSS or JavaScript. The server does not render anything in the browser window, and the browser does not send HTML to the server in order to receive a page."
+    },
+    "tip": {
+      "de": "Wer beginnt, wer liefert, und wer stellt dar?",
+      "en": "Who starts, who delivers and who displays?"
+    }
+  },
+  {
+    "id": "ch2-mc-215",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Was ist ein Webserver laut Skript?",
+      "en": "What is a web server according to the script?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Ein Programm, das HTML interpretiert und darstellt",
+          "en": "Ein Programm, das HTML interpretiert und darstellt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Ein Server, der Dienste im WWW anbietet und in der Regel über HTTP kommuniziert",
+          "en": "Ein Server, der Dienste im WWW anbietet und in der Regel über HTTP kommuniziert"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Eine Sprache zur Gestaltung von Layouts und Farben",
+          "en": "Eine Sprache zur Gestaltung von Layouts und Farben"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Ein Dateiformat für den Austausch strukturierter Daten",
+          "en": "Ein Dateiformat für den Austausch strukturierter Daten"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "Ein Webserver ist ein Server, der Dienste im World Wide Web anbietet; in der Regel ist er ein HTTP-Server, der HTML-Seiten, JSON-Daten oder Bilder ausliefert. Ein Browser ist der Client, und CSS ist eine Gestaltungssprache.",
+      "en": "A web server is a server that offers services in the World Wide Web; usually it is an HTTP server that delivers HTML pages, JSON data or images. A browser is the client, and CSS is a styling language."
+    },
+    "tip": {
+      "de": "Der Webserver ist die Gegenseite des Webbrowsers.",
+      "en": "The web server is the counterpart of the web browser."
+    }
+  },
+  {
+    "id": "ch2-mc-216",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "mc",
+    "difficulty": "medium",
+    "question": {
+      "de": "Was bedeutet es, wenn ein Webbrowser eine Seite „rendert“?",
+      "en": "What does it mean when a web browser “renders” a page?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Er interpretiert die HTML-Tags und stellt die Seite entsprechend dar.",
+          "en": "Er interpretiert die HTML-Tags und stellt die Seite entsprechend dar."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Er speichert die Seite dauerhaft in einer Datenbank.",
+          "en": "Er speichert die Seite dauerhaft in einer Datenbank."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Er startet einen Webserver auf dem eigenen Rechner.",
+          "en": "Er startet einen Webserver auf dem eigenen Rechner."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Er vergibt der Seite eine neue URL.",
+          "en": "Er vergibt der Seite eine neue URL."
+        }
+      }
+    ],
+    "answer": "a",
+    "explanation": {
+      "de": "Beim Rendern interpretiert der Browser die HTML-Tags der Seite und stellt Überschriften, Absätze, Bilder usw. entsprechend dar. Das Aufsetzen des Servers, das Speichern von Daten und das Vergeben von URLs sind andere Aufgaben.",
+      "en": "When rendering, the browser interprets the HTML tags of the page and displays headings, paragraphs, images etc. accordingly. Setting up the server, storing data and assigning URLs are different tasks."
+    },
+    "tip": {
+      "de": "Was passiert mit den Tags im HTML-Text?",
+      "en": "What happens to the tags in the HTML text?"
+    }
+  },
+  {
+    "id": "ch2-mc-217",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "mc",
+    "difficulty": "hard",
+    "question": {
+      "de": "Warum ist es missverständlich, einen Rechner umgangssprachlich als „Server“ zu bezeichnen?",
+      "en": "Why is it misleading to colloquially call a computer a “server”?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Weil ein Rechner niemals ein Serverprogramm ausführen darf",
+          "en": "Weil ein Rechner niemals ein Serverprogramm ausführen darf"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Weil Server und Client immer dasselbe Programm sind",
+          "en": "Weil Server und Client immer dasselbe Programm sind"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Weil ein Host nur genau einen Dienst anbieten kann",
+          "en": "Weil ein Host nur genau einen Dienst anbieten kann"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Weil der Server nur die Software ist, die auf dem Host läuft, und nicht der Host selbst",
+          "en": "Weil der Server nur die Software ist, die auf dem Host läuft, und nicht der Host selbst"
+        }
+      }
+    ],
+    "answer": "d",
+    "explanation": {
+      "de": "Der Server ist nur die Software, die auf dem Host läuft; der Rechner (die Server-Hardware) ist der Host. Ein Host kann außerdem mehrere Serverprogramme gleichzeitig ausführen und darf durchaus Serverprogramme betreiben. Client und Server sind verschiedene Rollen, nicht dasselbe Programm.",
+      "en": "The server is only the software running on the host; the computer (the server hardware) is the host. A host can also run several server programs at the same time and may very well run server programs. Client and server are different roles, not the same program."
+    },
+    "tip": {
+      "de": "Unterscheide zwischen Hardware und dem darauf laufenden Programm.",
+      "en": "Distinguish between hardware and the program running on it."
+    }
+  },
+  {
+    "id": "ch2-mc-218",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "mc",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Auf einem Rechner laufen ein Webserver-Programm und ein Mailserver-Programm. Zwei Browser auf anderen Rechnern rufen gleichzeitig Seiten vom Webserver ab. Wie viele Hosts, Serverprogramme und Clients gibt es im Sinne des Skripts?",
+      "en": "A web server program and a mail server program run on one computer. Two browsers on other computers retrieve pages from the web server at the same time. How many hosts, server programs and clients are there in the sense of the script?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "3 Hosts, 2 Serverprogramme, 1 Client",
+          "en": "3 Hosts, 2 Serverprogramme, 1 Client"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "1 Host, 2 Serverprogramme, 2 Clients",
+          "en": "1 Host, 2 Serverprogramme, 2 Clients"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "1 Host, 1 Serverprogramm, 2 Clients",
+          "en": "1 Host, 1 Serverprogramm, 2 Clients"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "2 Hosts, 2 Serverprogramme, 2 Clients",
+          "en": "2 Hosts, 2 Serverprogramme, 2 Clients"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "Host ist der Rechner, auf dem Serverprogramme laufen, hier also einer; darauf laufen zwei Serverprogramme (Web und Mail). Die beiden Browser sind zwei Clients. Ein Host kann mehrere Serverprogramme ausführen, und der Mailserver zählt als Serverprogramm, auch wenn gerade nur der Webserver genutzt wird.",
+      "en": "A host is the computer on which server programs run, so here there is one; two server programs run on it (web and mail). The two browsers are two clients. A host can run several server programs, and the mail server counts as a server program even if only the web server is being used right now."
+    },
+    "tip": {
+      "de": "Zähle getrennt: Rechner mit Serverprogrammen, Serverprogramme, Clientprogramme.",
+      "en": "Count separately: computers with server programs, server programs, client programs."
+    }
+  },
+  {
+    "id": "ch2-mc-219",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "mc",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wofür steht die Abkürzung URL?",
+      "en": "What does the abbreviation URL stand for?"
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Universal Reference Link",
+          "en": "Universal Reference Link"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Uniform Resource Locator",
+          "en": "Uniform Resource Locator"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Unified Remote Language",
+          "en": "Unified Remote Language"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Uniform Resource Library",
+          "en": "Uniform Resource Library"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "de": "URL steht für Uniform Resource Locator, einen String, der eine bestimmte Ressource in einem Netzwerk eindeutig adressiert. Die anderen Ausschreibungen sind erfunden.",
+      "en": "URL stands for Uniform Resource Locator, a string that uniquely addresses a particular resource in a network. The other expansions are made up."
+    },
+    "tip": {
+      "de": "Das Wort „Locator“ verrät die Aufgabe.",
+      "en": "The word “Locator” reveals the task."
+    }
+  },
+  {
+    "id": "ch2-mc-220",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "mc",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Welche Aussage über die URL im Codekommentar ist korrekt?",
+      "en": "Which statement about the URL in the code comment is correct?"
+    },
+    "clarification": null,
+    "code": "# https://anna:geheim@www.example.com:8443/a/b?x=1&y=2#top",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Der Host ist anna, das Passwort geheim steht hinter dem Host www.example.com.",
+          "en": "Der Host ist anna, das Passwort geheim steht hinter dem Host www.example.com."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Die Query lautet x=1&y=2#top, der Port ist 443.",
+          "en": "Die Query lautet x=1&y=2#top, der Port ist 443."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Benutzername und Passwort stehen in der User-Info vor dem Host; der Host ist www.example.com und der Port 8443.",
+          "en": "Benutzername und Passwort stehen in der User-Info vor dem Host; der Host ist www.example.com und der Port 8443."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Der Port ist 2, weil nach dem Doppelpunkt hinter geheim die erste Ziffernfolge steht.",
+          "en": "Der Port ist 2, weil nach dem Doppelpunkt hinter geheim die erste Ziffernfolge steht."
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Die User-Info anna:geheim steht vor dem @, der Host ist www.example.com, der Port 8443, der Pfad /a/b und die Query x=1&y=2 (das Fragment top folgt nach #). Anna ist daher nicht der Host, und das Passwort steht nicht hinter dem Host.",
+      "en": "The user info anna:geheim stands before the @, the host is www.example.com, the port is 8443, the path is /a/b and the query is x=1&y=2 (the fragment top follows after #). Anna is therefore not the host, and the password does not come after the host."
+    },
+    "tip": {
+      "de": "Das Zeichen @ trennt die User-Info vom Host.",
+      "en": "The @ character separates the user info from the host."
+    }
+  },
+  {
+    "id": "ch2-ms-201",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "ms",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche Aussagen über die im Kapitel behandelten Basistechnologien sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "Which statements about the basic technologies covered in the chapter are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Persistenz bedeutet, dass Daten die Laufzeit eines Programms überdauern.",
+          "en": "Persistenz bedeutet, dass Daten die Laufzeit eines Programms überdauern."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Nebenläufige Programme erledigen mehrere Aufgaben praktisch zeitgleich.",
+          "en": "Nebenläufige Programme erledigen mehrere Aufgaben praktisch zeitgleich."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "HTTP, HTML und JSON gehören zu den Web-Technologien.",
+          "en": "HTTP, HTML und JSON gehören zu den Web-Technologien."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Cloud-Speicher wird als eigener Schwerpunkt ausführlich vertieft.",
+          "en": "Cloud-Speicher wird als eigener Schwerpunkt ausführlich vertieft."
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "Persistenz bedeutet, dass ein Programm mehrere Aufgaben gleichzeitig ausführt.",
+          "en": "Persistenz bedeutet, dass ein Programm mehrere Aufgaben gleichzeitig ausführt."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": {
+      "de": "Persistenz meint das Erhalten von Daten über die Laufzeit hinaus, Nebenläufigkeit das praktisch zeitgleiche Erledigen mehrerer Aufgaben, und HTTP, HTML und JSON zählen zu den Web-Technologien. Cloud-Speicher wird nicht vertieft behandelt, und Persistenz bedeutet gerade nicht gleichzeitige Aufgaben.",
+      "en": "Persistence means keeping data beyond the runtime, concurrency means handling several tasks practically at the same time, and HTTP, HTML and JSON belong to the web technologies. Cloud storage is not covered in depth, and persistence does not mean simultaneous tasks."
+    },
+    "tip": {
+      "de": "Prüfe jede Aussage gegen die Definitionen aus 2.3, 2.4 und 2.5.",
+      "en": "Check each statement against the definitions in 2.3, 2.4 and 2.5."
+    }
+  },
+  {
+    "id": "ch2-ms-202",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "ms",
+    "difficulty": "hard",
+    "question": {
+      "de": "Das folgende Programm läuft fehlerfrei durch und wird beendet. Welche Aussagen sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "The following program runs without errors and then terminates. Which statements are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": "data = [1, 2, 3]\nwith open(\"data.txt\", \"w\") as f:\n    f.write(str(data))",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Nach dem Programmende existiert die Variable data nicht mehr.",
+          "en": "Nach dem Programmende existiert die Variable data nicht mehr."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Die Datei data.txt enthält danach den Text [1, 2, 3] und bleibt bestehen.",
+          "en": "Die Datei data.txt enthält danach den Text [1, 2, 3] und bleibt bestehen."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "In der Datei ist das Python-Listenobjekt selbst gespeichert, nicht nur Text.",
+          "en": "In der Datei ist das Python-Listenobjekt selbst gespeichert, nicht nur Text."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Am Ende des with-Blocks wird die Datei automatisch gelöscht.",
+          "en": "Am Ende des with-Blocks wird die Datei automatisch gelöscht."
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "Ein anderes Programm kann data.txt später lesen.",
+          "en": "Ein anderes Programm kann data.txt später lesen."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "e"
+    ],
+    "explanation": {
+      "de": "Die Variable data lebt nur im Arbeitsspeicher und verschwindet mit dem Programmende. Die Datei data.txt enthält den Text [1, 2, 3], bleibt erhalten und kann von einem anderen Programm gelesen werden. Gespeichert wird Text und nicht das Listenobjekt selbst, und der with-Block schließt die Datei nur, er löscht sie nicht.",
+      "en": "The variable data only lives in main memory and disappears when the program ends. The file data.txt contains the text [1, 2, 3], is kept and can be read by another program. Text is stored and not the list object itself, and the with block only closes the file, it does not delete it."
+    },
+    "tip": {
+      "de": "Unterscheide zwischen der Variablen im Arbeitsspeicher und der Datei auf dem Datenträger.",
+      "en": "Distinguish between the variable in main memory and the file on the storage medium."
+    }
+  },
+  {
+    "id": "ch2-ms-203",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "ms",
+    "difficulty": "hard",
+    "question": {
+      "de": "Welche Aussagen über Nebenläufigkeit sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "Which statements about concurrency are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Ein nebenläufiges Programm kann mehrere Aufgaben praktisch zeitgleich erledigen.",
+          "en": "Ein nebenläufiges Programm kann mehrere Aufgaben praktisch zeitgleich erledigen."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Ein nebenläufiger Webserver bedient Anfragen verschiedener Clients, ohne dass eine Anfrage die andere blockiert.",
+          "en": "Ein nebenläufiger Webserver bedient Anfragen verschiedener Clients, ohne dass eine Anfrage die andere blockiert."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Nebenläufigkeit bedeutet, dass Daten nach dem Programmende erhalten bleiben.",
+          "en": "Nebenläufigkeit bedeutet, dass Daten nach dem Programmende erhalten bleiben."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Nebenläufigkeit ist nur für Programme ohne Benutzeroberfläche relevant.",
+          "en": "Nebenläufigkeit ist nur für Programme ohne Benutzeroberfläche relevant."
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "Nebenläufigkeit ist wichtig, um Daten mehrerer Sensoren gleichzeitig zu verarbeiten.",
+          "en": "Nebenläufigkeit ist wichtig, um Daten mehrerer Sensoren gleichzeitig zu verarbeiten."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "e"
+    ],
+    "explanation": {
+      "de": "Nebenläufige Programme erledigen mehrere Aufgaben praktisch zeitgleich; ein Webserver bedient so mehrere Clients ohne gegenseitiges Blockieren, und auch das Verarbeiten der Daten mehrerer Sensoren ist ein Beispiel. Dauerhaftes Speichern ist Persistenz, und gerade Programme mit Benutzeroberfläche müssen laut Skript fast immer nebenläufig sein.",
+      "en": "Concurrent programs handle several tasks practically at the same time; a web server thus serves several clients without blocking one another, and processing the data of several sensors is an example as well. Permanent storage is persistence, and according to the script it is precisely programs with a user interface that almost always have to be concurrent."
+    },
+    "tip": {
+      "de": "Zwei der falschen Aussagen vermischen Nebenläufigkeit mit anderen Konzepten oder schränken sie zu stark ein.",
+      "en": "Two of the wrong statements mix concurrency with other concepts or restrict it too much."
+    }
+  },
+  {
+    "id": "ch2-ms-204",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "ms",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche zwei der folgenden Anforderungen sprechen für Nebenläufigkeit? Wähle genau zwei aus.",
+      "en": "Which two of the following requirements call for concurrency? Select exactly two."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Die Benutzeroberfläche soll während einer Datenverarbeitung weiter auf Eingaben reagieren.",
+          "en": "Die Benutzeroberfläche soll während einer Datenverarbeitung weiter auf Eingaben reagieren."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Ein Bericht soll auch nächste Woche noch verfügbar sein.",
+          "en": "Ein Bericht soll auch nächste Woche noch verfügbar sein."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Ein Webserver soll mehrere Clients gleichzeitig bedienen.",
+          "en": "Ein Webserver soll mehrere Clients gleichzeitig bedienen."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Daten sollen mit einem anderen Programm geteilt werden.",
+          "en": "Daten sollen mit einem anderen Programm geteilt werden."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "c"
+    ],
+    "explanation": {
+      "de": "Eine Benutzeroberfläche, die während der Datenverarbeitung weiter reagiert, und ein Webserver, der mehrere Clients gleichzeitig bedient, erfordern Nebenläufigkeit. Dass ein Bericht nächste Woche noch verfügbar ist oder Daten mit einem anderen Programm geteilt werden, sind Anforderungen an die Persistenz.",
+      "en": "A user interface that keeps responding during data processing and a web server serving several clients at the same time require concurrency. A report still being available next week or data being shared with another program are requirements for persistence."
+    },
+    "tip": {
+      "de": "Frage bei jeder Anforderung: Geht es um Gleichzeitigkeit oder um Erhalten über die Laufzeit hinaus?",
+      "en": "For each requirement ask: is it about simultaneity or about keeping data beyond the runtime?"
+    }
+  },
+  {
+    "id": "ch2-ms-205",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "ms",
+    "difficulty": "easy",
+    "question": {
+      "de": "Welche Zuordnungen von Technologie und Aufgabe sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "Which assignments of technology to task are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "HTML: Texte, Bilder und Links auf einer Webseite darstellen",
+          "en": "HTML: Texte, Bilder und Links auf einer Webseite darstellen"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "CSS: Layouts und Farben festlegen",
+          "en": "CSS: Layouts und Farben festlegen"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "JavaScript: Interaktivität von Webseiten",
+          "en": "JavaScript: Interaktivität von Webseiten"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "JSON: Layouts und Farben festlegen",
+          "en": "JSON: Layouts und Farben festlegen"
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "HTTP: Webseiten grafisch darstellen",
+          "en": "HTTP: Webseiten grafisch darstellen"
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": {
+      "de": "HTML stellt Texte, Bilder und Links dar, CSS gestaltet Layouts und Farben, und JavaScript sorgt für Interaktivität. JSON tauscht strukturierte Daten aus und legt kein Aussehen fest, und HTTP ist ein Übertragungsprotokoll und keine Darstellungssprache.",
+      "en": "HTML presents text, images and links, CSS styles layouts and colours, and JavaScript provides interactivity. JSON exchanges structured data and does not define appearance, and HTTP is a transfer protocol and not a presentation language."
+    },
+    "tip": {
+      "de": "Jede der Sprachen bzw. Technologien hat im Skript genau eine Hauptaufgabe.",
+      "en": "Each of the languages or technologies has exactly one main task in the script."
+    }
+  },
+  {
+    "id": "ch2-ms-206",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "ms",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche Aussagen über Request und Response sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "Which statements about request and response are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Der Client sendet einen Request und erwartet eine Response.",
+          "en": "Der Client sendet einen Request und erwartet eine Response."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Ein Server kann potentiell viele Client-Anfragen gleichzeitig beantworten.",
+          "en": "Ein Server kann potentiell viele Client-Anfragen gleichzeitig beantworten."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Der Server beginnt die Kommunikation mit einem Request an den Client.",
+          "en": "Der Server beginnt die Kommunikation mit einem Request an den Client."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Die Response wird vom Client an den Server geschickt.",
+          "en": "Die Response wird vom Client an den Server geschickt."
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "Ein Webserver kann z. B. HTML-Seiten, JSON-Daten und Bilder ausliefern.",
+          "en": "Ein Webserver kann z. B. HTML-Seiten, JSON-Daten und Bilder ausliefern."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "e"
+    ],
+    "explanation": {
+      "de": "Der Client sendet eine Anfrage und erwartet eine Antwort, und ein Webserver liefert u. a. HTML-Seiten, JSON-Daten oder Bilder aus; ein Server kann potentiell viele Client-Anfragen gleichzeitig beantworten. Die Kommunikation beginnt aber immer mit dem Request des Clients, und die Response schickt der Server.",
+      "en": "The client sends a request and expects an answer, and a web server delivers e.g. HTML pages, JSON data or images; a server can potentially answer many client requests at the same time. However, communication always starts with the client's request, and the server sends the response."
+    },
+    "tip": {
+      "de": "Wer beginnt die Kommunikation, und wer antwortet?",
+      "en": "Who starts the communication and who answers?"
+    }
+  },
+  {
+    "id": "ch2-ms-207",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "ms",
+    "difficulty": "medium",
+    "question": {
+      "de": "Welche Aussagen über die Query einer URL sind zutreffend? Wähle alle zutreffenden aus.",
+      "en": "Which statements about the query of a URL are correct? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Die Query beginnt mit einem Fragezeichen.",
+          "en": "Die Query beginnt mit einem Fragezeichen."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Schlüssel und Wert eines Parameters werden durch = getrennt.",
+          "en": "Schlüssel und Wert eines Parameters werden durch = getrennt."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Mehrere Parameter werden durch & getrennt.",
+          "en": "Mehrere Parameter werden durch & getrennt."
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Schlüssel und Wert eines Parameters werden durch einen Doppelpunkt getrennt.",
+          "en": "Schlüssel und Wert eines Parameters werden durch einen Doppelpunkt getrennt."
+        }
+      },
+      {
+        "id": "e",
+        "text": {
+          "de": "Die Query beginnt mit dem Zeichen #.",
+          "en": "Die Query beginnt mit dem Zeichen #."
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": {
+      "de": "Die Query beginnt mit einem Fragezeichen, enthält Key-Value-Paare, bei denen ein Gleichheitszeichen Schlüssel und Wert trennt, und mehrere Paare werden durch & getrennt. Ein Doppelpunkt trennt Schlüssel und Wert nicht, und das # leitet nicht die Query, sondern das Fragment ein.",
+      "en": "The query starts with a question mark, contains key-value pairs in which an equals sign separates key and value, and several pairs are separated by &. A colon does not separate key and value, and the # does not introduce the query but the fragment."
+    },
+    "tip": {
+      "de": "Schau dir die Beispiel-URL mit lat und lon aus dem Skript an.",
+      "en": "Look at the example URL with lat and lon from the script."
+    }
+  },
+  {
+    "id": "ch2-ms-208",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "ms",
+    "difficulty": "ultra",
+    "question": {
+      "de": "Über welche der folgenden URLs baut ein Client die Verbindung zum Server über Port 443 auf? Wähle alle zutreffenden aus.",
+      "en": "Via which of the following URLs does a client connect to the server over port 443? Select all that apply."
+    },
+    "clarification": null,
+    "code": null,
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "https://www.thu.de:443/",
+          "en": "https://www.thu.de:443/"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "https://www.thu.de/",
+          "en": "https://www.thu.de/"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "http://www.thu.de:443/",
+          "en": "http://www.thu.de:443/"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "http://www.thu.de/",
+          "en": "http://www.thu.de/"
+        }
+      }
+    ],
+    "answer": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": {
+      "de": "Bei https wird ohne Portangabe der Default-Port 443 verwendet, daher gilt das für die URL ohne Port ebenso wie für die mit explizitem :443. Auch bei http://www.thu.de:443/ ist der Port ausdrücklich genannt und ersetzt den Default-Port 80. Nur die http-URL ohne Port nutzt den Default-Port 80.",
+      "en": "For https the default port 443 is used when no port is given, so this holds for the URL without a port as well as for the one with an explicit :443. In http://www.thu.de:443/ the port is also given explicitly and replaces the default port 80. Only the http URL without a port uses the default port 80."
+    },
+    "tip": {
+      "de": "Ein explizit angegebener Port hat Vorrang vor dem Default des Schemas.",
+      "en": "An explicitly given port takes precedence over the scheme's default."
+    }
+  },
+  {
+    "id": "ch2-tf-201",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "tf",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wahr oder falsch: HTTP, HTML und JSON werden im Kapitel als Grundlagen der Web-Technologien genannt.",
+      "en": "True or false: HTTP, HTML and JSON are named in the chapter as basics of web technologies."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": true,
+    "explanation": {
+      "de": "Wahr. Das Skript nennt als Grundlagen der Web-Technologien ausdrücklich HTTP, HTML und JSON.",
+      "en": "True. The script explicitly names HTTP, HTML and JSON as basics of web technologies."
+    },
+    "tip": {
+      "de": "Lies die Aufzählung der Schwerpunkte in 2.2.",
+      "en": "Read the list of focus areas in 2.2."
+    }
+  },
+  {
+    "id": "ch2-tf-202",
+    "chapter": 2,
+    "section": "2.2 Grundlagen von vernetzten Systemen",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.2 Grundlagen von vernetzten Systemen"
+    },
+    "type": "tf",
+    "difficulty": "hard",
+    "question": {
+      "de": "Wahr oder falsch: Wenn ein Webserver Anfragen per HTTP entgegennimmt, ist keine Persistenz mehr nötig, weil HTTP die Daten dauerhaft speichert.",
+      "en": "True or false: If a web server receives requests via HTTP, persistence is no longer needed, because HTTP stores the data permanently."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": false,
+    "explanation": {
+      "de": "Falsch. HTTP ist ein Übertragungsprotokoll und speichert nichts dauerhaft. Sollen Daten über die Laufzeit hinaus erhalten bleiben, muss der Server sie in Dateien oder Datenbanken ablegen.",
+      "en": "False. HTTP is a transfer protocol and does not store anything permanently. If data is to be kept beyond the runtime, the server has to store it in files or databases."
+    },
+    "tip": {
+      "de": "Was ist die Aufgabe eines Protokolls, und was die Aufgabe der Persistenz?",
+      "en": "What is the task of a protocol, and what is the task of persistence?"
+    }
+  },
+  {
+    "id": "ch2-tf-203",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "tf",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wahr oder falsch: Datenbanken, z. B. relationale oder NoSQL-Datenbanken, sind eine Möglichkeit, Daten persistent zu speichern.",
+      "en": "True or false: Databases, e.g. relational or NoSQL databases, are a way to store data persistently."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": true,
+    "explanation": {
+      "de": "Wahr. Das Skript nennt neben Dateien und Cloud-Speicher ausdrücklich Datenbanken als Möglichkeit der persistenten Speicherung.",
+      "en": "True. Besides files and cloud storage, the script explicitly names databases as a way of persistent storage."
+    },
+    "tip": {
+      "de": "Das Skript nennt drei Möglichkeiten; zwei davon werden in der Lehrveranstaltung vertieft.",
+      "en": "The script names three options; two of them are covered in depth in the course."
+    }
+  },
+  {
+    "id": "ch2-tf-204",
+    "chapter": 2,
+    "section": "2.4 Nebenläufigkeit",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.4 Nebenläufigkeit"
+    },
+    "type": "tf",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wahr oder falsch: Programme, die mehrere Aufgaben praktisch zeitgleich erledigen können, nennt man nebenläufig.",
+      "en": "True or false: Programs that can handle several tasks practically at the same time are called concurrent."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": true,
+    "explanation": {
+      "de": "Wahr. Genau so definiert das Skript den Begriff nebenläufig.",
+      "en": "True. This is exactly how the script defines the term concurrent."
+    },
+    "tip": {
+      "de": "Achte auf die Formulierung „praktisch zeitgleich“.",
+      "en": "Pay attention to the wording “practically at the same time”."
+    }
+  },
+  {
+    "id": "ch2-tf-205",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "tf",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wahr oder falsch: Ein Webbrowser kann neben HTML auch CSS und JavaScript interpretieren und darstellen.",
+      "en": "True or false: Besides HTML, a web browser can also interpret and display CSS and JavaScript."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": true,
+    "explanation": {
+      "de": "Wahr. Der Browser interpretiert CSS für Gestaltung und JavaScript für Interaktivität, zusätzlich zum HTML der Seite.",
+      "en": "True. The browser interprets CSS for styling and JavaScript for interactivity, in addition to the HTML of the page."
+    },
+    "tip": {
+      "de": "Wer muss Layout und Interaktivität einer Seite am Ende umsetzen?",
+      "en": "Who has to implement the layout and interactivity of a page in the end?"
+    }
+  },
+  {
+    "id": "ch2-tf-206",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "tf",
+    "difficulty": "easy",
+    "question": {
+      "de": "Wahr oder falsch: Ein Webbrowser ist ein Client, der die Dienste eines Webservers nutzt.",
+      "en": "True or false: A web browser is a client that uses the services of a web server."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": true,
+    "explanation": {
+      "de": "Wahr. Der Webbrowser ist der Client, der Webseiten vom Webserver abruft und darstellt.",
+      "en": "True. The web browser is the client that retrieves web pages from the web server and displays them."
+    },
+    "tip": {
+      "de": "Wer fragt an, und wer bietet den Dienst an?",
+      "en": "Who requests, and who offers the service?"
+    }
+  },
+  {
+    "id": "ch2-tf-207",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "tf",
+    "difficulty": "medium",
+    "question": {
+      "de": "Wahr oder falsch: Ein Webserver kann ausschließlich HTML-Seiten ausliefern, aber keine Bilder oder JSON-Daten.",
+      "en": "True or false: A web server can only deliver HTML pages, but no images or JSON data."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": false,
+    "explanation": {
+      "de": "Falsch. Webserver liefern über HTTP neben HTML-Seiten auch JSON-Daten, Bilder und weitere Ressourcen wie Videos aus.",
+      "en": "False. Over HTTP web servers deliver not only HTML pages but also JSON data, images and further resources such as videos."
+    },
+    "tip": {
+      "de": "Überlege, welche Ressourcen eine Webseite außer Text noch enthält.",
+      "en": "Consider which resources a web page contains besides text."
+    }
+  },
+  {
+    "id": "ch2-tf-208",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "tf",
+    "difficulty": "hard",
+    "question": {
+      "de": "Wahr oder falsch: Laut Skript ist für die Adressierung des lokalen PCs die Verwendung von localhost der Verwendung von 127.0.0.1 vorzuziehen.",
+      "en": "True or false: According to the script, using localhost is preferable to using 127.0.0.1 for addressing the local PC."
+    },
+    "clarification": null,
+    "code": null,
+    "answer": false,
+    "explanation": {
+      "de": "Falsch. Das Skript sagt, localhost funktioniere (fast) immer genauso, die Verwendung von 127.0.0.1 sei jedoch zu bevorzugen. 127.0.0.1 adressiert grundsätzlich immer den lokalen PC.",
+      "en": "False. The script says localhost (almost) always works the same way, but using 127.0.0.1 is preferable. 127.0.0.1 always addresses the local PC."
+    },
+    "tip": {
+      "de": "Achte auf das Wort „fast“ im Skript.",
+      "en": "Pay attention to the word “almost” in the script."
+    }
+  },
+  {
+    "id": "ch2-fib-201",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "fib",
+    "difficulty": "easy",
+    "question": {
+      "de": "Ergänze den Modus, mit dem die Datei zum Lesen geöffnet wird.",
+      "en": "Fill in the mode with which the file is opened for reading."
+    },
+    "clarification": null,
+    "code": "with open(\"data.txt\", \"____\") as f:\n    text = f.read()",
+    "blanks": [
+      {
+        "accepted": [
+          "r"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Der Modus \"r\" (read) öffnet eine vorhandene Datei zum Lesen, sodass f.read() den persistent gespeicherten Inhalt liefert. Mit \"w\" würde der Inhalt überschrieben statt gelesen.",
+      "en": "Mode \"r\" (read) opens an existing file for reading, so f.read() returns the persistently stored content. With \"w\" the content would be overwritten instead of read."
+    },
+    "tip": {
+      "de": "Der Modus besteht aus dem Anfangsbuchstaben des englischen Wortes für „lesen“.",
+      "en": "The mode is the first letter of the English word for reading."
+    }
+  },
+  {
+    "id": "ch2-fib-202",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze die Funktion, mit der in Python eine Datei geöffnet wird, um Daten persistent zu schreiben.",
+      "en": "Fill in the function used in Python to open a file in order to write data persistently."
+    },
+    "clarification": null,
+    "code": "with ____(\"notes.txt\", \"w\") as f:\n    f.write(\"hello\")",
+    "blanks": [
+      {
+        "accepted": [
+          "open"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Die eingebaute Funktion open öffnet eine Datei und liefert ein Dateiobjekt, dessen write-Methode Text auf den Datenträger schreibt. Der with-Block schließt die Datei danach wieder.",
+      "en": "The built-in function open opens a file and returns a file object whose write method writes text to the storage medium. The with block closes the file afterwards."
+    },
+    "tip": {
+      "de": "Es ist eine eingebaute Funktion mit einem sehr naheliegenden Namen.",
+      "en": "It is a built-in function with a very obvious name."
+    }
+  },
+  {
+    "id": "ch2-fib-203",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "fib",
+    "difficulty": "hard",
+    "question": {
+      "de": "Das Programm läuft ohne Fehler. Trage die Zahl ein, die print ausgibt.",
+      "en": "The program runs without errors. Enter the number that print outputs."
+    },
+    "clarification": null,
+    "code": "with open(\"n.txt\", \"w\") as f:\n    f.write(\"7\")\n\nwith open(\"n.txt\") as f:\n    value = int(f.read())\n\nprint(value + 1)  # prints ____",
+    "blanks": [
+      {
+        "accepted": [
+          "8"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "In die Datei wird der Text \"7\" geschrieben und danach wieder gelesen; int(f.read()) macht daraus die Zahl 7. Mit value + 1 ergibt sich 8, und print gibt 8 aus.",
+      "en": "The text \"7\" is written to the file and then read back; int(f.read()) turns it into the number 7. With value + 1 the result is 8, and print outputs 8."
+    },
+    "tip": {
+      "de": "Verfolge den Wert Schritt für Schritt: schreiben, lesen, in Zahl umwandeln, addieren.",
+      "en": "Follow the value step by step: write, read, convert to a number, add."
+    }
+  },
+  {
+    "id": "ch2-fib-204",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze den HTML-Tag-Namen, mit dem der Link erzeugt wird.",
+      "en": "Fill in the HTML tag name that creates the link."
+    },
+    "clarification": null,
+    "code": "<____ href=\"https://www.thu.de/\">THU</a>",
+    "blanks": [
+      {
+        "accepted": [
+          "a"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Links werden in HTML mit dem Tag a (anchor) erzeugt, hier mit dem Zielattribut href. Das schließende Tag lautet entsprechend a.",
+      "en": "In HTML links are created with the tag a (anchor), here with the target attribute href. The closing tag is accordingly a."
+    },
+    "tip": {
+      "de": "Das schließende Tag in der Zeile zeigt dir den gesuchten Namen.",
+      "en": "The closing tag in the line shows you the name you are looking for."
+    }
+  },
+  {
+    "id": "ch2-fib-205",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze die HTTP-Methode, mit der ein Client Daten an den Server sendet (z. B. eine neue Bestellung).",
+      "en": "Fill in the HTTP method with which a client sends data to the server (e.g. a new order)."
+    },
+    "clarification": {
+      "de": "Gesucht ist die zweite Methode der Aufzählung im Skript (GET, ____, PUT, DELETE).",
+      "en": "The second method of the list in the script is meant (GET, ____, PUT, DELETE)."
+    },
+    "code": "____ /orders HTTP/1.1",
+    "blanks": [
+      {
+        "accepted": [
+          "POST"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "POST ist die HTTP-Methode zum Senden von Daten an den Server, GET dagegen ruft Daten ab. Das Skript nennt zu den Methoden den Zweck, Daten abzurufen bzw. Daten zu senden.",
+      "en": "POST is the HTTP method for sending data to the server, whereas GET retrieves data. The script names the purposes of retrieving and sending data for the methods."
+    },
+    "tip": {
+      "de": "Im Skript steht diese Methode direkt hinter GET.",
+      "en": "In the script this method stands directly after GET."
+    }
+  },
+  {
+    "id": "ch2-fib-206",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze die Protokollversion in der ersten Zeile der HTTP-Anfrage.",
+      "en": "Fill in the protocol version in the first line of the HTTP request."
+    },
+    "clarification": {
+      "de": "Gesucht ist die Version 1.1 von HTTP in der üblichen Schreibweise.",
+      "en": "Version 1.1 of HTTP in the usual notation is meant."
+    },
+    "code": "GET /index.html ____\nHost: www.thu.de",
+    "blanks": [
+      {
+        "accepted": [
+          "HTTP/1.1"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Eine textbasierte HTTP-Anfrage beginnt mit Methode, Pfad und Protokollversion, hier HTTP/1.1. Die zweite Zeile enthält mit Host den Namen des Servers.",
+      "en": "A text-based HTTP request starts with method, path and protocol version, here HTTP/1.1. The second line contains the name of the server with Host."
+    },
+    "tip": {
+      "de": "Die Version steht am Ende der Zeile, getrennt durch einen Schrägstrich vom Protokollnamen.",
+      "en": "The version is at the end of the line, separated from the protocol name by a slash."
+    }
+  },
+  {
+    "id": "ch2-fib-207",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "fib",
+    "difficulty": "easy",
+    "question": {
+      "de": "Ergänze die Standard-Portnummer von FTP.",
+      "en": "Fill in the default port number of FTP."
+    },
+    "clarification": null,
+    "code": "# ftp://ftp.example.com:____/",
+    "blanks": [
+      {
+        "accepted": [
+          "21"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Für das Schema ftp ist 21 der reservierte Standard-Port (well-known port). Zum Vergleich: http nutzt 80 und https 443.",
+      "en": "For the scheme ftp, 21 is the reserved default port (well-known port). For comparison: http uses 80 and https 443."
+    },
+    "tip": {
+      "de": "Das Skript listet drei Standard-Ports auf: 80, 443 und noch einen.",
+      "en": "The script lists three default ports: 80, 443 and one more."
+    }
+  },
+  {
+    "id": "ch2-fib-208",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze das Zeichen, das den Host vom Pfad trennt.",
+      "en": "Fill in the character that separates the host from the path."
+    },
+    "clarification": null,
+    "code": "# https://wikipedia.org____wiki/URL",
+    "blanks": [
+      {
+        "accepted": [
+          "/"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Der Pfad wird durch einen Schrägstrich vom Host (bzw. Port) getrennt, ähnlich wie bei einem Dateipfad. Hier ergibt sich der Pfad wiki/URL.",
+      "en": "The path is separated from the host (or port) by a slash, similar to a file path. Here the path is wiki/URL."
+    },
+    "tip": {
+      "de": "Denke an die Trennzeichen in Dateipfaden.",
+      "en": "Think of the separators in file paths."
+    }
+  },
+  {
+    "id": "ch2-fib-209",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "fib",
+    "difficulty": "hard",
+    "question": {
+      "de": "Ergänze das Zeichen, das die Query vom Fragment top trennt.",
+      "en": "Fill in the character that separates the query from the fragment top."
+    },
+    "clarification": null,
+    "code": "# http://example.com:8080/a/b.html?x=1____top",
+    "blanks": [
+      {
+        "accepted": [
+          "#"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Das Schema einer HTTP-URL lautet ...?Query#Fragment, das Fragment wird also durch # eingeleitet. Das ? beginnt die Query, und & trennt nur Parameter innerhalb der Query.",
+      "en": "The format of an HTTP URL is ...?query#fragment, so the fragment is introduced by #. The ? starts the query, and & only separates parameters within the query."
+    },
+    "tip": {
+      "de": "Schau dir die Reihenfolge Schema, Host, Port, Pfad, Query, Fragment an.",
+      "en": "Look at the order scheme, host, port, path, query, fragment."
+    }
+  },
+  {
+    "id": "ch2-fib-210",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "fib",
+    "difficulty": "medium",
+    "question": {
+      "de": "Ergänze das Schema der URL, mit der eine E-Mail an die angegebene Adresse adressiert wird.",
+      "en": "Fill in the scheme of the URL that addresses an e-mail to the given address."
+    },
+    "clarification": null,
+    "code": "# ____:michael.munz@thu.de",
+    "blanks": [
+      {
+        "accepted": [
+          "mailto"
+        ],
+        "caseSensitive": true
+      }
+    ],
+    "explanation": {
+      "de": "Das Schema mailto adressiert eine E-Mail-Adresse und ist ein Beispiel für eine URL ohne HTTP. Es folgt dem allgemeinen Aufbau Schema:Schema-spezifischer-Teil.",
+      "en": "The scheme mailto addresses an e-mail address and is an example of a URL without HTTP. It follows the general structure scheme:scheme-specific-part."
+    },
+    "tip": {
+      "de": "Im Skript steht ein Beispiel mit der Adresse michael.munz@thu.de.",
+      "en": "The script contains an example with the address michael.munz@thu.de."
+    }
+  },
+  {
+    "id": "ch2-fe-201",
+    "chapter": 2,
+    "section": "2.3 Persistenz",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.3 Persistenz"
+    },
+    "type": "fe",
+    "difficulty": "medium",
+    "question": {
+      "de": "In der folgenden Beschreibung der Persistenz steckt genau ein inhaltlicher Fehler. In welcher Zeile?",
+      "en": "The following description of persistence contains exactly one factual error. In which line?"
+    },
+    "clarification": {
+      "de": "Jede Zeile ist eine Aussage über Persistenz.",
+      "en": "Each line is a statement about persistence."
+    },
+    "code": "# 1  persistence = storing data beyond the runtime of a program\n# 2  possible ways: files, databases, cloud storage\n# 3  a variable in main memory is persistent because it survives the end of the program\n# 4  data stored in a file is still available after the program ends",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Zeile 1 (Definition der Persistenz)",
+          "en": "Zeile 1 (Definition der Persistenz)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Zeile 2 (Möglichkeiten der Speicherung)",
+          "en": "Zeile 2 (Möglichkeiten der Speicherung)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Zeile 3 (Variable im Arbeitsspeicher)",
+          "en": "Zeile 3 (Variable im Arbeitsspeicher)"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Zeile 4 (Daten in einer Datei)",
+          "en": "Zeile 4 (Daten in einer Datei)"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Zeile 3 ist falsch: Eine Variable im Arbeitsspeicher überdauert das Programmende nicht, nur gespeicherte Daten (z. B. in Dateien) sind persistent. Die Zeilen 1, 2 und 4 stimmen mit dem Skript überein.",
+      "en": "Line 3 is wrong: a variable in main memory does not survive the end of the program, only stored data (e.g. in files) is persistent. Lines 1, 2 and 4 agree with the script."
+    },
+    "tip": {
+      "de": "Was geschieht mit dem Arbeitsspeicher eines Programms nach dessen Ende?",
+      "en": "What happens to a program's main memory after it ends?"
+    }
+  },
+  {
+    "id": "ch2-fe-202",
+    "chapter": 2,
+    "section": "2.5 Web-Technologien",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.5 Web-Technologien"
+    },
+    "type": "fe",
+    "difficulty": "hard",
+    "question": {
+      "de": "In der folgenden Beschreibung der Web-Technologien steckt genau ein inhaltlicher Fehler. In welcher Zeile?",
+      "en": "The following description of web technologies contains exactly one factual error. In which line?"
+    },
+    "clarification": {
+      "de": "Jede Zeile ist eine Aussage über Web-Technologien.",
+      "en": "Each line is a statement about web technologies."
+    },
+    "code": "# 1  HTTP is a text-based protocol between client and server\n# 2  the client sends a request and the server answers with a response\n# 3  HTML defines layout and colours, while CSS presents text, images and links\n# 4  JSON is often used to exchange structured data",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Zeile 1 (HTTP)",
+          "en": "Zeile 1 (HTTP)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Zeile 2 (Request und Response)",
+          "en": "Zeile 2 (Request und Response)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Zeile 3 (HTML und CSS)",
+          "en": "Zeile 3 (HTML und CSS)"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Zeile 4 (JSON)",
+          "en": "Zeile 4 (JSON)"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Zeile 3 vertauscht die Aufgaben: HTML stellt Texte, Bilder und Links dar, während CSS Layout und Farben festlegt. Zeile 1 (textbasiertes HTTP), Zeile 2 (Request und Response) und Zeile 4 (JSON für strukturierte Daten) sind korrekt.",
+      "en": "Line 3 swaps the tasks: HTML presents text, images and links, whereas CSS defines layout and colours. Line 1 (text-based HTTP), line 2 (request and response) and line 4 (JSON for structured data) are correct."
+    },
+    "tip": {
+      "de": "Welche der beiden Sprachen beschreibt Inhalte, welche das Aussehen?",
+      "en": "Which of the two languages describes content and which describes appearance?"
+    }
+  },
+  {
+    "id": "ch2-fe-203",
+    "chapter": 2,
+    "section": "2.6 Begriffe",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.6 Begriffe"
+    },
+    "type": "fe",
+    "difficulty": "hard",
+    "question": {
+      "de": "In der folgenden Beschreibung der Begriffe steckt genau ein inhaltlicher Fehler. In welcher Zeile?",
+      "en": "The following description of terms contains exactly one factual error. In which line?"
+    },
+    "clarification": {
+      "de": "Jede Zeile erklärt einen Begriff aus dem Kapitel.",
+      "en": "Each line explains a term from the chapter."
+    },
+    "code": "# 1  client: a program that uses the services of a server over a network\n# 2  server: a program that provides a service, e.g. a database, in a network\n# 3  host: the program that provides the service; the server is the computer it runs on\n# 4  web browser: a client that renders the HTML delivered by a web server",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Zeile 1 (Client)",
+          "en": "Zeile 1 (Client)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Zeile 2 (Server)",
+          "en": "Zeile 2 (Server)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Zeile 3 (Host)",
+          "en": "Zeile 3 (Host)"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Zeile 4 (Webbrowser)",
+          "en": "Zeile 4 (Webbrowser)"
+        }
+      }
+    ],
+    "answer": "c",
+    "explanation": {
+      "de": "Zeile 3 vertauscht Host und Server: Der Host ist der Rechner, auf dem das Serverprogramm läuft, der Server ist die Software. Die Definitionen von Client (Zeile 1) und Server (Zeile 2) sowie die Rolle des Browsers (Zeile 4) stimmen.",
+      "en": "Line 3 swaps host and server: the host is the computer on which the server program runs, the server is the software. The definitions of client (line 1) and server (line 2) as well as the role of the browser (line 4) are correct."
+    },
+    "tip": {
+      "de": "Welcher der beiden Begriffe bezeichnet Hardware, welcher Software?",
+      "en": "Which of the two terms denotes hardware and which software?"
+    }
+  },
+  {
+    "id": "ch2-fe-204",
+    "chapter": 2,
+    "section": "2.7 URLs",
+    "source": {
+      "document": "SOTE2 Skript (Softwareentwicklung 2)",
+      "section": "2.7 URLs"
+    },
+    "type": "fe",
+    "difficulty": "hard",
+    "question": {
+      "de": "In der folgenden Beschreibung einer URL steckt genau ein Fehler. In welcher Zeile?",
+      "en": "The following description of a URL contains exactly one error. In which line?"
+    },
+    "clarification": {
+      "de": "Zeile 1 enthält die vollständige URL, die Zeilen 2 bis 4 beschreiben sie.",
+      "en": "Line 1 contains the complete URL, lines 2 to 4 describe it."
+    },
+    "code": "# 1  url  = http://127.0.0.1:5000/data.json\n# 2  host = 127.0.0.1 (always addresses the local PC)\n# 3  port = 5000 (identifies the server program on that host)\n# 4  without \":5000\" the default port of http would be 443",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "de": "Zeile 1 (URL)",
+          "en": "Zeile 1 (URL)"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "de": "Zeile 2 (Host)",
+          "en": "Zeile 2 (Host)"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "de": "Zeile 3 (Port)",
+          "en": "Zeile 3 (Port)"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "de": "Zeile 4 (Default-Port)",
+          "en": "Zeile 4 (Default-Port)"
+        }
+      }
+    ],
+    "answer": "d",
+    "explanation": {
+      "de": "Zeile 4 ist falsch: Ohne Portangabe nutzt http den Default-Port 80; 443 ist der Default-Port von https. 127.0.0.1 adressiert immer den lokalen PC (Zeile 2), und der Port 5000 bezeichnet das Serverprogramm auf diesem Host (Zeile 3).",
+      "en": "Line 4 is wrong: without a port, http uses the default port 80; 443 is the default port of https. 127.0.0.1 always addresses the local PC (line 2), and port 5000 identifies the server program on that host (line 3)."
+    },
+    "tip": {
+      "de": "Zu welchem Schema gehört welcher Default-Port?",
+      "en": "Which default port belongs to which scheme?"
+    }
   }
 ];
