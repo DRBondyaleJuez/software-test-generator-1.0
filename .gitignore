@@ -1,0 +1,11 @@
+# Course material (copyrighted teacher resources — reference only, never push)
+RESOURCES/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
