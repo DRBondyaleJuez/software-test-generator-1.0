@@ -11,19 +11,24 @@
   const BLANK = "____";
   const LETTERS = "ABCDEFGHIJ";
 
+  const VOTES_KEY = "sote2quiz.votes";
+
   const bank = (typeof QUESTIONS !== "undefined" && Array.isArray(QUESTIONS)) ? QUESTIONS : [];
+  const baseScores = (typeof QUESTION_SCORES !== "undefined" && QUESTION_SCORES) ? QUESTION_SCORES : {};
 
   const state = {
     lang: "de",
     view: "start", // "start" | "quiz" | "results"
     infoOpen: false,
+    votes: {}, // question id -> 1 | -1 (this browser's own votes)
     filters: {
       chapters: new Set(),
       difficulties: new Set(),
       types: new Set(),
       chapterOrder: false, // false = random, true = by chapter
       difficultyOrder: false,
-      display: "paged" // "paged" | "scroll"
+      display: "paged", // "paged" | "scroll"
+      includeLowScore: false // false = skip questions whose score is below 0
     },
     quiz: null,
     results: null
@@ -127,6 +132,45 @@
     }
   }
 
+  function loadVotes() {
+    try {
+      const raw = window.localStorage.getItem(VOTES_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveVotes() {
+    try {
+      window.localStorage.setItem(VOTES_KEY, JSON.stringify(state.votes));
+    } catch (e) {
+      // Storage unavailable: votes only last until the page is closed.
+    }
+  }
+
+  // ----------------------------------------------------------------- scores
+
+  function getVote(id) {
+    return state.votes[id] === 1 || state.votes[id] === -1 ? state.votes[id] : 0;
+  }
+
+  // Total score = maintainer baseline + this browser's own vote.
+  function questionScore(q) {
+    const base = typeof baseScores[q.id] === "number" ? baseScores[q.id] : 0;
+    return base + getVote(q.id);
+  }
+
+  function setVote(id, vote) {
+    if (vote === 0) {
+      delete state.votes[id];
+    } else {
+      state.votes[id] = vote;
+    }
+    saveVotes();
+  }
+
   // -------------------------------------------------------------- filtering
 
   function matchingQuestions() {
@@ -134,7 +178,8 @@
     return bank.filter(function (q) {
       return (f.chapters.size === 0 || f.chapters.has(q.chapter)) &&
         (f.difficulties.size === 0 || f.difficulties.has(q.difficulty)) &&
-        (f.types.size === 0 || f.types.has(q.type));
+        (f.types.size === 0 || f.types.has(q.type)) &&
+        (f.includeLowScore || questionScore(q) >= 0);
     });
   }
 
@@ -289,6 +334,7 @@
         infoBlock("start.infoTypesTitle", "start.infoTypes"),
         infoBlock("start.infoDiffTitle", "start.infoDiff"),
         infoBlock("start.infoScoreTitle", "start.infoScore"),
+        infoBlock("start.infoHintTitle", "start.infoHint"),
         infoBlock("start.infoTimeTitle", "start.infoTime")
       ])
     ]);
@@ -405,6 +451,13 @@
         { value: "paged", label: t("start.displayPaged") },
         { value: "scroll", label: t("start.displayScroll") }
       ], f.display, function (v) { f.display = v; }),
+      segmented(t("start.lowScore"), [
+        { value: false, label: t("start.lowScoreHide") },
+        { value: true, label: t("start.lowScoreInclude") }
+      ], f.includeLowScore, function (v) {
+        f.includeLowScore = v;
+        updateMatchInfo();
+      }),
       h("p", { id: "match-info", class: "match-info" }),
       h("button", { id: "start-btn", type: "button", class: "btn btn-primary btn-large", onclick: startQuiz })
     ]);
@@ -588,6 +641,70 @@
     ]);
   }
 
+  // Score display with like/dislike buttons. Clicking the active vote again removes it.
+  function buildVoteBox(q) {
+    const scoreEl = h("span", { class: "vote-score" });
+    const up = h("button", {
+      type: "button",
+      class: "vote-btn vote-up",
+      title: t("vote.like"),
+      "aria-label": t("vote.like")
+    }, [h("span", { "aria-hidden": "true", text: "👍" })]);
+    const down = h("button", {
+      type: "button",
+      class: "vote-btn vote-down",
+      title: t("vote.dislike"),
+      "aria-label": t("vote.dislike")
+    }, [h("span", { "aria-hidden": "true", text: "👎" })]);
+
+    function sync() {
+      const score = questionScore(q);
+      const vote = getVote(q.id);
+      scoreEl.textContent = t("vote.score") + ": " + (score > 0 ? "+" + score : String(score));
+      scoreEl.classList.toggle("positive", score > 0);
+      scoreEl.classList.toggle("negative", score < 0);
+      up.classList.toggle("selected", vote === 1);
+      up.setAttribute("aria-pressed", String(vote === 1));
+      down.classList.toggle("selected", vote === -1);
+      down.setAttribute("aria-pressed", String(vote === -1));
+    }
+    function cast(value) {
+      setVote(q.id, getVote(q.id) === value ? 0 : value);
+      sync();
+    }
+    up.addEventListener("click", function () { cast(1); });
+    down.addEventListener("click", function () { cast(-1); });
+    sync();
+    return h("span", { class: "vote-box" }, [scoreEl, up, down]);
+  }
+
+  // Optional hint: collapsed until the student asks for it.
+  function buildHint(item) {
+    const tip = loc(item.q.tip);
+    if (!tip) {
+      return null;
+    }
+    const body = h("div", { class: "box box-tip hint-body", hidden: !item.hintOpen }, [
+      h("span", { text: tip })
+    ]);
+    const toggle = h("button", {
+      type: "button",
+      class: "btn btn-small btn-hint",
+      "aria-expanded": String(Boolean(item.hintOpen))
+    });
+    function sync() {
+      toggle.textContent = "💡 " + t(item.hintOpen ? "quiz.hideHint" : "quiz.showHint");
+      toggle.setAttribute("aria-expanded", String(Boolean(item.hintOpen)));
+      body.hidden = !item.hintOpen;
+    }
+    toggle.addEventListener("click", function () {
+      item.hintOpen = !item.hintOpen;
+      sync();
+    });
+    sync();
+    return h("div", { class: "hint-wrap" }, [toggle, body]);
+  }
+
   // ------------------------------------------------------------ quiz render
 
   function renderQuiz() {
@@ -665,7 +782,7 @@
     const card = h("article", { class: "card q-card" });
     card.appendChild(h("div", { class: "q-meta" }, [
       h("span", { class: "q-num", text: t("quiz.question", { i: index + 1, n: total }) })
-    ].concat(badges(q))));
+    ].concat(badges(q), [buildVoteBox(q)])));
 
     const blanksTotal = blankCount(q);
     let blanksUsed = 0;
@@ -693,6 +810,11 @@
       } else {
         card.appendChild(codeBlock(q.code));
       }
+    }
+
+    const hint = buildHint(item);
+    if (hint) {
+      card.appendChild(hint);
     }
 
     if (q.type === "fib") {
@@ -938,7 +1060,7 @@
       h("span", { class: "q-num", text: t("quiz.question", { i: index + 1, n: total }) }),
       h("span", { class: "result-time", text: t("results.timeSpent", { time: timeText }) })
     ]));
-    card.appendChild(h("div", { class: "q-meta" }, badges(q)));
+    card.appendChild(h("div", { class: "q-meta" }, badges(q).concat([buildVoteBox(q)])));
     card.appendChild(h("p", { class: "q-text", text: loc(q.question) }));
 
     const clar = loc(q.clarification);
@@ -984,5 +1106,6 @@
   // ------------------------------------------------------------------- init
 
   state.lang = safeGetLang();
+  state.votes = loadVotes();
   render();
 })();

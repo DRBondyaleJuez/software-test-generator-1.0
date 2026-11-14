@@ -73,7 +73,16 @@ const I18N = {
       fewMatch: "Nur {n} passende Fragen verfügbar: Es werden alle verwendet.",
       noMatch: "Keine Frage passt zu diesen Filtern.",
       startButton: "Test starten ({n} Fragen)",
-      startButtonNone: "Test starten"
+      startButtonNone: "Test starten",
+      lowScore: "Schlecht bewertete Fragen",
+      lowScoreHide: "Ausblenden (Score < 0)",
+      lowScoreInclude: "Einbeziehen",
+      infoHintTitle: "Tipps und Bewertung",
+      infoHint: [
+        "Tipp: Bei jeder Frage kannst du optional einen Tipp aufklappen. Er führt dich zur Antwort, ohne sie zu verraten. Probiere erst selbst, dann hilft der Tipp beim Nachschlagen.",
+        "Score: Mit 👍 und 👎 bewertest du, ob eine Frage gut formuliert und relevant ist. Dein Votum zählt +1 bzw. −1 zum Score der Frage. Fragen mit negativem Score werden standardmäßig nicht gezogen; mit dem Schalter „Schlecht bewertete Fragen“ kannst du sie wieder einbeziehen.",
+        "Deine Stimmen werden nur in diesem Browser gespeichert. Ein Basis-Score kann vom Betreuer in data/scores.js gepflegt werden."
+      ]
     },
     bank: {
       missingTitle: "Fragenkatalog nicht geladen",
@@ -97,7 +106,15 @@ const I18N = {
       finishTest: "Test beenden",
       goTo: "Zu Frage {n}",
       fewNotice: "Es passen nur {n} Fragen zu deinen Filtern, daher besteht der Test aus {n} Fragen.",
-      confirmUnanswered: "{n} Frage(n) sind unbeantwortet und zählen als falsch. Trotzdem beenden?"
+      confirmUnanswered: "{n} Frage(n) sind unbeantwortet und zählen als falsch. Trotzdem beenden?",
+      showHint: "Tipp anzeigen",
+      hideHint: "Tipp ausblenden",
+      hintLabel: "Tipp"
+    },
+    vote: {
+      score: "Score",
+      like: "Gute Frage: Score +1",
+      dislike: "Schlechte oder fehlerhafte Frage: Score −1"
     },
     results: {
       heading: "Dein Ergebnis",
@@ -194,7 +211,16 @@ const I18N = {
       fewMatch: "Only {n} matching questions available: all of them will be used.",
       noMatch: "No question matches these filters.",
       startButton: "Start test ({n} questions)",
-      startButtonNone: "Start test"
+      startButtonNone: "Start test",
+      lowScore: "Low-rated questions",
+      lowScoreHide: "Hide (score < 0)",
+      lowScoreInclude: "Include",
+      infoHintTitle: "Hints and rating",
+      infoHint: [
+        "Hint: every question has an optional hint you can open. It points you towards the answer without giving it away. Try on your own first, then use the hint to know where to look.",
+        "Score: use 👍 and 👎 to rate whether a question is well worded and relevant. Your vote adds +1 or −1 to the question's score. Questions with a negative score are not drawn by default; the \"Low-rated questions\" switch lets you include them again.",
+        "Your votes are stored in this browser only. A baseline score can be maintained by the maintainer in data/scores.js."
+      ]
     },
     bank: {
       missingTitle: "Question bank not loaded",
@@ -218,7 +244,15 @@ const I18N = {
       finishTest: "Finish test",
       goTo: "Go to question {n}",
       fewNotice: "Only {n} questions match your filters, so the test consists of {n} questions.",
-      confirmUnanswered: "{n} question(s) are unanswered and will count as wrong. Finish anyway?"
+      confirmUnanswered: "{n} question(s) are unanswered and will count as wrong. Finish anyway?",
+      showHint: "Show hint",
+      hideHint: "Hide hint",
+      hintLabel: "Hint"
+    },
+    vote: {
+      score: "Score",
+      like: "Good question: score +1",
+      dislike: "Poor or incorrect question: score −1"
     },
     results: {
       heading: "Your result",
