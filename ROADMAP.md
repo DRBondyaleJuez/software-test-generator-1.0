@@ -8,20 +8,20 @@ Spec lives in [AGENTS.md](AGENTS.md). MVP-first strategy: 20 pilot questions + f
 - [x] Write AGENTS.md (spec) and this roadmap
 - [x] Init git repo, connect to GitHub remote, first push
 
-## Phase 1 — Pilot question bank (MVP data)
-- [ ] `data/questions.js` with 20 questions (ch1:1, ch2:3, ch3:5, ch4:4, ch5:4, ch6:3)
-- [ ] All 5 types (mc, ms, tf, fib, fe) and all 4 difficulties represented
-- [ ] `tools/validate_questions.py` schema validator; pilot passes it
-- [ ] Commit: "Add pilot question bank (20 questions) and validator"
+## Phase 1 — Pilot question bank (MVP data) ✅
+- [x] `data/questions.js` with 20 questions (ch1:1, ch2:3, ch3:5, ch4:4, ch5:4, ch6:3)
+- [x] All 5 types (mc, ms, tf, fib, fe) and all 4 difficulties represented
+- [x] `tools/validate_questions.py` schema validator; pilot passes it
+- [x] Commit: "Add pilot question bank (20 questions) and validator"
 
-## Phase 2 — Website (MVP app)
-- [ ] `index.html`, `css/style.css`, `js/i18n.js`, `js/app.js` per AGENTS.md §4
-- [ ] Start view: description, info section, filters (chapter/difficulty/type multi-select), order + display options, DE/EN toggle
-- [ ] Quiz engine: 10 random matching questions, option shuffling, timer, per-question timing, scroll + paginated modes
-- [ ] Results view: score, per-question time, correct answers, explanations, tips, sources
-- [ ] Mobile responsive + dark mode; works over file:// and GitHub Pages
-- [ ] Manual browser test of all question types and both display modes
-- [ ] Commit: "Add quiz website (MVP)"
+## Phase 2 — Website (MVP app) ✅
+- [x] `index.html`, `css/style.css`, `js/i18n.js`, `js/app.js` per AGENTS.md §4
+- [x] Start view: description, info section, filters (chapter/difficulty/type multi-select), order + display options, DE/EN toggle
+- [x] Quiz engine: 10 random matching questions, option shuffling, timer, per-question timing, scroll + paginated modes
+- [x] Results view: score, per-question time, correct answers, explanations, tips, sources
+- [x] Mobile responsive + dark mode; works over file:// and GitHub Pages
+- [x] Manual browser test of all question types and both display modes
+- [x] Commit: "Add quiz website (MVP)"
 
 ## Phase 3 — MVP release
 - [ ] Review pass (strong model): question quality, grading correctness, UI issues
