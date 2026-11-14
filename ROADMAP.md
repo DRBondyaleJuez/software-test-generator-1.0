@@ -29,13 +29,15 @@ Spec lives in [AGENTS.md](AGENTS.md). MVP-first strategy: 20 pilot questions + f
 - [ ] Students test the MVP; collect feedback, fix issues
 
 ## Phase 4 — Scale the question bank to 1000
-Batches of ~50 questions per chapter/section (cheap model + validator + spot review), committed per batch:
+Batches of ~45 questions per chapter (cheap model + validator + spot review), committed per batch.
+Wave 1 done (2026-11-14): bank at 264 (ch1:20 ✅ complete, ch2:48, ch3:50, ch4:49, ch5:49, ch6:48).
+Targets (ch1 capped at 20 — thin source material; its share moved to ch2):
 - [ ] Ch 3 Strukturierte Daten → 220 total
 - [ ] Ch 4 Dateien → 200 total
 - [ ] Ch 5 Datensätze (Pandas/Matplotlib) → 200 total
 - [ ] Ch 6 NoSQL/MongoDB → 200 total
-- [ ] Ch 2 Basistechnologien → 140 total
-- [ ] Ch 1 Einführung → 40 total
+- [ ] Ch 2 Basistechnologien → 160 total
+- [x] Ch 1 Einführung → 20 total (complete)
 - [ ] Deduplicate/balance pass; final validator run; update site copy if needed
 
 ## Phase 5 — Polish (optional)
