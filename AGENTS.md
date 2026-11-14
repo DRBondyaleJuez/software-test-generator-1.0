@@ -74,7 +74,7 @@ const QUESTIONS = [ /* question objects */ ];
 2. Self-contained: everything needed is in the question + code. Add `clarification` whenever a term or setup could confuse — except for `ultra` difficulty, which gets none.
 3. Difficulty meaning: `easy` = recall/recognition; `medium` = understanding/one-step application; `hard` = multi-step reasoning, reading code output, edge cases; `ultra` = subtle semantics, combined concepts, no clarification given.
 4. `tip` guides the search ("Think about what `dict.get` returns when the key is missing"), never states the answer.
-5. `explanation` states why the correct answer is right and, for plausible distractors, why they are wrong. 2–4 sentences.
+5. `explanation` states why the correct answer is right and, for plausible distractors, why they are wrong. 2–4 sentences. **Never reference option letters** ("(b)", "option c") anywhere — options are shuffled at display time, so letters won't match what the student saw; refer to the option's content instead.
 6. German is the primary wording (exam language); English is a faithful translation, not a paraphrase. Code identifiers/comments stay English in both.
 7. Distractors must be plausible (common student mistakes), never joke options.
 8. Every question's content must be consistent with the SOTE2 course material; `source.section` must name a real section from the table above (or a lab).

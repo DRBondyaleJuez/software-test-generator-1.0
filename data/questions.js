@@ -51,8 +51,8 @@ const QUESTIONS = [
     ],
     "answer": "a",
     "explanation": {
-      "de": "Das Skript betont in Abschnitt 1.1, dass sehr viele intelligente Systeme heute vernetzt sind: Sie kommunizieren über Netzwerke wie das Internet, lassen sich z. B. per App steuern oder tauschen Daten mit anderen Systemen aus. Isolation (b), eine grafische Oberfläche (c) oder eine relationale Datenbank (d) sind keine kennzeichnenden Merkmale.",
-      "en": "Section 1.1 of the script emphasizes that very many intelligent systems today are networked: they communicate over networks such as the internet, can be controlled via apps, or exchange data with other systems. Isolation (b), a graphical interface (c) or a relational database (d) are not defining characteristics."
+      "de": "Das Skript betont in Abschnitt 1.1, dass sehr viele intelligente Systeme heute vernetzt sind: Sie kommunizieren über Netzwerke wie das Internet, lassen sich z. B. per App steuern oder tauschen Daten mit anderen Systemen aus. Isolation, eine grafische Oberfläche oder eine relationale Datenbank sind keine kennzeichnenden Merkmale.",
+      "en": "Section 1.1 of the script emphasizes that very many intelligent systems today are networked: they communicate over networks such as the internet, can be controlled via apps, or exchange data with other systems. Isolation, a graphical interface or a relational database are not defining characteristics."
     },
     "tip": {
       "de": "Im Skript stehen Beispiele wie Smart-Home-Geräte und vernetzte Autos — was haben sie gemeinsam?",
@@ -150,8 +150,8 @@ const QUESTIONS = [
       "c"
     ],
     "explanation": {
-      "de": "Eine URL besteht u. a. aus Schema (https), Host, optionalem Port (8080), Pfad (/info/seite.html) und optionalem Query-String (id=5). Ein Primärschlüssel (d) ist ein Datenbankbegriff, und ein Compiler (e) hat mit dem Aufbau einer URL nichts zu tun.",
-      "en": "A URL consists of a scheme (https), host, optional port (8080), path (/info/seite.html) and optional query string (id=5), among others. A primary key (d) is a database term, and a compiler (e) has nothing to do with the structure of a URL."
+      "de": "Eine URL besteht u. a. aus Schema (https), Host, optionalem Port (8080), Pfad (/info/seite.html) und optionalem Query-String (id=5). Ein Primärschlüssel ist ein Datenbankbegriff, und ein Compiler hat mit dem Aufbau einer URL nichts zu tun.",
+      "en": "A URL consists of a scheme (https), host, optional port (8080), path (/info/seite.html) and optional query string (id=5), among others. A primary key is a database term, and a compiler has nothing to do with the structure of a URL."
     },
     "tip": {
       "de": "Zerlege die Adresse von links nach rechts und benenne jedes Stück.",
@@ -209,8 +209,8 @@ const QUESTIONS = [
     ],
     "answer": "a",
     "explanation": {
-      "de": "Der Query-String beginnt nach dem ? und endet vor dem optionalen Fragment (#top). Daher ist x=1&y=2 korrekt; (b) schließt fälschlich das Fragment ein, (c) ist der Pfad und (d) der Port.",
-      "en": "The query string starts after the ? and ends before the optional fragment (#top). Therefore x=1&y=2 is correct; (b) wrongly includes the fragment, (c) is the path and (d) is the port."
+      "de": "Der Query-String beginnt nach dem ? und endet vor dem optionalen Fragment (#top). Daher ist x=1&y=2 korrekt; die Variante mit #top schließt fälschlich das Fragment ein, /a/b.html ist der Pfad und 8080 der Port.",
+      "en": "The query string starts after the ? and ends before the optional fragment (#top). Therefore x=1&y=2 is correct; the variant with #top wrongly includes the fragment, /a/b.html is the path and 8080 is the port."
     },
     "tip": {
       "de": "Achte auf die Zeichen ? und # als Trenner.",
@@ -435,8 +435,8 @@ const QUESTIONS = [
       "e"
     ],
     "explanation": {
-      "de": "JSON verlangt doppelte Anführungszeichen für Schlüssel und Strings, dumps gibt einen str zurück, und None wird zu null. Kommentare (c) sieht das Format nicht vor, und einfache Anführungszeichen (d) sind kein gültiges JSON.",
-      "en": "JSON requires double quotes for keys and strings, dumps returns a str, and None becomes null. The format has no comments (c), and single quotes (d) are not valid JSON."
+      "de": "JSON verlangt doppelte Anführungszeichen für Schlüssel und Strings, dumps gibt einen str zurück, und None wird zu null. Kommentare sieht das Format nicht vor, und einfache Anführungszeichen sind kein gültiges JSON.",
+      "en": "JSON requires double quotes for keys and strings, dumps returns a str, and None becomes null. The format has no comments, and single quotes are not valid JSON."
     },
     "tip": {
       "de": "Vergleiche die JSON-Syntax mit Python-Dictionary-Literalen, wo sie sich unterscheidet.",
@@ -691,8 +691,8 @@ const QUESTIONS = [
       "c"
     ],
     "explanation": {
-      "de": "readline() liefert die erste Zeile inklusive \\n, read() danach den Rest ab der aktuellen Position. Nach dem with-Block ist die Datei geschlossen, das Attribut closed ist aber weiterhin lesbar und True; ein Fehler (d) tritt nicht auf.",
-      "en": "readline() returns the first line including \\n, read() then returns the rest from the current position. After the with block the file is closed, but the attribute closed can still be read and is True; no error (d) occurs."
+      "de": "readline() liefert die erste Zeile inklusive \\n, read() danach den Rest ab der aktuellen Position. Nach dem with-Block ist die Datei geschlossen, das Attribut closed ist aber weiterhin lesbar und True; ein ValueError tritt dabei nicht auf.",
+      "en": "readline() returns the first line including \\n, read() then returns the rest from the current position. After the with block the file is closed, but the attribute closed can still be read and is True; no ValueError occurs."
     },
     "tip": {
       "de": "Überlege, wo der Dateizeiger nach readline() steht und was with am Ende tut.",
@@ -809,8 +809,8 @@ const QUESTIONS = [
     ],
     "answer": "a",
     "explanation": {
-      "de": "Die Maske df[\"score\"] > 60 ist nur für B (80) und C (65) wahr, daher bleiben diese beiden Zeilen. Danach wählt [\"name\"] die Namen aus, tolist() macht daraus eine Liste: ['B', 'C']. Die Scores (c) wären die Ausgabe bei Auswahl der Spalte \"score\".",
-      "en": "The mask df[\"score\"] > 60 is only true for B (80) and C (65), so these two rows remain. Then [\"name\"] selects the names and tolist() turns them into a list: ['B', 'C']. The scores (c) would be the output if the column \"score\" were selected."
+      "de": "Die Maske df[\"score\"] > 60 ist nur für B (80) und C (65) wahr, daher bleiben diese beiden Zeilen. Danach wählt [\"name\"] die Namen aus, tolist() macht daraus eine Liste: ['B', 'C']. Die Scores [80, 65] wären die Ausgabe bei Auswahl der Spalte \"score\".",
+      "en": "The mask df[\"score\"] > 60 is only true for B (80) and C (65), so these two rows remain. Then [\"name\"] selects the names and tolist() turns them into a list: ['B', 'C']. The scores [80, 65] would be the output if the column \"score\" were selected."
     },
     "tip": {
       "de": "Berechne zuerst die Maske, dann die gefilterten Zeilen, dann die Spalte.",
@@ -937,8 +937,8 @@ const QUESTIONS = [
     ],
     "answer": "a",
     "explanation": {
-      "de": "MongoDB speichert Dokumente im JSON-ähnlichen BSON-Format, die in Collections liegen und verschachtelt sein dürfen. Tabellen mit festem Schema (b) beschreiben RDBMS, Graphen (d) Graphdatenbanken.",
-      "en": "MongoDB stores documents in the JSON-like BSON format, which live in collections and may be nested. Tables with a fixed schema (b) describe RDBMS, graphs (d) describe graph databases."
+      "de": "MongoDB speichert Dokumente im JSON-ähnlichen BSON-Format, die in Collections liegen und verschachtelt sein dürfen. Tabellen mit festem Schema beschreiben RDBMS, Graphen beschreiben Graphdatenbanken.",
+      "en": "MongoDB stores documents in the JSON-like BSON format, which live in collections and may be nested. Tables with a fixed schema describe RDBMS, graphs describe graph databases."
     },
     "tip": {
       "de": "Denke an die Verwandtschaft zu JSON.",
